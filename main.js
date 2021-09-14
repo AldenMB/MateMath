@@ -1,5 +1,4 @@
-const ENGLISH = 'eng';
-const SPANISH = 'esp';
+import {makeDictionary, ENGLISH, SPANISH} from './modules/dictionary.js';
 
 window.onload = function() {
 	const sortbutton = document.getElementById('sort');
