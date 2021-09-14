@@ -1,0 +1,30 @@
+body {
+	background-color: yellow;
+}
+
+#wrapper {
+	background-color: white;
+	max-width: 800px;
+	margin: auto;
+	border-radius: 30px;
+	padding: 20px;
+}
+
+.twocol {
+	display: flex;
+	flex-direction: row;
+}
+
+.english, .spanish {
+	width: 50%;
+	padding: 10px;
+}
+
+@media (max-width: 800px) {
+	.twocol {
+		flex-direction: column;
+	}
+	.english, .spanish {
+		width: 100%;
+	}
+}
