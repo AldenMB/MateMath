@@ -2,6 +2,7 @@ import {parse} from './csv.js';
 
 const ENGLISH = 'ENG';
 const SPANISH = 'ESP';
+const UNSPECIFIED = 'no especificado';
 
 function *zip (...iterables){
     let iterators = iterables.map(i => i[Symbol.iterator]() )
@@ -12,9 +13,9 @@ function *zip (...iterables){
     }
 }
 
-function intersects(set1, set2){
-	for(const x of set1){
-		if(set2.has(x)){
+function intersects(list1, list2){
+	for(const x of list1){
+		if(list2.includes(x)){
 			return true;
 		}
 	}
@@ -30,8 +31,8 @@ function parse_dictionary(csv_string){
 	const defns = arr.map(to_obj)
 	for(const defn of defns){
 		defn.areas = defn.areas.split(',').map(s => s.trim()).sort();
-		if(defn.areas.length === 0){
-			defn.areas = ['no especificado'];
+		if(defn.areas[0] === ""){
+			defn.areas = [UNSPECIFIED];
 		}
 	}
 	return defns;
@@ -47,12 +48,22 @@ function divclass(cla, contents){
 	return div;	
 };
 
+function spanclass(cla, contents){
+	const span = document.createElement('span');
+	span.classList.add(cla);
+	if(contents){
+		const t = document.createTextNode(contents);
+		span.appendChild(t);
+	}
+	return span;	
+};
+
 function defn_html(def, language){
 	const eng = divclass("english");
 	const esp = divclass("spanish");
 	
-	eng.appendChild(divclass("word", def.ENG));
-	eng.appendChild(divclass("part", '('+def.part_of_speech+')'));
+	eng.appendChild(spanclass("word", def.ENG));
+	eng.appendChild(spanclass("part", '('+def.part_of_speech+')'));
 	if(def.definition_ENG){
 		eng.appendChild(divclass("definition", def.definition_ENG));
 	}
@@ -60,13 +71,13 @@ function defn_html(def, language){
 		eng.appendChild(divclass("example", 'Example: '+def.example_ENG));
 	}
 	
-	esp.appendChild(divclass("word", def.ESP));
-	esp.appendChild(divclass("part", '('+def.part_of_speech+')'));
+	esp.appendChild(spanclass("word", def.ESP));
+	esp.appendChild(spanclass("part", '('+def.part_of_speech+')'));
 	if(def.definition_ESP){
 		esp.appendChild(divclass("definition", def.definition_ESP));
 	}
 	if(def.example_ESP){
-		esp.appendChild(divclass("example", 'Ejemplo: 'def.example_ESP));
+		esp.appendChild(divclass("example", 'Ejemplo: '+def.example_ESP));
 	}
 	
 	const columns = divclass('twocol');
@@ -77,8 +88,12 @@ function defn_html(def, language){
 	
 	const div = divclass("entry");
 	div.appendChild(columns);
-	div.appendChild(divclass("references", 'References/Referencias: '+def.sources));
-	div.appendChild(divclass("subjects", "areas/áreas: "+def.areas));
+	if(def.sources){
+		div.appendChild(divclass("references", 'References/Referencias: '+def.sources));
+	}
+	if(def.areas[0] !== UNSPECIFIED){
+		div.appendChild(divclass("subjects", "areas/áreas: "+def.areas));
+	}
 	
 	return div;
 };
@@ -94,7 +109,7 @@ function makeDictionary(csv_string){
 		);
 		if(search_string){
 			reduced_dict = reduced_dict.filter(
-				defn => defn.values.some(x => x.includes(serach_string))
+				defn => Object.values(defn).filter(x => typeof(x) === "string").some(x => x.toLowerCase().includes(search_string.toLowerCase()))
 			);
 		};
 		reduced_dict.sort(function compare(a,b){
@@ -105,11 +120,12 @@ function makeDictionary(csv_string){
 				return 1
 			}
 			if(a[primary_language] === b[primary_language]){
-				sec = primary_language === ENGLISH ? SPANISH : ENGLISH;
+				const sec = primary_language === ENGLISH ? SPANISH : ENGLISH;
 				return 1-2*(a[sec] < b[sec]);
 			}
 		});
-		div = divclass("dictionary");
+		const div = document.createElement('div');
+		div.id = "dictionary";
 		for(const defn of reduced_dict){
 			div.appendChild(defn_html(defn, primary_language));
 		}

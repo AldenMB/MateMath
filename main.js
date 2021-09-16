@@ -25,4 +25,44 @@ window.onload = function() {
 			}
 		}
 	};
+	
+	fetch('./dictionary.csv')
+		.then((response) => {
+			return response.text();
+		})
+		.then((data) => {
+			const dictionary = makeDictionary(data);
+			const areas_container = document.getElementById("subject areas");
+			const area_boxes = [];
+			for(const a of dictionary.getSubjectAreas()){
+				const box = document.createElement("input");
+				box.setAttribute("type", "checkbox");
+				box.setAttribute("id", a);
+				box.setAttribute("name", a);
+				box.checked = true;
+				areas_container.appendChild(box);
+				area_boxes.push(box);
+				const label = document.createElement("label");
+				label.setAttribute("for", a);
+				label.appendChild(document.createTextNode(a));
+				areas_container.appendChild(label);
+			}
+			
+			function write_dictionary(){
+				const searchtext = document.getElementById("search").value;
+				const filters = area_boxes.filter(x => x.checked).map(x => x.name);
+				document.getElementById("dictionary").replaceWith(dictionary.toHTML(get_primary_language(), filters, searchtext));
+			};
+			
+			document.getElementById("selections").addEventListener('input', write_dictionary);
+			/*
+			for(const box of area_boxes){
+				box.addEventListener('input', write_dictionary);
+			};
+			document.getElementById("search").addEventListener('input',write_dictionary);
+			document.getElementById(
+			*/
+			
+			write_dictionary();
+		});
 };
