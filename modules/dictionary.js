@@ -11,7 +11,7 @@ function *zip (...iterables){
         if (results.some(res => res.done) ) return
         else yield results.map(res => res.value )
     }
-}
+};
 
 function intersects(list1, list2){
 	for(const x of list1){
@@ -20,7 +20,20 @@ function intersects(list1, list2){
 		}
 	}
 	return false;
-}
+};
+
+function normalize(str){
+	return (str
+		.toLowerCase()
+		.normalize()
+		.replace('á','a')
+		.replace('é','e')
+		.replace('í','i')
+		.replace('ó','o')
+		.replace('ú','u')
+		.replace('ñ','n')
+	);
+};
 
 function parse_dictionary(csv_string){
 	const arr = parse(csv_string);
@@ -109,7 +122,7 @@ function makeDictionary(csv_string){
 		);
 		if(search_string){
 			reduced_dict = reduced_dict.filter(
-				defn => Object.values(defn).filter(x => typeof(x) === "string").some(x => x.toLowerCase().includes(search_string.toLowerCase()))
+				defn => Object.values(defn).filter(x => typeof(x) === "string").some(x => normalize(x).includes(normalize(search_string)))
 			);
 		};
 		reduced_dict.sort(function compare(a,b){
