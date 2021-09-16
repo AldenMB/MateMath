@@ -28,3 +28,18 @@ body {
 		width: 100%;
 	}
 }
+
+.word {
+	font-weight: bold;
+}
+
+.part {
+	font-style: italic;
+}
+
+.entry {
+	background-color: AliceBlue;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 5px;
+}

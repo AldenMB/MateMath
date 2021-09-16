@@ -76,7 +76,7 @@ function defn_html(def, language){
 	const esp = divclass("spanish");
 	
 	eng.appendChild(spanclass("word", def.ENG));
-	eng.appendChild(spanclass("part", '('+def.part_of_speech+')'));
+	eng.appendChild(spanclass("part", ' ('+def.part_of_speech+')'));
 	if(def.definition_ENG){
 		eng.appendChild(divclass("definition", def.definition_ENG));
 	}
@@ -85,7 +85,11 @@ function defn_html(def, language){
 	}
 	
 	esp.appendChild(spanclass("word", def.ESP));
-	esp.appendChild(spanclass("part", '('+def.part_of_speech+')'));
+	if(def.part_of_speech === 'Noun'){esp.appendChild(spanclass("part", ' (Sustantivo, '+def.gender+')'));
+	} else {
+		esp.appendChild(spanclass("part", ' ('+def.part_of_speech+')'));
+	}
+	
 	if(def.definition_ESP){
 		esp.appendChild(divclass("definition", def.definition_ESP));
 	}
@@ -126,15 +130,15 @@ function makeDictionary(csv_string){
 			);
 		};
 		reduced_dict.sort(function compare(a,b){
-			if(a[primary_language] < b[primary_language]){
+			if(normalize(a[primary_language]) < normalize(b[primary_language])){
 				return -1;
 			}
-			if(a[primary_language] > b[primary_language]){
+			if(normalize(a[primary_language]) > normalize(b[primary_language])){
 				return 1
 			}
-			if(a[primary_language] === b[primary_language]){
+			if(normalize(a[primary_language]) === normalize(b[primary_language])){
 				const sec = primary_language === ENGLISH ? SPANISH : ENGLISH;
-				return 1-2*(a[sec] < b[sec]);
+				return 1-2*(normalize(a[sec]) < normalize(b[sec]));
 			}
 		});
 		const div = document.createElement('div');
