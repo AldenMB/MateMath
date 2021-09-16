@@ -55,13 +55,7 @@ window.onload = function() {
 			};
 			
 			document.getElementById("selections").addEventListener('input', write_dictionary);
-			/*
-			for(const box of area_boxes){
-				box.addEventListener('input', write_dictionary);
-			};
-			document.getElementById("search").addEventListener('input',write_dictionary);
-			document.getElementById(
-			*/
+			sortbutton.addEventListener('click', write_dictionary);
 			
 			write_dictionary();
 		});
