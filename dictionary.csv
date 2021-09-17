@@ -1,6 +1,7 @@
 ESP,ENG,part_of_speech,gender,definition_ESP,definition_ENG,example_ESP,example_ENG,sources,areas
-Cuerpo ,Field,Noun,M.,,,,,,
-Anillo ,Ring,Noun,M.,,,,,,
+Cuerpo ,Field,Noun,M.,"Un cuerpo es un anillo de división conmutativo, es decir, un anillo conmutativo y unitario en el que todo elemento distinto de cero es invertible respecto del producto",,,,Wiki,"Álgebra, Teoría de Números"
+Anillo ,Ring,Noun,M.,"Un anillo  es un conjunto con dos leyes de composición, llamadas adición y multiplicación, cumpliendo las condiciones siguientes:  es grupo abeliano para la adición; el elemento neutro en esta adición se nombra cero del anillo, y se denota usualmente 0, es un semigrupo para la multiplicación, y La multiplicación es distributiva (por los dos lados) respecto de la adición.
+",,,,,Álgebra
 Ideal,Ideal,Noun,M.,,,,,,
 Grupo,Group,Noun,M.,,,,,,
 Conjunto ,Set,Noun,M.,,,,,,
@@ -99,4 +100,16 @@ Cubo,Cube,Noun,M.,un poliedro limitado por seis caras cuadradas congruentes,,,,W
 Ángulo,Angle,Noun,M.,la parte del plano determinada por dos semirrectas llamadas lados que tienen el mismo punto de origen llamado vértice del ángulo,,,,Wiki,Geometría
 Plano,Plane,Noun,M.,"un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas",,,,Wiki,Geometría
 Homología,Homology,Noun,F.,,,,,,
-Races De Unidad,Roots of Unity,Noun,F.,,,,,Viola-Prioli & Viola-Prioli (2006),
+Raíces De Unidad ,Roots of Unity,Noun,F.,,,,,Viola-Prioli & Viola-Prioli (2006),
+Raiz N-ésima de la Unidad (o enésima ),N-th Root of Unity,Noun,F.,,,,,Wiki,
+Construcciones con Regla y Compás,Constructions with Straight Edge and Compass,Noun,F.,,,,,,"Álgebra, Análsis Compleja"
+Dominio de Ideales Principales (DIP),Principal Ideal Domain (PID),Noun,M.,,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
+Polinomio,Polynomial,Noun,M.,,,,,Viola-Prioli & Viola-Prioli (2006),
+Mónica/o,Mononic,Adj,,Se dice que un polinomio es mónico si tiene grado $n$ y el coeficiente de $x^n$  es igual a 1,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
+Elemento Nulo ,Zero Element,Noun,F.,,,,,,
+Polinomio Constante,Constant Polynomial,Noun,M.,Se dice que un polinomio es constante si tien grado cero o es el polinomio nulo,,,,Viola-Prioli & Viola-Prioli (2006),
+Polinomio Nulo,Zero Polynomial,Noun,M.,,,,,,
+El Grupo de Galois,Galois Group,Noun,M.,,,,,,Álgebra
+Clausura Algebraica ,Algebraic Closure,Noun,F.,,,,,,Álgebra
+Extension,Extension,Noun,F.,,,,,,
+Extension Radical ,Radical Extension,Noun,F.,,,,,,
