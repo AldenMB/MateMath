@@ -43,3 +43,9 @@ body {
 	margin: 10px;
 	padding: 5px;
 }
+
+.letter {
+	font-weight: bold;
+	font-size: xx-large;
+	margin: 20px;
+}

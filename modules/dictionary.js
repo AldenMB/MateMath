@@ -143,7 +143,13 @@ function makeDictionary(csv_string){
 		});
 		const div = document.createElement('div');
 		div.id = "dictionary";
+		let current_letter = ''
 		for(const defn of reduced_dict){
+			const def_letter = normalize(defn[primary_language][0]).toUpperCase();
+			if(def_letter !== current_letter){
+				div.appendChild(divclass('letter', def_letter));
+				current_letter = def_letter;
+			}
 			div.appendChild(defn_html(defn, primary_language));
 		}
 		return div;
