@@ -1,9 +1,24 @@
 ESP,ENG,part_of_speech,gender,definition_ESP,definition_ENG,example_ESP,example_ENG,sources,areas
 Cuerpo ,Field,Noun,M.,"Un cuerpo es un anillo de división conmutativo, es decir, un anillo conmutativo y unitario en el que todo elemento distinto de cero es invertible respecto del producto",,,,Wiki,"Álgebra, Teoría de Números"
-Anillo ,Ring,Noun,M.,"Un anillo  es un conjunto con dos leyes de composición, llamadas adición y multiplicación, cumpliendo las condiciones siguientes:  es grupo abeliano para la adición; el elemento neutro en esta adición se nombra cero del anillo, y se denota usualmente 0, es un semigrupo para la multiplicación, y La multiplicación es distributiva (por los dos lados) respecto de la adición.
+Anillo ,Ring,Noun,M.,"Un anillo  es un conjunto con dos leyes de composición, llamadas adición y multiplicación, cumpliendo las condiciones siguientes:  es grupo abeliano para la adición; el elemento neutro en esta adición se nombra cero del anillo, y se denota usualmente 0, es un semigrupo para la multiplicación, y la multiplicación es distributiva (por los dos lados) respecto de la adición.
 ",,,,,Álgebra
-Ideal,Ideal,Noun,M.,,,,,,
-Grupo,Group,Noun,M.,,,,,,
+Ideal (o Ideal Bilátero),Ideal,Noun,M.,"Un ideal bilátero es un ideal por la derecha y por la izquierda. En un anillo conmutativo, las nociones de ideal por la derecha, de ideal por la izquierda y de ideal bilátero coinciden y simplemente se habla de ideal.",,"Dado un número entro $k$, $k\mathbb{Z}$ es un ideal de $\mathbb{Z}$",,Wiki,Álgebra
+Ideal por la Izquierda ,Left Ideal,Noun,M.,"Un subconjunto $I$ no vacío de un anillo $A$ es un ideal por la izquierda de $A$ si:
+1. I es un subgrupo aditivo de $A$.
+2. $\forall(a, x) \in A \times I: a \times x \in I$ (El producto por la izquierda de un elemento de I por un elemento de $A$ pertenece a $I$ ).",,,,Wiki,Álgebra
+Ideal por la Derecha,Right Ideal,Noun,M.,"Un subconjunto $I$ no vacío de un anillo $A$ es un ideal por la derecha de $A$ si:
+1. I es un subgrupo aditivo de $A$.
+2. $\forall(x, a) \in I \times A: x \times a \in I$ (El producto por la derecha de un elemento de / por un elemento de $A$ pertenece a I).
+",,,,Wiki,Álgebra
+Grupo,Group,Noun,M.,"Un conjunto $G$ y una operación binaria forman un grupo $(G, \star)$ cuando:
+1. $(G, \star)$ es un monoide o semigrupo con elemento neutro
+2. $(G, \star)$ verifica la existencia de elemento simétrico para cada uno de sus elementos.
+$$
+\begin{aligned}
+&\exists ! e \in G: e \star a=a, \forall a \in G . \\
+&\forall a \in G, \exists \bar{a}: a \star \bar{a}=e
+\end{aligned}
+$$",,El conjunto de los números enteros con la operación de multiplicar conocida,,,Álgebra
 Conjunto ,Set,Noun,M.,,,,,,
 Subconjunto,Subset,,,,,,,,
 Conjunto Vacío,Empty Set,Noun,M.,,,,,,
@@ -113,3 +128,5 @@ El Grupo de Galois,Galois Group,Noun,M.,,,,,,Álgebra
 Clausura Algebraica ,Algebraic Closure,Noun,F.,,,,,,Álgebra
 Extension,Extension,Noun,F.,,,,,,
 Extension Radical ,Radical Extension,Noun,F.,,,,,,
+Elemento Simétrico,Inverse Element,Noun,,,,,,,
+Elemento Neutro,Identity Element,Noun,,,,,,,
