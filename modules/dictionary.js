@@ -26,12 +26,12 @@ function normalize(str){
 	return (str
 		.toLowerCase()
 		.normalize()
-		.replace('á','a')
-		.replace('é','e')
-		.replace('í','i')
-		.replace('ó','o')
-		.replace('ú','u')
-		.replace('ñ','n')
+		.replaceAll('á','a')
+		.replaceAll('é','e')
+		.replaceAll('í','i')
+		.replaceAll('ó','o')
+		.replaceAll('ú','u')
+		.replaceAll('ñ','n')
 	);
 };
 
