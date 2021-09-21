@@ -1,62 +1,15 @@
 ESP,ENG,part_of_speech,gender,definition_ESP,definition_ENG,example_ESP,example_ENG,sources,areas
-Abierto ,Open,Adj,,,,,,,
-Álgebra,Algebra,Noun,F.,la rama de la matemática que estudia la combinación de elementos de estructuras abstractas acorde a ciertas reglas.,,,,Wik,
-Álgebra Abstracta,Abstract Algebra,Noun,F.,,,,,,
-Álgebra Exterior (o Álgebra de Grassmann),Exterior Algebra ,Noun,F.,el sistema algebraico cuyo producto es el producto exterior y se proporciona un entorno algebraico en el que manejar cuestiones geométricas.,,,,Wiki,
-Álgebra Homológica,Homological Algebra,Noun,F.,,,,,,
-Álgebra Lineal ,Linear Algebra,Noun,F.,"La rama de matemáticas en que se estudia conceptos tales como vectores, matrices, espacio dual, sistemas de ecuaciones lineales y en su enfoque de manera más formal, espacios vectoriales y sus transformaciones lineales.",,,,Wiki,
-Análisis ,Analysis ,Noun,M.,,,,,,
-Análisis Complejo ( o Teoría de las Funciones de Variable Compleja) ,Complex Analysis,Noun,M.,,,,,,
-Análisis Real ( o Teoría de las Funciones de Variable Real) ,Real Analysis,Noun,M.,la rama del análisis matemático que tiene que ver con el conjunto de los números reales,,,,Wiki,
-Ángulo,Angle,Noun,M.,la parte del plano determinada por dos semirrectas llamadas lados que tienen el mismo punto de origen llamado vértice del ángulo,,,,Wiki,Geometría
+Cuerpo ,Field,Noun,M.,"Un cuerpo es un anillo de división conmutativo, es decir, un anillo conmutativo y unitario en el que todo elemento distinto de cero es invertible respecto del producto",,,,Wiki,"Álgebra, Teoría de Números"
 Anillo ,Ring,Noun,M.,"Un anillo  es un conjunto con dos leyes de composición, llamadas adición y multiplicación, cumpliendo las condiciones siguientes:  es grupo abeliano para la adición; el elemento neutro en esta adición se nombra cero del anillo, y se denota usualmente 0, es un semigrupo para la multiplicación, y la multiplicación es distributiva (por los dos lados) respecto de la adición.
 ",,,,,Álgebra
-Arista,Edge,Noun,F.,"el segmento de recta que limita la cara, también conocida como lado, de una figura plana",,,,Wiki,"Geometría, Teoría de Grafos"
-Asimétra,Antisymmetry,Adj,,,,,,,
-Asimétrica,Antisymmetric,Adj,,,,,,,
-Biyectiva/o,Bijective,Adj,,,,,,,
-Campo escalar,Scalar field,Noun,M.,,,,,Wiki,
-Campo vectorial,Vector field,Noun,M.,,,,,Wiki,
-Cardinalidad ,Cardinality ,Noun,F.,,,,,,
-Categoría ,Category ,Noun,F.,,,,,,
-Cerado,Closed,Adj,,,,,,,
-Clausura Algebraica ,Algebraic Closure,Noun,F.,,,,,,Álgebra
-Codominio,Codomain,Noun,M.,,,,,,
-Complemento,Compliment,Noun,M.,,,,,,
-Conjunto ,Set,Noun,M.,,,,,,
-Conjunto Denso,Dense Set ,Noun,M.,,,,,,
-Conjunto No Numberable,Uncountable Set,Noun,M.,un conjunto no numerable es un conjunto que no puede ser enumerado,,El conjunto de los números reales,The real numbers,Wiki,
-Conjunto Numerable ,Countable Set,Noun,M.,un conjunto numerable es un conjunto con la misma cardinalidad que el conjunto de los números naturales,,,,Wiki,
-Conjunto Parcialmente Ordenado,Partially Ordered Set (Poset),Noun,M.,,,,,,
-Conjunto Potencia (Conjunto de Las Partes o Conjunto de Partes) ,Power Set,Noun,M.,el conjunto potencia de un conjunto dado es otro conjunto formado por todos los subconjuntos del conjunto dado,,,,Wiki,
-Conjunto Vacío,Empty Set,Noun,M.,,,,,,
-Construcciones con Regla y Compás,Constructions with Straight Edge and Compass,Noun,F.,,,,,,"Álgebra, Análsis Compleja"
-Contraejemplo,Counterexample ,Noun,M.,,,,,,
-Cubo,Cube,Noun,M.,un poliedro limitado por seis caras cuadradas congruentes,,,,Wiki,Geometría
-Cuerpo ,Field,Noun,M.,"Un cuerpo es un anillo de división conmutativo, es decir, un anillo conmutativo y unitario en el que todo elemento distinto de cero es invertible respecto del producto",,,,Wiki,"Álgebra, Teoría de Números"
-Densa/o,Dense,Adj,,,,,,,
-Difeomorfismo,Diffeomorphism,Noun,M.,,,,,Wiki,
-Dominio,Domain,Noun,M.,,,,,,
-Dominio de Ideales Principales (DIP),Principal Ideal Domain (PID),Noun,M.,,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
-El Conjunto de Los Números Enteros ,The Integers ,Noun,M.,,,,,,
-El Conjunto de Los Números Irracionales ,The Irrational Numbers,Noun,M.,,,,,,
-El Conjunto de Los Números Naturales,The Natural Numbers,Noun,M.,,,,,,
-El Conjunto de Los Números Reales,The Real Numbers,Noun,M.,,,,,,
-El Grupo de Galois,Galois Group,Noun,M.,,,,,,Álgebra
-Elemento Neutro,Identity Element,Noun,,,,,,,
-Elemento Nulo ,Zero Element,Noun,F.,,,,,,
-Elemento Simétrico,Inverse Element,Noun,,,,,,,
-Epimorfismo,Epimorphism,Noun,M.,,,,,,
-Espacio de Lazos ,Loop Space ,Noun,M.,,,,,,
-Espacio Denso,Dense Space,Noun,M.,,,,,,
-Espacio Separable ,Separable Space,Noun,M.,,,,,,
-Espacio Topológico,Topological Space,Noun,M.,,,,,,
-Espacio Vectorial ,Vector Space,Noun,M.,,,,,,
-Extension,Extension,Noun,F.,,,,,,
-Extension Radical ,Radical Extension,Noun,F.,,,,,,
-Finita/o ,Finite,Adj,,,,,,,
-Función,Function,Noun,F.,,,,,,
-Geometría,Geometry,Noun,F.,,,,,,
+Ideal (o Ideal Bilátero),Ideal,Noun,M.,"Un ideal bilátero es un ideal por la derecha y por la izquierda. En un anillo conmutativo, las nociones de ideal por la derecha, de ideal por la izquierda y de ideal bilátero coinciden y simplemente se habla de ideal.",,"Dado un número entro $k$, $k\mathbb{Z}$ es un ideal de $\mathbb{Z}$",,Wiki,Álgebra
+Ideal por la Izquierda ,Left Ideal,Noun,M.,"Un subconjunto $I$ no vacío de un anillo $A$ es un ideal por la izquierda de $A$ si:
+1. I es un subgrupo aditivo de $A$.
+2. $\forall(a, x) \in A \times I: a \times x \in I$ (El producto por la izquierda de un elemento de I por un elemento de $A$ pertenece a $I$ ).",,,,Wiki,Álgebra
+Ideal por la Derecha,Right Ideal,Noun,M.,"Un subconjunto $I$ no vacío de un anillo $A$ es un ideal por la derecha de $A$ si:
+1. I es un subgrupo aditivo de $A$.
+2. $\forall(x, a) \in I \times A: x \times a \in I$ (El producto por la derecha de un elemento de / por un elemento de $A$ pertenece a I).
+",,,,Wiki,Álgebra
 Grupo,Group,Noun,M.,"Un conjunto $G$ y una operación binaria forman un grupo $(G, \star)$ cuando:
 1. $(G, \star)$ es un monoide o semigrupo con elemento neutro
 2. $(G, \star)$ verifica la existencia de elemento simétrico para cada uno de sus elementos.
@@ -66,7 +19,6 @@ $$
 &\forall a \in G, \exists \bar{a}: a \star \bar{a}=e
 \end{aligned}
 $$",,El conjunto de los números enteros con la operación de multiplicar conocida,,,Álgebra
-<<<<<<< HEAD
 Conjunto ,Set,Noun,M.,"Un conjunto es una agrupación de elementos tal que todos ellos participan en cierto modo, de las mismas características o propiedades",,"Conjunto de los números naturales {0,1,2,3,..}",,Zamalloa (2013),
 Subconjunto,Subset,Noun,M. ,,,,,,
 Conjunto Vacío,Empty Set,Noun,M.,El conjunto que no contiene ningún elemento,The set  which contains no elements,,,,
@@ -82,59 +34,55 @@ El Conjunto de Los Números Reales,The Set of Real Numbers (The Reals),Noun,M.,"
 El Conjunto de Los Números Complejos,The Set of Complex Numbers (The Complex Numbers),,,,,,,,
 Espacio de Lazos ,Loop Space ,Noun,M.,,,,,,
 Espacio Vectorial ,Vector Space,Noun,M.,,,,,,
-=======
-Hexadro ,Hexagon ,Noun,M.,Un poliedro de sies caras,,,,Wiki,"Geometría, Teoría de Grafos"
-Homología,Homology,Noun,F.,,,,,,
->>>>>>> b8637909b5af6e071719f360a18d59be845d4700
 Homotopía,Homotopy ,Noun,F.,,,,,,
-Ideal (o Ideal Bilátero),Ideal,Noun,M.,"Un ideal bilátero es un ideal por la derecha y por la izquierda. En un anillo conmutativo, las nociones de ideal por la derecha, de ideal por la izquierda y de ideal bilátero coinciden y simplemente se habla de ideal.",,"Dado un número entro $k$, $k\mathbb{Z}$ es un ideal de $\mathbb{Z}$",,Wiki,Álgebra
-Ideal por la Derecha,Right Ideal,Noun,M.,"Un subconjunto $I$ no vacío de un anillo $A$ es un ideal por la derecha de $A$ si:
-1. I es un subgrupo aditivo de $A$.
-2. $\forall(x, a) \in I \times A: x \times a \in I$ (El producto por la derecha de un elemento de / por un elemento de $A$ pertenece a I).
-",,,,Wiki,Álgebra
-Ideal por la Izquierda ,Left Ideal,Noun,M.,"Un subconjunto $I$ no vacío de un anillo $A$ es un ideal por la izquierda de $A$ si:
-1. I es un subgrupo aditivo de $A$.
-2. $\forall(a, x) \in A \times I: a \times x \in I$ (El producto por la izquierda de un elemento de I por un elemento de $A$ pertenece a $I$ ).",,,,Wiki,Álgebra
-Imagen,Image,Noun,M.,,,,,,
-Infinita/o,Infinite,Adj,,,,,,,
-Intersección,Intersection ,Noun,F.,,,,,,
-Inyectiva/o,Injective,Adj,,,,,,,
-Irreflexiva (Antirreflexiva o Antirrefleja),Irreflexiva (Anti-reflexive),Adj,,,,,,,
 Isomorfismo ,Isomorphism,Noun,M.,,,,,,
-Leyes De De Morgan,De Morgan’s Law,Noun,F.,,,,,,
-Matriz,Matrix,Noun,F.,,,,,,
-Matriz Cero,Zero Matrix,Noun,F.,,,,,,
-Matriz Cuadrada,Square Matrix,Noun,F.,,,,,,
-Matriz de Adyacencia,Adjacency Matrix,Noun,F.,,,,,,
-Matriz Laplaciana (o Matriz de Admitancia o Matriz de Kirchhoff ),Laplacian Matrix (or Admittance Matrix or Kirchhoff Matrix),Noun,F.,,,,,Wiki,Teoría de Grafos
-Mónica/o,Mononic,Adj,,Se dice que un polinomio es mónico si tiene grado $n$ y el coeficiente de $x^n$  es igual a 1,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
-Monomorfismo,Monomorphism,Noun,M.,,,,,,
 Morfismo ,Morphism ,Noun,M.,,,,,,
-Número Entero,Integer Number,Noun,M.,,,,,,
-Número Irracional,Irrational Number,Noun,M.,,,,,,
-Número Natural,Natural Number ,Noun,M.,,,,,,
-"Opuesto (o Simétrico Para la Suma, o Inverso Aditivo) ",Negation (Additive Inverse),Noun,M.,"el opuesto de un número n es el número que, sumado conn da cero",,,,Wiki,
-Orden,Order,Noun,M.,,,,,,
-Orden Parcial,Partial Ordering,Adj,,,,,,,
+Epimorfismo,Epimorphism,Noun,M.,,,,,,
+Monomorfismo,Monomorphism,Noun,M.,,,,,,
+Difeomorfismo,Diffeomorphism,Noun,M.,,,,,Wiki,
+Categoría ,Category ,Noun,F.,,,,,,
+Topología ,Topology,Noun,F.,,,,,,
+Topología de los Complementos Finito / Topología Cofinita,Finite Complement Topology/ Cofinite Topology,Noun,F.,"En matemáticas, la topología de los complementos finitos o topología cofinita sobre un conjunto $X$ es la topología dada por
+$$\mathcal{T}_{c o f}=\{A \subseteq X: X \backslash A \text { es finito ó } A=\emptyset\}$$
+Es decir, un subconjunto $A$ de $X$ es abierto si su complemento es un conjunto finito.","The cofinite topology or the finite complement topology is a topology that can be defined on every set $X$. It has precisely the empty set and all cofinite subsets of $X$ as open sets. Symbolically,
+$$\mathcal{T}=\{A \subseteq X \mid A=\varnothing \text { or } X \backslash A \text { is finite }\}$$",,,"Wiki, Munkres 1999",
+Espacio Topológico,Topological Space,Noun,M.,"Se llama un espacio topológico al par ordenado $(X,T)$ formado por un conjunto $X$ y una topología $T$ sobre X, es decir, una colección de subconjuntos de X que cumplen las tres propiedades siguientes:
+1. El conjunto vacío y $X$ están en $T$.
+$$\varnothing \in T, X \in T$$
+2. La intersección de cualquier subcolección finita de conjuntos de $T$ está en $T$.
+$$\left(O_{1} \in T, O_{2} \in T\right) \Rightarrow\left(O_{1} \cap O_{2} \in T\right)$$
+3. La unión de cualquier subcolección de conjuntos de $T$ está en $T .$
+Esta condición también se escribe, formalmente:
+$$\forall S \subset T, \cup_{O \in S} O \in T$$
+A los conjuntos pertenecientes a la topología $T$ se les llama conjuntos abiertos o simplemente abiertos de $(X, T) ;^{4}$ y a sus complementos en E, conjuntos cerrados.","A topological space is an ordered pair $(X, T)$, where $X$ is a set and $T$ is a collection of subsets of $X$, satisfying the following axioms: 
+1. The empty set and $X$ itself belong to $T$.
+2. Any arbitrary (finite or infinite) union of members of $\tau$ belongs to $T$.
+3. The intersection of any finite number of members of $\tau$ belongs to $T$.
+The elements of $T$ are called open sets and the collection $T$ is called a topology on $X .$ A subset $C \subseteq X$ is said to be closed in $(X, T)$ if and only if its complement $X \backslash C$ is an element of $T$.","Dado el conjunto $X=\{1,2,3,4\}$ y la colección de los seis subconjuntos de $X$
+$$T=\{\{\},\{2\},\{1,2\},\{2,3\},\{1,2,3\},\{1,2,3,4\}\}=\{\varnothing,\{2\},\{1,2\},\{2,3\},\{1,2,3\}, X\}$$
+$(X,T)$ forman un espacio topológico. Aveces este espacio topológico con esta descripción de $T$ se llama un espacio topológico con la topología discreta.","Given $X=\{1,2,3,4\}$, the family
+$$
+T=\{\{\},\{2\},\{1,2\},\{2,3\},\{1,2,3\},\{1,2,3,4\}\}=\{\varnothing,\{2\},\{1,2\},\{2,3\},\{1,2,3\}, X\}
+$$
+of six subsets of $X$ form topologv of $X$.  Sometimes a this topological space with this description of $T$ is called is called a topological space with the discrete topology.","Wiki, Munkres 1999",
+Variedad Diferenciable,Differentiable Manifold,Noun,F.,,,,,Wiki,
 Par,Pair,Noun,M.,,,,,,
 Par Ordenado,Ordered Pair,Noun,M.,,,,,,
-Paralelepípedo,Parallelepiped,Noun,M.,"es un poliedro de seis caras (por tanto, un hexaedro), en el que todas las caras son paralelogramos, paralelas e iguales dos a dos",,,,Wiki,Geometría
-Plano,Plane,Noun,M.,"un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas",,,,Wiki,Geometría
-Poliedro,Polygon,Noun,M.,un cuerpo geométrico cuyas caras son planas y encierran un volumen finito,,,,Wiki,Geometría
-Polinomio,Polynomial,Noun,M.,,,,,Viola-Prioli & Viola-Prioli (2006),
-Polinomio Constante,Constant Polynomial,Noun,M.,Se dice que un polinomio es constante si tien grado cero o es el polinomio nulo,,,,Viola-Prioli & Viola-Prioli (2006),
-Polinomio Nulo,Zero Polynomial,Noun,M.,,,,,,
-Primo,Prime,Adj,,,,,,,
+Unión ,Union,Noun,F.,La unión de dos conjuntos $A$ y $B$ es otro conjunto $A \cup B$ cuyos elementos son todos los elementos de $A \mathrm{y} / \mathrm{o}$ de $B$. En símbolos $$A \cup B=\{x: x \in A \text { o } x \in B\} $$,"The union of two sets $A$ and $B$ is the set of elements which are in $A$, in $B$, or in both $A$ and $B$. Symbolically,
+$$A \cup B=\{x: x \in A \text { or } x \in B\} $$",,,,
+Intersección,Intersection ,Noun,F.,,,,,,
+Complemento,Compliment,Noun,M.,,,,,,
+Abierto ,Open,Adj,,,,,,,
+Cerado,Closed,Adj,,,,,,,
+Leyes De De Morgan,De Morgan’s Law,Noun,F.,,,,,,
 Producto Cartesiano ,Cartesian Product,Noun,M.,,,,,,
-Punto,Point,Noun,M.,,,,,,
-Raíces De Unidad ,Roots of Unity,Noun,F.,,,,,Viola-Prioli & Viola-Prioli (2006),
-Raiz N-ésima de la Unidad (o enésima ),N-th Root of Unity,Noun,F.,,,,,Wiki,
-Reflexividad,Reflexivity ,Adj,,una propiedad,,,,,
-Relación Binaria ,Binary Relation,Noun,F.,,,,,,
-Relación de Equivalencia,Equivalence Relation,Noun,F.,,,,,,
+Conjunto Parcialmente Ordenado,Partially Ordered Set (Poset),Noun,M.,,,,,,
+Orden,Order,Noun,M.,,,,,,
+Orden Parcial,Partial Ordering,Adj,,,,,,,
 Relación de Orden,Ordering,,,,,,,,
+Relación de Equivalencia,Equivalence Relation,Noun,F.,,,,,,
+Relación Binaria ,Binary Relation,Noun,F.,,,,,,
 Relación de Orden Total,Total Ordering ,Noun,F.,,,,,,
-<<<<<<< HEAD
 Contraejemplo,Counterexample ,Noun,M.,,,,,,
 Conjunto Denso,Dense Set ,Noun,M.,,,,,,
 Densa/o,Dense,Adj,,,,,,,
@@ -159,12 +107,10 @@ Primo,Prime,Adj,,,,,,,
 Reflexividad,Reflexivity ,Adj,,una propiedad,,,,,
 Simetría,Symmetry,Adj,,,,,,,
 Transitividad,Transitividad,Adj,,,,,,,
-=======
->>>>>>> b8637909b5af6e071719f360a18d59be845d4700
 Relación Reflexiva (o Refleja),Reflexive Relation,Noun,,,,,,,
-Simetría,Symmetry,Adj,,,,,,,
+Irreflexiva (Antirreflexiva o Antirrefleja),Irreflexiva (Anti-reflexive),Adj,,,,,,,
+Asimétra,Antisymmetry,Adj,,,,,,,
 Simétrica ,Symmetric,Adj,,,,,,,
-<<<<<<< HEAD
 Asimétrica,Antisymmetric,Adj,,,,,,,
 (Matriz) Transpuesta,Transpose (Matrix),Noun,F.,,,,,,
 Matriz,Matrix,Noun,F.,"Una matriz es un arreglo p-dimensional de números (elementos de la matriz) ordenados en filas (o renglones) y columnas, donde una fila es cada una de las líneas horizontales de la matriz y una columna es cada una de las líneas verticales. ",A matrix is a rectangular array of numbers (or other mathematical objects) for which operations such as addition and multiplication are defined.,,,Wiki,Álgebra Lineal
@@ -172,18 +118,39 @@ Matriz de Adyacencia,Adjacency Matrix,Noun,F.,La matriz de adyacencia es una mat
 Matriz Cuadrada,Square Matrix,Noun,F.,,,,,,
 Matriz Cero,Zero Matrix,Noun,F.,,,,,,
 Matriz Laplaciana (o Matriz de Admitancia o Matriz de Kirchhoff ),Laplacian Matrix (or Admittance Matrix or Kirchhoff Matrix),Noun,F.,,,,,Wiki,Teoría de Grafos
-=======
-Sistema Algebraica ( Estructura Algebraica),Algebraic Structure,Noun,F.,,,,,,
-"Sobreyectiva (epiyectiva, suprayectiva suryectiva, exhaustiva, onto o subyectiva)/o",Surjective,Adj,,,,,,Wiki,
-Subconjunto,Subset,,,,,,,,
-Teorema,Theorem,Noun,M.,,,,,,
->>>>>>> b8637909b5af6e071719f360a18d59be845d4700
 Teoría de Grafos,Graph Theory,Noun,,,,,,,
+Álgebra,Algebra,Noun,F.,la rama de la matemática que estudia la combinación de elementos de estructuras abstractas acorde a ciertas reglas.,,,,Wik,
+Análisis ,Analysis ,Noun,M.,,,,,,
+Geometría,Geometry,Noun,F.,,,,,,
 Teoría de Números,Number Theory,Noun,,,,,,,
-Topología ,Topology,Noun,F.,,,,,,
-Topología de los Complementos Finito / Topología Cofinita,Finite Complement Topology/ Cofinite Topology,Noun,F.,,,,,,
-Transitividad,Transitividad,Adj,,,,,,,
-Transpuesta (Matriz Transpuesta),Transpose (Matrix),Noun,F.,,,,,,
-Unión ,Union,Noun,F.,,,,,,
-Variedad Diferenciable,Differentiable Manifold,Noun,F.,,,,,Wiki,
+Álgebra Lineal ,Linear Algebra,Noun,F.,"La rama de matemáticas en que se estudia conceptos tales como vectores, matrices, espacio dual, sistemas de ecuaciones lineales y en su enfoque de manera más formal, espacios vectoriales y sus transformaciones lineales.",,,,Wiki,
+Análisis Real ( o Teoría de las Funciones de Variable Real) ,Real Analysis,Noun,M.,la rama del análisis matemático que tiene que ver con el conjunto de los números reales,,,,Wiki,
+Análisis Complejo ( o Teoría de las Funciones de Variable Compleja) ,Complex Analysis,Noun,M.,,,,,,
+Álgebra Abstracta,Abstract Algebra,Noun,F.,,,,,,
+Álgebra Homológica,Homological Algebra,Noun,F.,,,,,,
+Álgebra Exterior (o Álgebra de Grassmann),Exterior Algebra ,Noun,F.,el sistema algebraico cuyo producto es el producto exterior y se proporciona un entorno algebraico en el que manejar cuestiones geométricas.,,,,Wiki,
+Arista,Edge,Noun,F.,"el segmento de recta que limita la cara, también conocida como lado, de una figura plana",,,,Wiki,"Geometría, Teoría de Grafos"
 Vértice,Vertex,Noun,M.,"el punto donde se encuentran dos o más elementos unidimensionales (curvas, vectores, rectas, semirrectas o segmentos)",,,,Wiki,"Geometría, Teoría de Grafos"
+Punto,Point,Noun,M.,,,,,,
+Paralelepípedo,Parallelepiped,Noun,M.,"es un poliedro de seis caras (por tanto, un hexaedro), en el que todas las caras son paralelogramos, paralelas e iguales dos a dos",,,,Wiki,Geometría
+Poliedro,Polygon,Noun,M.,un cuerpo geométrico cuyas caras son planas y encierran un volumen finito,,,,Wiki,Geometría
+Hexadro ,Hexagon ,Noun,M.,Un poliedro de sies caras,,,,Wiki,"Geometría, Teoría de Grafos"
+Cubo,Cube,Noun,M.,un poliedro limitado por seis caras cuadradas congruentes,,,,Wiki,Geometría
+Ángulo,Angle,Noun,M.,la parte del plano determinada por dos semirrectas llamadas lados que tienen el mismo punto de origen llamado vértice del ángulo,,,,Wiki,Geometría
+Plano,Plane,Noun,M.,"un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas",,,,Wiki,Geometría
+Homología,Homology,Noun,F.,,,,,,
+Raíces De Unidad ,Roots of Unity,Noun,F.,,,,,Viola-Prioli & Viola-Prioli (2006),
+Raiz N-ésima de la Unidad (o enésima ),N-th Root of Unity,Noun,F.,,,,,Wiki,
+Construcciones con Regla y Compás,Constructions with Straight Edge and Compass,Noun,F.,,,,,,"Álgebra, Análsis Compleja"
+Dominio de Ideales Principales (DIP),Principal Ideal Domain (PID),Noun,M.,,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
+Polinomio,Polynomial,Noun,M.,,,,,Viola-Prioli & Viola-Prioli (2006),
+Mónica/o,Mononic,Adj,,Se dice que un polinomio es mónico si tiene grado $n$ y el coeficiente de $x^n$  es igual a 1,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
+Elemento Nulo ,Zero Element,Noun,F.,,,,,,
+Polinomio Constante,Constant Polynomial,Noun,M.,Se dice que un polinomio es constante si tien grado cero o es el polinomio nulo,,,,Viola-Prioli & Viola-Prioli (2006),
+Polinomio Nulo,Zero Polynomial,Noun,M.,,,,,,
+El Grupo de Galois,Galois Group,Noun,M.,,,,,,Álgebra
+Clausura Algebraica ,Algebraic Closure,Noun,F.,,,,,,Álgebra
+Extension,Extension,Noun,F.,,,,,,
+Extension Radical ,Radical Extension,Noun,F.,,,,,,
+Elemento Simétrico,Inverse Element,Noun,,,,,,,
+Elemento Neutro,Identity Element,Noun,,,,,,,
