@@ -119,7 +119,7 @@ Matriz Cuadrada,Square Matrix,Noun,F.,,,,,,
 Matriz Cero,Zero Matrix,Noun,F.,,,,,,
 Matriz Laplaciana (o Matriz de Admitancia o Matriz de Kirchhoff ),Laplacian Matrix (or Admittance Matrix or Kirchhoff Matrix),Noun,F.,,,,,Wiki,Teoría de Grafos
 Teoría de Grafos,Graph Theory,Noun,,,,,,,
-Álgebra,Algebra,Noun,F.,la rama de la matemática que estudia la combinación de elementos de estructuras abstractas acorde a ciertas reglas.,,,,Wik,
+Álgebra,Algebra,Noun,F.,la rama de la matemática que estudia la combinación de elementos de estructuras abstractas acorde a ciertas reglas.,,,,Wiki,
 Análisis ,Analysis ,Noun,M.,,,,,,
 Geometría,Geometry,Noun,F.,,,,,,
 Teoría de Números,Number Theory,Noun,,,,,,,
@@ -140,7 +140,7 @@ Cubo,Cube,Noun,M.,un poliedro limitado por seis caras cuadradas congruentes,,,,W
 Plano,Plane,Noun,M.,"un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas",,,,Wiki,Geometría
 Homología,Homology,Noun,F.,,,,,,
 Raíces De Unidad ,Roots of Unity,Noun,F.,,,,,Viola-Prioli & Viola-Prioli (2006),
-Raiz N-ésima de la Unidad (o enésima ),N-th Root of Unity,Noun,F.,,,,,Wiki,
+Raiz N-ésima de la Unidad (o Enésima),N-th Root of Unity,Noun,F.,,,,,Wiki,
 Construcciones con Regla y Compás,Constructions with Straight Edge and Compass,Noun,F.,,,,,,"Álgebra, Análsis Compleja"
 Dominio de Ideales Principales (DIP),Principal Ideal Domain (PID),Noun,M.,,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
 Polinomio,Polynomial,Noun,M.,,,,,Viola-Prioli & Viola-Prioli (2006),
@@ -152,5 +152,5 @@ El Grupo de Galois,Galois Group,Noun,M.,,,,,,Álgebra
 Clausura Algebraica ,Algebraic Closure,Noun,F.,,,,,,Álgebra
 Extension,Extension,Noun,F.,,,,,,
 Extension Radical ,Radical Extension,Noun,F.,,,,,,
-Elemento Simétrico,Inverse Element,Noun,,,,,,,
-Elemento Neutro,Identity Element,Noun,,,,,,,
+Elemento Simétrico,Inverse Element,Noun,M.,,,,,,
+Elemento Neutro,Identity Element,Noun,M.,,,,,,
