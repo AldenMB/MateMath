@@ -20,12 +20,12 @@ $$
 \end{aligned}
 $$",,El conjunto de los números enteros con la operación de multiplicar conocida,,,Álgebra
 Conjunto ,Set,Noun,M.,"Un conjunto es una agrupación de elementos tal que todos ellos participan en cierto modo, de las mismas características o propiedades",,"Conjunto de los números naturales {0,1,2,3,..}",,Zamalloa (2013),
-Subconjunto,Subset,Noun,M. ,,,,,,
-Conjunto Vacío,Empty Set,Noun,M.,El conjunto que no contiene ningún elemento,The set  which contains no elements,,,,
+Subconjunto,Subset,Noun,M. ,Un conjunto B es subconjunto de un conjunto A si B está contenido dentro de A,a set A is a subset of a set B if all elements of A are also elements of B,El conjunto de los números naturales es un subconjunto del conjunto de los números reales ,The set of natural numbers is a subset of the set of real numbers,Wiki,
+Conjunto Vacío,Empty Set,Noun,M.,El conjunto que no contiene ningún elemento,the set which contains no elements,,,,
 Conjunto Potencia (Conjunto de Las Partes o Conjunto de Partes) ,Power Set,Noun,M.,El conjunto potencia de un conjunto dado es otro conjunto formado por todos los subconjuntos del conjunto dado,,,,Wiki,
 Número Entero,An Integer Number,Noun,M.,,,,,,
-Número Natural,A Natural Number ,Noun,M.,,,,,,
-Número Irracional,A Irrational Number,Noun,M.,,,,,,
+Número Natural,A Natural Number ,Noun,M.,un número natural es cualquiera de los números que se usan para contar los elementos de ciertos conjuntos,the natural numbers are those used for counting and ordering,"1, 2, 100","1, 2, 100",Wiki,
+Número Irracional,A Irrational Number,Noun,M.,un número irracional es un valor que no puede ser expresado como una fracción de números enteros ,a number which can not be represented as a quotient of two integers ,"$\sqrt{2}$, e, \π","$\sqrt{2}, e, \π",Wiki,
 El Conjunto de Los Números Enteros ,The Set of Integers (The Integers),Noun,M.,El conjunto de números enteros positivos y negativos,,,,,
 El Conjunto de Los Números Naturales,The Set of Natural Numbers (The Naturals),Noun,M.,El conjunto de números enteros positivos ,,,,,
 El Conjunto de Los Números Racionales ,The Set of Rational Numbers (The Rationals),,M.,El conjunto de números fraccionarios ,,,,,
