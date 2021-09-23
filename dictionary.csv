@@ -25,7 +25,7 @@ Conjunto Vacío,Empty Set,Noun,M.,El conjunto que no contiene ningún elemento,t
 Conjunto Potencia (Conjunto de Las Partes o Conjunto de Partes) ,Power Set,Noun,M.,El conjunto potencia de un conjunto dado es otro conjunto formado por todos los subconjuntos del conjunto dado,,,,Wiki,
 Número Entero,An Integer Number,Noun,M.,,,,,,
 Número Natural,A Natural Number ,Noun,M.,un número natural es cualquiera de los números que se usan para contar los elementos de ciertos conjuntos,the natural numbers are those used for counting and ordering,"1, 2, 100","1, 2, 100",Wiki,
-Número Irracional,A Irrational Number,Noun,M.,un número irracional es un valor que no puede ser expresado como una fracción de números enteros ,a number which can not be represented as a quotient of two integers ,"$\sqrt{2}$, e, \π","$\sqrt{2}, e, \π",Wiki,
+Número Irracional,An Irrational Number,Noun,M.,un número irracional es un valor que no puede ser expresado como una fracción de números enteros ,a number which can not be represented as a quotient of two integers ,"$\sqrt{2}$, e, \π","$\sqrt{2}, e, \π",Wiki,
 El Conjunto de Los Números Enteros ,The Set of Integers (The Integers),Noun,M.,El conjunto de números enteros positivos y negativos,,,,,
 El Conjunto de Los Números Naturales,The Set of Natural Numbers (The Naturals),Noun,M.,El conjunto de números enteros positivos ,,,,,
 El Conjunto de Los Números Racionales ,The Set of Rational Numbers (The Rationals),,M.,El conjunto de números fraccionarios ,,,,,
