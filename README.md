@@ -7,3 +7,5 @@ If you have any suggestions for features, do get in touch.
 
 ## Thanks
 Thanks to <a href="https://github.com/evanplaice">Evan Plaice</a> for sharing the <a href="https://github.com/vanillaes/csv">VanillaES CSV reader</a> we use.
+
+Thanks to <a href="https://www.mathjax.org">the MathJax project</a> for the use of this elegant typesetting tool.
