@@ -1,5 +1,11 @@
 import {makeDictionary, ENGLISH, SPANISH} from './modules/dictionary.js';
 
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+
 window.onload = function() {
 	const sortbutton = document.getElementById('sort');
 	function get_primary_language(){
@@ -52,6 +58,7 @@ window.onload = function() {
 				const searchtext = document.getElementById("search").value;
 				const filters = area_boxes.filter(x => x.checked).map(x => x.name);
 				document.getElementById("dictionary").replaceWith(dictionary.toHTML(get_primary_language(), filters, searchtext));
+				MathJax.typeset();
 			};
 			
 			document.getElementById("selections").addEventListener('input', write_dictionary);
