@@ -1,15 +1,13 @@
 ESP,ENG,part_of_speech,gender,definition_ESP,definition_ENG,example_ESP,example_ENG,sources,areas
 Cuerpo ,Field,Noun,M.,"Un cuerpo es un anillo de división conmutativo, es decir, un anillo conmutativo y unitario en el que todo elemento distinto de cero es invertible respecto del producto.",,,,Wiki,"Álgebra, Teoría de Números"
-Anillo ,Ring,Noun,M.,"Un anillo  es un conjunto con dos leyes de composición, llamadas adición y multiplicación, cumpliendo las condiciones siguientes:  es grupo abeliano para la adición; el elemento neutro en esta adición se nombra cero del anillo, y se denota usualmente 0, es un semigrupo para la multiplicación, y la multiplicación es distributiva (por los dos lados) respecto de la adición.
-",,,,,Álgebra
+Anillo ,Ring,Noun,M.,"Un anillo  es un conjunto con dos leyes de composición, llamadas adición y multiplicación, cumpliendo las condiciones siguientes:  es grupo abeliano para la adición; el elemento neutro en esta adición se nombra cero del anillo, y se denota usualmente 0, es un semigrupo para la multiplicación, y la multiplicación es distributiva (por los dos lados) respecto de la adición.",,,,,Álgebra
 Ideal (o Ideal Bilátero),Ideal,Noun,M.,"Un ideal bilátero es un ideal por la derecha y por la izquierda. En un anillo conmutativo, las nociones de ideal por la derecha, de ideal por la izquierda y de ideal bilátero coinciden y simplemente se habla de ideal.",,"Dado un número entro $k$, $k\mathbb{Z}$ es un ideal de $\mathbb{Z}$",,Wiki,Álgebra
 Ideal por la Izquierda ,Left Ideal,Noun,M.,"Un subconjunto $I$ no vacío de un anillo $A$ es un ideal por la izquierda de $A$ si:
 1. I es un subgrupo aditivo de $A$.
 2. $\forall(a, x) \in A \times I: a \times x \in I$ (El producto por la izquierda de un elemento de I por un elemento de $A$ pertenece a $I$ ).",,,,Wiki,Álgebra
 Ideal por la Derecha,Right Ideal,Noun,M.,"Un subconjunto $I$ no vacío de un anillo $A$ es un ideal por la derecha de $A$ si:
 1. I es un subgrupo aditivo de $A$.
-2. $\forall(x, a) \in I \times A: x \times a \in I$ (El producto por la derecha de un elemento de / por un elemento de $A$ pertenece a I).
-",,,,Wiki,Álgebra
+2. $\forall(x, a) \in I \times A: x \times a \in I$ (El producto por la derecha de un elemento de / por un elemento de $A$ pertenece a I).",,,,Wiki,Álgebra
 Grupo,Group,Noun,M.,"Un conjunto $G$ y una operación binaria forman un grupo $(G, \star)$ cuando:
 1. $(G, \star)$ es un monoide o semigrupo con elemento neutro
 2. $(G, \star)$ verifica la existencia de elemento simétrico para cada uno de sus elementos.
@@ -19,7 +17,7 @@ $$
 &\forall a \in G, \exists \bar{a}: a \star \bar{a}=e
 \end{aligned}
 $$",,El conjunto de los números enteros con la operación de multiplicar conocida,,,Álgebra
-Conjunto ,Set,Noun,M.,"Un conjunto es una agrupación de elementos tal que todos ellos participan en cierto modo, de las mismas características o propiedades.",,"Conjunto de los números naturales {0,1,2,3,..} es un conjunto, ",The set of natural numbers is a set. ,Zamalloa (2013),
+Conjunto ,Set,Noun,M.,"Un conjunto es una agrupación de elementos tal que todos ellos participan en cierto modo, de las mismas características o propiedades.",,"Conjunto de los números naturales {0,1,2,3,..} es un conjunto,",The set of natural numbers is a set. ,Zamalloa (2013),
 Subconjunto,Subset,Noun,M. ,Un conjunto B es subconjunto de un conjunto $A$ si $B$ está contenido dentro de $A$.,A set $A$ is a subset of a set B if all elements of A are also elements of B,El conjunto de los números naturales es un subconjunto del conjunto de los números reales. ,The set of natural numbers is a subset of the set of real numbers,Wiki,
 Conjunto Vacío,Empty Set,Noun,M.,El conjunto que no contiene ningún elemento.,The empty is the set which contains no elements.,,,,
 Conjunto Potencia (Conjunto de Las Partes o Conjunto de Partes) ,Power Set,Noun,M.,El conjunto potencia de un conjunto dado es otro conjunto formado por todos los subconjuntos del conjunto dado.,The power set is the set of all possible subsets of a given set. ,,,Wiki,
@@ -32,15 +30,105 @@ El Conjunto de Los Números Racionales ,The Set of Rational Numbers (The Rationa
 El Conjunto de Los Números Irracionales ,The Set of Irrational Numbers (The Irrationals),Noun,M.,,,,,,
 El Conjunto de Los Números Reales,The Set of Real Numbers (The Reals),Noun,M.,"El conjunto de los números reales es el conjunto de números enteros, fraccionarios y irracionales.",,,,,
 El Conjunto de Los Números Complejos,The Set of Complex Numbers (The Complex Numbers),Noun,M.,,,,,,
-Espacio de Lazos ,Loop Space ,Noun,M.,,,,,,
-Espacio Vectorial ,Vector Space,Noun,M.,,,,,,
+Lazo,Loop,Noun,M. ,"Si es $X$ un espacio topológico, y $p$ un punto fijo de $X$, un lazo con base en $p$ es una aplicación continua $\gamma:[0,1] \rightarrow X$ que verifica $\gamma(0)=\gamma(1)=p$.","Given a topological space $X$, a loop based at $p$ is defined to be a continuous function (also known as a continuous map) $\gamma:[0,1] \rightarrow X$ such that the starting point $\gamma(0)$ and the end point $\gamma(1)$ are both equal to $p$.",,,,
+Topología Compacto-Abierta,Compact-Open Topology ,Noun,F.,,,,,,
+Espacio de Lazos ,Loop Space ,Noun,M.,"El espacio de lazos, denotado $\Omega X$, de un espacio topológico $X$ con un punto base, $p$, es el espacio hecho de los lazos basados en $p$ dado la topología compacto-abierta.","The loop space $\Omega X$ of a pointed topological space $X$ is the space of (based) loops in $X$, specifically continuous pointed maps from the pointed circle $S^1$ to $X$, equipped with the compact-open topology.",,,"Wiki, Munkres 1999",
+Espacio Vectorial ,Vector Space,Noun,M.,"Un espacio vectorial sobre un cuerpo $K$ es un conjunto no vacío, $V$, dotado de dos operaciones para las cuales será cerrado:
+$$
+\begin{aligned}
+\text { Suma }+: V \times V & \rightarrow V \\
+&\rightarrow \mathbf{u}, \mathbf{v}) & \mapsto \quad \mathbf{u}+\mathbf{v}
+\end{aligned}
+$$
+operación interna tal que:
+- Tenga la propiedad conmutativa:
+$\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}, \quad \forall \mathbf{u}, \mathbf{v} \in V$
+- Tenga la propiedad asociativa:
+$$
+\mathbf{u}+(\mathbf{v}+\mathbf{w})=(\mathbf{u}+\mathbf{v})+\mathbf{w}, \quad \forall \mathbf{u}, \mathbf{v}, \mathbf{w} \in V
+$$
+- Exista el elemento neutro:
+$$
+\exists \mathbf{e} \in V: \mathbf{u}+\mathbf{e}=\mathbf{u}, \forall \mathbf{u} \in V
+$$
+- Exista el elemento opuesto:
+$$
+\forall \mathbf{u} \in V, \quad \exists-\mathbf{u} \in V: \mathbf{u}+(-\mathbf{u})=\mathbf{e}
+$$
+$\mathrm{Y}$ tenga la operación producto por un escalar:
+$$
+\begin{aligned}
+\text { Producto } \cdot: \quad K \times V & \rightarrow V \\
+(a, \mathbf{u}) & \mapsto a \cdot \mathbf{u}
+\end{aligned}
+$$
+operación externa tal que:
+- Tenga la propiedad asociativa:
+$$
+a \cdot(b \cdot \mathbf{u})=(a \cdot b) \cdot \mathbf{u}, \forall a, b \in K, \forall \mathbf{u} \in V
+$$
+- Exista el elemento neutro:
+$$
+\exists e \in K: e \cdot \mathbf{u}=\mathbf{u}, \forall \mathbf{u} \in V
+$$
+- Tenga la propiedad distributiva respecto de la suma vectorial:
+$$
+a \cdot(\mathbf{u}+\mathbf{v})=a \cdot \mathbf{u}+a \cdot \mathbf{v}, \forall a \in K, \forall \mathbf{u}, \mathbf{v} \in V
+$$
+- Tenga la propiedad distributiva respecto de la suma escalar:
+$$
+(a+b) \cdot \mathbf{u}=a \cdot \mathbf{u}+b \cdot \mathbf{u}, \forall a, b \in K, \forall \mathbf{u} \in V
+$$","A vector space over a field $K$ is a set, $V$, with two operations which it is closed under: the first operation being $$ \begin{aligned}
+\text { Suma }+: V \times V & \rightarrow V \\
+&\rightarrow \mathbf{u}, \mathbf{v}) & \mapsto \quad \mathbf{u}+\mathbf{v}
+\end{aligned}
+$$
+such that 
+- It is commutative:
+$\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}, \quad \forall \mathbf{u}, \mathbf{v} \in V$
+- It is associative:
+$$
+\mathbf{u}+(\mathbf{v}+\mathbf{w})=(\mathbf{u}+\mathbf{v})+\mathbf{w}, \quad \forall \mathbf{u}, \mathbf{v}, \mathbf{w} \in V
+$$
+- There exists an identity element: 
+$$
+\exists \mathbf{e} \in V: \mathbf{u}+\mathbf{e}=\mathbf{u}, \forall \mathbf{u} \in V
+$$
+- There exists inverses:
+$$
+\forall \mathbf{u} \in V, \quad \exists-\mathbf{u} \in V: \mathbf{u}+(-\mathbf{u})=\mathbf{e}
+$$
+$\mathrm{Y}$ and second operation:
+$$
+\begin{aligned}
+\text { Producto } \cdot: \quad K \times V & \rightarrow V \\
+(a, \mathbf{u}) & \mapsto a \cdot \mathbf{u}
+\end{aligned}
+$$
+such that:
+- It is associative:
+$$
+a \cdot(b \cdot \mathbf{u})=(a \cdot b) \cdot \mathbf{u}, \forall a, b \in K, \forall \mathbf{u} \in V
+$$
+- There exists an identity element:
+$$
+\exists e \in K: e \cdot \mathbf{u}=\mathbf{u}, \forall \mathbf{u} \in V
+$$
+- It respects the distributive law with respect to the sum operation:
+$$
+a \cdot(\mathbf{u}+\mathbf{v})=a \cdot \mathbf{u}+a \cdot \mathbf{v}, \forall a \in K, \forall \mathbf{u}, \mathbf{v} \in V
+$$
+-  It respects the distributive law with respect to the product operation:
+$$
+(a+b) \cdot \mathbf{u}=a \cdot \mathbf{u}+b \cdot \mathbf{u}, \forall a, b \in K, \forall \mathbf{u} \in V
+$$",El conjunto de los números reales forman un espacio vectorial sobre el cuerpo de formado del conjunto de los números racionales. ,The set of real numbers forms a vector space over the field formed by the set of rational numbers.  ,Wiki ,
 Homotopía,Homotopy ,Noun,F.,"Una homotopía entro dos aplicaciones continuas $f, g: X \rightarrow Y$ es un aplicación, también continua, $H: X \times[0,1] \rightarrow Y$ tal que:
 $$
 \begin{aligned}
 &H(x, 0)=f(x) \\
 &H(x, 1)=g(x)
 \end{aligned}
-$$","A homotopy between two continuous functions $f$ and $g$ from a topological space $X$ to a topological space $Y$ is defined to be a continuous function $H: X \times[0,1] \rightarrow Y$ from the product of the space $X$ with the unit interval $[0,1]$ to $Y$ such that $H(x, 0)=f(x)$ and $H(x, 1)=g(x)$ for all $x \in X$.",,,"Wiki, Munkres 1999",
+$$",,,,"Wiki, Munkres 1999",
 Isomorfismo ,Isomorphism,Noun,M.,,,,,,
 Morfismo ,Morphism ,Noun,M.,Se llaman morfismos (u homomorfismos) a las aplicaciones entre estructuras matemáticas que preservan la estructura interna.,A morphism is a structure-preserving map from one mathematical structure to another one of the same type.,,,Wiki,
 Epimorfismo,Epimorphism,Noun,M.,,,,,,
@@ -99,7 +187,7 @@ Infinita/o,Infinite,Adj,,,,,,,
 Conjunto Numerable ,Countable Set,Noun,M.,Un conjunto numerable es un conjunto con la misma cardinalidad que el conjunto de los números naturales.,,,,Wiki,
 Conjunto No Numberable,Uncountable Set,Noun,M.,Un conjunto no numerable es un conjunto que no puede ser enumerado.,,El conjunto de los números reales,The real numebers,Wiki,
 Cardinalidad ,Cardinality ,Noun,F.,La cardinalidad de un conjunto es la medida del número de elementos en el conjunto.,The cardinality of a set is a measure of the number of elements of the set.,,,Wiki,
-Dominio,Domain,Noun,M.,El dominio (conjunto de definición o conjunto de partida) de una función son los valores para los cuales la función está definida.,The domain (or set of departure) of a function is the set which constitute the input values of the function., El dominio de la función $f(x) = x^3$ es el conjunto de los números reales. El dominion de la función $f(x) = \frac{1}{x}$ es el conjunto de los números reales menos 0 puesto porque no esta definida para $x=0$. ,"The domain of the function $f(x)= x^3$ is the set of real numbers. The domain of the function $f(x) = \frac{1}{x}$ is the set of real numbers except 0, because the function is not defined there.",Wiki,
+Dominio,Domain,Noun,M.,El dominio (conjunto de definición o conjunto de partida) de una función son los valores para los cuales la función está definida.,The domain (or set of departure) of a function is the set which constitute the input values of the function.,El dominio de la función $f(x) = x^3$ es el conjunto de los números reales. El dominion de la función $f(x) = \frac{1}{x}$ es el conjunto de los números reales menos 0 puesto porque no esta definida para $x=0$.,"The domain of the function $f(x)= x^3$ is the set of real numbers. The domain of the function $f(x) = \frac{1}{x}$ is the set of real numbers except 0, because the function is not defined there.",Wiki,
 Codominio,Codomain,Noun,M.,"El codominio (también llamado contradominio, conjunto final o conjunto de llegada) de una función
  es un conjunto al que pertenecen todos los valores de salida  de la función.",The codomain (or set of destination) of a function is the set where output values may result in. ,"Para una función $f: \mathbb{R} \rightarrow \mathbb{R}$ 
 definida como $f(x) = x^2$ el codominio de $f$ es $\mathbb{R}$, pero $f(x)$ siempre toma un valor positivo.","For the function $f: \mathbb{R} \rightarrow \mathbb{R}$ defined as $f(x) = x^2$ the codomain of $f$ is $\mathbb{R}$, even though $f(x)$ always outputs a positive value.",Wiki,
