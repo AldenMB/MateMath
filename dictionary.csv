@@ -103,7 +103,7 @@ Topología de los Complementos Finito / Topología Cofinita,Finite Complement To
 $$\mathcal{T}_{c o f}=\{A \subseteq X: X \backslash A \text { es finito ó } A=\emptyset\}$$.
 Es decir, un subconjunto $A$ de $X$ es abierto si su complemento es un conjunto finito.","The cofinite topology or the finite complement topology is a topology that can be defined on every set $X$. It has precisely the empty set and all cofinite subsets of $X$ as open sets. Symbolically,
 $$\mathcal{T}=\{A \subseteq X \mid A=\varnothing \text { or } X \backslash A \text { is finite }\}$$",,,"Wiki, Munkres 1999",
-Espacio Topológico,Topological Space,Noun,M.,"se llama un espacio topológico al par ordenado $(X,T)$ formado por un conjunto $X$ y una topología $T$ sobre X, es decir, una colección de subconjuntos de X que cumplen las tres propiedades siguientes:
+Espacio Topológico,Topological Space,Noun,M.,"Se llama un espacio topológico al par ordenado $(X,T)$ formado por un conjunto $X$ y una topología $T$ sobre X, es decir, una colección de subconjuntos de X que cumplen las tres propiedades siguientes:
 1. El conjunto vacío y $X$ están en $T$.
 $$\varnothing \in T, X \in T$$
 2. La intersección de cualquier subcolección finita de conjuntos de $T$ está en $T$.
@@ -112,22 +112,20 @@ $$\left(O_{1} \in T, O_{2} \in T\right) \Rightarrow\left(O_{1} \cap O_{2} \in T\
 Esta condición también se escribe, formalmente:
 $$\forall S \subset T, \cup_{O \in S} O \in T$$
 A los conjuntos pertenecientes a la topología $T$ se les llama conjuntos abiertos o simplemente abiertos de $(X, T) ;^{4}$ y a sus complementos en E, conjuntos cerrados.","A topological space is an ordered pair $(X, T)$, where $X$ is a set and $T$ is a collection of subsets of $X$, satisfying the following axioms: 
-1. The empty set and $X$ itself belong to $T$.
-2. Any arbitrary (finite or infinite) union of members of $\tau$ belongs to $T$.
-3. The intersection of any finite number of members of $\tau$ belongs to $T$.
+\newline1. The empty set and $X$ itself belong to $T$.
+\newline 2. Any arbitrary (finite or infinite) union of members of $\tau$ belongs to $T$.
+\newline 3. The intersection of any finite number of members of $\tau$ belongs to $T$.
 The elements of $T$ are called open sets and the collection $T$ is called a topology on $X .$ A subset $C \subseteq X$ is said to be closed in $(X, T)$ if and only if its complement $X \backslash C$ is an element of $T$.","Dado el conjunto $X=\{1,2,3,4\}$ y la colección de los seis subconjuntos de $X$
 $$T=\{\{\},\{2\},\{1,2\},\{2,3\},\{1,2,3\},\{1,2,3,4\}\}=\{\varnothing,\{2\},\{1,2\},\{2,3\},\{1,2,3\}, X\}$$
 $(X,T)$ forman un espacio topológico. Aveces este espacio topológico con esta descripción de $T$ se llama un espacio topológico con la topología discreta.","Given $X=\{1,2,3,4\}$, the family
-$$
-T=\{\{\},\{2\},\{1,2\},\{2,3\},\{1,2,3\},\{1,2,3,4\}\}=\{\varnothing,\{2\},\{1,2\},\{2,3\},\{1,2,3\}, X\}
-$$
+$$T=& \{\{\},\{2\},\{1,2\},\{2,3\},\{1,2,3\},\{1,2,3,4\}\}$$ $$=& \{\varnothing,\{2\},\{1,2\},\{2,3\},\{1,2,3\}, X\}$$
 of six subsets of $X$ form topologv of $X$.  Sometimes a this topological space with this description of $T$ is called is called a topological space with the discrete topology.","Wiki, Munkres 1999",
 Variedad Diferenciable,Differentiable Manifold,Noun,F.,,,,,Wiki,
 Par,Pair,Noun,M.,,,,,,
 Par Ordenado,Ordered Pair,Noun,M.,,,,,,
 Unión ,Union,Noun,F.,La unión de dos conjuntos $A$ y $B$ es otro conjunto $A \cup B$ cuyos elementos son todos los elementos de $A \mathrm{y} / \mathrm{o}$ de $B$. En símbolos $$A \cup B=\{x: x \in A \text { o } x \in B\} $$,"The union of two sets $A$ and $B$ is the set of elements which are in $A$, in $B$, or in both $A$ and $B$. Symbolically,
-$$A \cup B=\{x: x \in A \text { or } x \in B\} $$","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ la unión de $A$ y $B$ es $A\cup B = \{1,2,3,4,6,8\}$. ","Given the sets $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ then the union of $A$ and $B$ is $A\cup B = \{1,2,3,4,6,8\}$.",Wiki,
-Intersección,Intersection ,Noun,F.,"La intersección de dos (o más) conjuntos, digamos $A$ y $B$, es un subconjunto de $A$ y $B$ denotado $A \cap B$  que contiene los elementos comunes de $A$ y $B$.","The intersection of two set $A$ and $B$ denoted by $A \cap B$ is the subset of $A$ and $B$ containing all elements of $A$ that also belong to $B$ or equivalently, all elements of $B$ that also belong to $A$.","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ la intersección de $A$ y $B$ es $A\cap B = \{2,4\}$. ","Given the sets $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ then the intersection of $A$ and $B$ is $A\cap B = \{2,4\}$.",Wiki,
+$$A \cup B=\{x: x \in A \text { or } x \in B\} $$","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ la unión de $A$ y $B$ es $A\cup B = \{1,2,3,4,6,8\}$.","Given the sets $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ then the union of $A$ and $B$ is $A\cup B = \{1,2,3,4,6,8\}$.",Wiki,
+Intersección,Intersection ,Noun,F.,"La intersección de dos (o más) conjuntos, digamos $A$ y $B$, es un subconjunto de $A$ y $B$ denotado $A \cap B$  que contiene los elementos comunes de $A$ y $B$.","The intersection of two set $A$ and $B$ denoted by $A \cap B$ is the subset of $A$ and $B$ containing all elements of $A$ that also belong to $B$ or equivalently, all elements of $B$ that also belong to $A$.","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ la intersección de $A$ y $B$ es $A\cap B = \{2,4\}$.","Given the sets $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ then the intersection of $A$ and $B$ is $A\cap B = \{2,4\}$.",Wiki,
 Complemento (de un Conjunto),Complement (of a Set),Noun,M.,"El complemento de un conjunto, digamos $A$, o conjunto complementario, es otro conjunto, aveces denotado $A^c$ o $A$, que contiene todos los elementos que no están en el conjunto original.","The complement of a set $A$, often denoted by $A^c$ or $A’$, are the elements not in $A$.","Hablando de números naturales, el complementario del conjunto $A = \{1, 5, 6, 7, 8, 10\}$ es el conjunto $A^c = {2, 3, 4, 9, 11, 12, ...}$.","Given the set of natural numbers $A= \{1, 5, 6, 7, 8, 10\}$ the complement of it in the set of natural numbers is $A^c= \{2, 3, 4, 9, 11, 12, …\}$.",Wiki,
 Abierto ,Open,Adj,,,,,,,
 Cerado,Closed,Adj,,,,,,,
