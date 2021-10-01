@@ -34,101 +34,64 @@ Lazo,Loop,Noun,M. ,"Si es $X$ un espacio topológico, y $p$ un punto fijo de $X$
 Topología Compacto-Abierta,Compact-Open Topology ,Noun,F.,,,,,,
 Espacio de Lazos ,Loop Space ,Noun,M.,"El espacio de lazos, denotado $\Omega X$, de un espacio topológico $X$ con un punto base, $p$, es el espacio hecho de los lazos basados en $p$ dado la topología compacto-abierta.","The loop space $\Omega X$ of a pointed topological space $X$ is the space of (based) loops in $X$, specifically continuous pointed maps from the pointed circle $S^1$ to $X$, equipped with the compact-open topology.",,,"Wiki, Munkres 1999",
 Espacio Vectorial ,Vector Space,Noun,M.,"Un espacio vectorial sobre un cuerpo $K$ es un conjunto no vacío, $V$, dotado de dos operaciones para las cuales será cerrado:
-$$
-\begin{aligned}
+$$\begin{aligned}
 \text { Suma }+: V \times V & \rightarrow V \\
 &\rightarrow \mathbf{u}, \mathbf{v}) & \mapsto \quad \mathbf{u}+\mathbf{v}
-\end{aligned}
-$$
+\end{aligned}$$
 operación interna tal que:
 - Tenga la propiedad conmutativa:
 $\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}, \quad \forall \mathbf{u}, \mathbf{v} \in V$
 - Tenga la propiedad asociativa:
-$$
-\mathbf{u}+(\mathbf{v}+\mathbf{w})=(\mathbf{u}+\mathbf{v})+\mathbf{w}, \quad \forall \mathbf{u}, \mathbf{v}, \mathbf{w} \in V
-$$
+$$\mathbf{u}+(\mathbf{v}+\mathbf{w})=(\mathbf{u}+\mathbf{v})+\mathbf{w}, \quad \forall \mathbf{u}, \mathbf{v}, \mathbf{w} \in V$$
 - Exista el elemento neutro:
-$$
-\exists \mathbf{e} \in V: \mathbf{u}+\mathbf{e}=\mathbf{u}, \forall \mathbf{u} \in V
-$$
-- Exista el elemento opuesto:
-$$
-\forall \mathbf{u} \in V, \quad \exists-\mathbf{u} \in V: \mathbf{u}+(-\mathbf{u})=\mathbf{e}
-$$
+$$\exists \mathbf{e} \in V: \mathbf{u}+\mathbf{e}=\mathbf{u}, \forall \mathbf{u} \in V$$
+- Exista el elemento opuesto:$$
+\forall \mathbf{u} \in V, \quad \exists-\mathbf{u} \in V: \mathbf{u}+(-\mathbf{u})=\mathbf{e}$$
 $\mathrm{Y}$ tenga la operación producto por un escalar:
-$$
-\begin{aligned}
+$$\begin{aligned}
 \text { Producto } \cdot: \quad K \times V & \rightarrow V \\
 (a, \mathbf{u}) & \mapsto a \cdot \mathbf{u}
-\end{aligned}
-$$
+\end{aligned}$$
 operación externa tal que:
 - Tenga la propiedad asociativa:
-$$
-a \cdot(b \cdot \mathbf{u})=(a \cdot b) \cdot \mathbf{u}, \forall a, b \in K, \forall \mathbf{u} \in V
-$$
+$$a \cdot(b \cdot \mathbf{u})=(a \cdot b) \cdot \mathbf{u}, \forall a, b \in K, \forall \mathbf{u} \in V$$
 - Exista el elemento neutro:
-$$
-\exists e \in K: e \cdot \mathbf{u}=\mathbf{u}, \forall \mathbf{u} \in V
-$$
+$$\exists e \in K: e \cdot \mathbf{u}=\mathbf{u}, \forall \mathbf{u} \in V$$
 - Tenga la propiedad distributiva respecto de la suma vectorial:
-$$
-a \cdot(\mathbf{u}+\mathbf{v})=a \cdot \mathbf{u}+a \cdot \mathbf{v}, \forall a \in K, \forall \mathbf{u}, \mathbf{v} \in V
-$$
+$$a \cdot(\mathbf{u}+\mathbf{v})=a \cdot \mathbf{u}+a \cdot \mathbf{v}, \forall a \in K, \forall \mathbf{u}, \mathbf{v} \in V$$
 - Tenga la propiedad distributiva respecto de la suma escalar:
-$$
-(a+b) \cdot \mathbf{u}=a \cdot \mathbf{u}+b \cdot \mathbf{u}, \forall a, b \in K, \forall \mathbf{u} \in V
-$$","A vector space over a field $K$ is a set, $V$, with two operations which it is closed under: the first operation being $$ \begin{aligned}
+$$(a+b) \cdot \mathbf{u}=a \cdot \mathbf{u}+b \cdot \mathbf{u}, \forall a, b \in K, \forall \mathbf{u} \in V$$","A vector space over a field $K$ is a set, $V$, with two operations which it is closed under: the first operation being $$ \begin{aligned}
 \text { Suma }+: V \times V & \rightarrow V \\
 &\rightarrow \mathbf{u}, \mathbf{v}) & \mapsto \quad \mathbf{u}+\mathbf{v}
-\end{aligned}
-$$
+\end{aligned}$$
 such that 
 - It is commutative:
 $\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}, \quad \forall \mathbf{u}, \mathbf{v} \in V$
 - It is associative:
-$$
-\mathbf{u}+(\mathbf{v}+\mathbf{w})=(\mathbf{u}+\mathbf{v})+\mathbf{w}, \quad \forall \mathbf{u}, \mathbf{v}, \mathbf{w} \in V
-$$
+$$\mathbf{u}+(\mathbf{v}+\mathbf{w})=(\mathbf{u}+\mathbf{v})+\mathbf{w}, \quad \forall \mathbf{u}, \mathbf{v}, \mathbf{w} \in V$$
 - There exists an identity element: 
-$$
-\exists \mathbf{e} \in V: \mathbf{u}+\mathbf{e}=\mathbf{u}, \forall \mathbf{u} \in V
-$$
+$$\exists \mathbf{e} \in V: \mathbf{u}+\mathbf{e}=\mathbf{u}, \forall \mathbf{u} \in V$$
 - There exists inverses:
-$$
-\forall \mathbf{u} \in V, \quad \exists-\mathbf{u} \in V: \mathbf{u}+(-\mathbf{u})=\mathbf{e}
-$$
+$$\forall \mathbf{u} \in V, \quad \exists-\mathbf{u} \in V: \mathbf{u}+(-\mathbf{u})=\mathbf{e}$$
 $\mathrm{Y}$ and second operation:
-$$
-\begin{aligned}
+$$\begin{aligned}
 \text { Producto } \cdot: \quad K \times V & \rightarrow V \\
 (a, \mathbf{u}) & \mapsto a \cdot \mathbf{u}
-\end{aligned}
-$$
+\end{aligned}$$
 such that:
 - It is associative:
-$$
-a \cdot(b \cdot \mathbf{u})=(a \cdot b) \cdot \mathbf{u}, \forall a, b \in K, \forall \mathbf{u} \in V
-$$
+$$a \cdot(b \cdot \mathbf{u})=(a \cdot b) \cdot \mathbf{u}, \forall a, b \in K, \forall \mathbf{u} \in V$$
 - There exists an identity element:
-$$
-\exists e \in K: e \cdot \mathbf{u}=\mathbf{u}, \forall \mathbf{u} \in V
-$$
+$$\exists e \in K: e \cdot \mathbf{u}=\mathbf{u}, \forall \mathbf{u} \in V$$
 - It respects the distributive law with respect to the sum operation:
-$$
-a \cdot(\mathbf{u}+\mathbf{v})=a \cdot \mathbf{u}+a \cdot \mathbf{v}, \forall a \in K, \forall \mathbf{u}, \mathbf{v} \in V
-$$
+$$a \cdot(\mathbf{u}+\mathbf{v})=a \cdot \mathbf{u}+a \cdot \mathbf{v}, \forall a \in K, \forall \mathbf{u}, \mathbf{v} \in $$
 -  It respects the distributive law with respect to the product operation:
-$$
-(a+b) \cdot \mathbf{u}=a \cdot \mathbf{u}+b \cdot \mathbf{u}, \forall a, b \in K, \forall \mathbf{u} \in V
-$$",El conjunto de los números reales forman un espacio vectorial sobre el cuerpo de formado del conjunto de los números racionales. ,The set of real numbers forms a vector space over the field formed by the set of rational numbers.  ,Wiki ,
+$$(a+b) \cdot \mathbf{u}=a \cdot \mathbf{u}+b \cdot \mathbf{u}, \forall a, b \in K, \forall \mathbf{u} \in V$$",El conjunto de los números reales forman un espacio vectorial sobre el cuerpo de formado del conjunto de los números racionales. ,The set of real numbers forms a vector space over the field formed by the set of rational numbers.  ,Wiki ,
 Homotopía,Homotopy ,Noun,F.,"Una homotopía entro dos aplicaciones continuas $f, g: X \rightarrow Y$ es un aplicación, también continua, $H: X \times[0,1] \rightarrow Y$ tal que:
-$$
-\begin{aligned}
+$$\begin{aligned}
 &H(x, 0)=f(x) \\
 &H(x, 1)=g(x)
-\end{aligned}
-$$",,,,"Wiki, Munkres 1999",
+\end{aligned}$$",,,,"Wiki, Munkres 1999",
 Isomorfismo ,Isomorphism,Noun,M.,,,,,,
 Morfismo ,Morphism ,Noun,M.,Se llaman morfismos (u homomorfismos) a las aplicaciones entre estructuras matemáticas que preservan la estructura interna.,A morphism is a structure-preserving map from one mathematical structure to another one of the same type.,,,Wiki,
 Epimorfismo,Epimorphism,Noun,M.,,,,,,
@@ -163,9 +126,9 @@ Variedad Diferenciable,Differentiable Manifold,Noun,F.,,,,,Wiki,
 Par,Pair,Noun,M.,,,,,,
 Par Ordenado,Ordered Pair,Noun,M.,,,,,,
 Unión ,Union,Noun,F.,La unión de dos conjuntos $A$ y $B$ es otro conjunto $A \cup B$ cuyos elementos son todos los elementos de $A \mathrm{y} / \mathrm{o}$ de $B$. En símbolos $$A \cup B=\{x: x \in A \text { o } x \in B\} $$,"The union of two sets $A$ and $B$ is the set of elements which are in $A$, in $B$, or in both $A$ and $B$. Symbolically,
-$$A \cup B=\{x: x \in A \text { or } x \in B\} $$",,,,
-Intersección,Intersection ,Noun,F.,,,,,,
-Complemento,Compliment,Noun,M.,,,,,,
+$$A \cup B=\{x: x \in A \text { or } x \in B\} $$","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ la unión de $A$ y $B$ es $A\cup B = \{1,2,3,4,6,8\}$. ","Given the sets $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ then the union of $A$ and $B$ is $A\cup B = \{1,2,3,4,6,8\}$.",Wiki,
+Intersección,Intersection ,Noun,F.,"La intersección de dos (o más) conjuntos, digamos $A$ y $B$, es un subconjunto de $A$ y $B$ denotado $A \cap B$  que contiene los elementos comunes de $A$ y $B$.","The intersection of two set $A$ and $B$ denoted by $A \cap B$ is the subset of $A$ and $B$ containing all elements of $A$ that also belong to $B$ or equivalently, all elements of $B$ that also belong to $A$.","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ la intersección de $A$ y $B$ es $A\cap B = \{2,4\}$. ","Given the sets $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ then the intersection of $A$ and $B$ is $A\cap B = \{2,4\}$.",Wiki,
+Complemento (de un Conjunto),Complement (of a Set),Noun,M.,"El complemento de un conjunto, digamos $A$, o conjunto complementario, es otro conjunto, aveces denotado $A^c$ o $A$, que contiene todos los elementos que no están en el conjunto original.","The complement of a set $A$, often denoted by $A^c$ or $A’$, are the elements not in $A$.","Hablando de números naturales, el complementario del conjunto $A = \{1, 5, 6, 7, 8, 10\}$ es el conjunto $A^c = {2, 3, 4, 9, 11, 12, ...}$.","Given the set of natural numbers $A= \{1, 5, 6, 7, 8, 10\}$ the complement of it in the set of natural numbers is $A^c= \{2, 3, 4, 9, 11, 12, …\}$.",Wiki,
 Abierto ,Open,Adj,,,,,,,
 Cerado,Closed,Adj,,,,,,,
 Leyes De De Morgan,De Morgan’s Law,Noun,F.,,,,,,
