@@ -92,7 +92,7 @@ $$\begin{aligned}
 &H(x, 0)=f(x) \\
 &H(x, 1)=g(x)
 \end{aligned}$$",,,,"Wiki, Munkres 1999",
-Isomorfismo ,Isomorphism,Noun,M.,,,,,,
+Isomorfismo ,Isomorphism,Noun,M.,Un isomorfismo es un homomorfismo (o más generalmente un morfismo) que admite un inverso.,An isomorphism is a homomorphism (or more generally) which admits an inverse. ,,,Wiki,
 Morfismo ,Morphism ,Noun,M.,Se llaman morfismos (u homomorfismos) a las aplicaciones entre estructuras matemáticas que preservan la estructura interna.,A morphism is a structure-preserving map from one mathematical structure to another one of the same type.,,,Wiki,
 Epimorfismo,Epimorphism,Noun,M.,,,,,,
 Monomorfismo,Monomorphism,Noun,M.,,,,,,
