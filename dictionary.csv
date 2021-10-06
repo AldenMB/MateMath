@@ -97,8 +97,21 @@ Morfismo ,Morphism ,Noun,M.,Se llaman morfismos (u homomorfismos) a las aplicaci
 Epimorfismo,Epimorphism,Noun,M.,,,,,,
 Monomorfismo,Monomorphism,Noun,M.,,,,,,
 Difeomorfismo,Diffeomorphism,Noun,M.,,,,,Wiki,
-Categoría ,Category ,Noun,F.,,,,,,
-Topología ,Topology,Noun,F.,Topología es la rama de las matemáticas dedicada al estudio de aquellas propiedades de los cuerpos geométricos que permanecen inalteradas por transformaciones continuas.,"Topology is the area of mathematics which is concerned with the properties of a geometric object that are preserved under continuous deformations, such as stretching, twisting, crumpling, and bending.",,,"Wiki, Munkres 1999",
+Categoría ,Category ,Noun,F.,"Una categoría $\mathcal{C}$ consta de
+- una clase ob($\mathcal{C}$) de objetos 
+- para cada par de objetos $A, B$ en ob($\mathcal{C}$) un conjunto $\mathcal{C}(A, B)$ de flechas o morfismos de $A$ a $B$.
+- para cada terna de objetos $A, B, C$ de $\mathcal{C}$ una función $ \circ : \mathcal{C}(A, B) \times \mathcal{C}(B, C) \rightarrow \mathcal{C}(A, C)$ donde $\circ (f, g)$ se denota $g \circ f$.
+Además, los siguientes axiomas deben ser ciertos:
+- (Asociatividad) para cualquier terna de flechas $f, g, h$ se cumple que $h \circ (g \circ f)=(h \circ g) \circ f$, si es que estas composiciones están definidas.
+- (Identidad) para todo objeto $A$ en ob(C) existe una flecha en $\mathcal{C}(A, A)$ comúnmente denotada $1_{A}$ tal que para toda flecha fen $\mathcal{C}(A ; B) f=1_{B} \circe f y f=f \circ 1_{A}$.","A category $\mathcal{C}$ consists of
+- a class ob $(\mathcal{C)$ of objects,
+- for every pair of objects $A, B$ in ob($\mathcal{C}$) the set $\mathcal{C}(A, B)$ of arrows or morphism from $A$ to $B$.
+- for every three objects $A,B$ and $C$, a binary operation  $\mathcal{C}(A, B) \times \mathcal{C}(B, C) \rightarrow \mathcal{C}(A, C)$ called composition of morphisms; the composition of $f: A \rightarrow B$ and $g:B \rightarrow C$ is written as $g \circ f$ or $g f$.
+Note: Here hom $(a, b)$ denotes the subclass of morphisms $f$ in $\operatorname{hom}(C)$ such that $\operatorname{dom}(f)=a$ and $\operatorname{cod}(f)=b$. Such morphisms are often written as $f: a \rightarrow b$.
+such that the following axioms hold:
+- (Associativity) if $f:A \rightarrow B, g: B \rightarrow C$ and $h: C \rightarrow D$ then $h \circ(g \circ f)=(h \circ g) \circ f$, and
+- (Identity) for every object $x$, there exists a morphism $1_{X}: X \rightarrow X$ called the identity morphism for the object $X$, such that every morphism $f: A \rightarrow X$ satisfies $1_{X} \circ f=f$, and every morphism $g: X \rightarrow B$ satisfies $g \circ 1_{x}=g$","La categoría $Con$ es aquella cuyos objetos son todos los conjuntos y los morfismos son morfismos de conjuntos. Entonces si $A$ y $B$ son objetos en la categoría $Con$, $Con(A,B)$ es el conjunto de funciones con dominio $A$ y codominio $B$.","The category $Set$ is the category whose objects are sets and morphism are morphisms of sets. Then if $A$ and $B$ are objects in the category $Set$, $Set(A,B)$ is the set of morphisms where$A$ is the domain and $B$ is the codomain.",Wiki,
+Topología ,Topology,Noun,F.,\,"Topology is the area of mathematics which is concerned with the properties of a geometric object that are preserved under continuous deformations, such as stretching, twisting, crumpling, and bending.",,,"Wiki, Munkres 1999",
 Topología de los Complementos Finito / Topología Cofinita,Finite Complement Topology/ Cofinite Topology,Noun,F.,"En matemáticas, la topología de los complementos finitos o topología cofinita sobre un conjunto $X$ es la topología dada por
 $$\mathcal{T}_{c o f}=\{A \subseteq X: X \backslash A \text { es finito ó } A=\emptyset\}$$.
 Es decir, un subconjunto $A$ de $X$ es abierto si su complemento es un conjunto finito.","The cofinite topology or the finite complement topology is a topology that can be defined on every set $X$. It has precisely the empty set and all cofinite subsets of $X$ as open sets. Symbolically,
@@ -139,7 +152,7 @@ Relación de Equivalencia,Equivalence Relation,Noun,F.,,,,,,
 Relación Binaria ,Binary Relation,Noun,F.,,,,,,
 Relación de Orden Total,Total Ordering ,Noun,F.,,,,,,
 Contraejemplo,Counterexample ,Noun,M.,,,,,,
-Conjunto Denso,Dense Set ,Noun,M.,,,,,,
+Conjunto Denso,Dense Set ,Noun,M.,"Si ($X, \mathcal{T})$ es un espacio topológico, $A \subset X$  se dice que es un conjunto denso en $X$  si y solamente si la clausura topológica de $A$, denotado $\bar{A}$ es $X$.","If ($X, \mathcal{T})$ is a topological space, $A \subset X$  is said to be a dense set in $X$ if and only the closure of $A$, denoted $\bar{A}$ is $X$.",El conjunto de los números racionales es un conjunto dense en el conjunto de los números reales.,The set of ration numbers is a dense set in the set of real numbers.,Wiki,
 Densa/o,Dense,Adj,,,,,,,
 Espacio Separable ,Separable Space,Noun,M.,,,,,,
 Espacio Denso,Dense Space,Noun,M.,,,,,,
