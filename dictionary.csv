@@ -94,8 +94,12 @@ $$\begin{aligned}
 \end{aligned}$$",,,,"Wiki, Munkres 1999",
 Isomorfismo ,Isomorphism,Noun,M.,Un isomorfismo es un homomorfismo (o más generalmente un morfismo) que admite un inverso.,An isomorphism is a homomorphism (or more generally) which admits an inverse. ,,,Wiki,
 Morfismo ,Morphism ,Noun,M.,Se llaman morfismos (u homomorfismos) a las aplicaciones entre estructuras matemáticas que preservan la estructura interna.,A morphism is a structure-preserving map from one mathematical structure to another one of the same type.,,,Wiki,
-Epimorfismo,Epimorphism,Noun,M.,,,,,,
-Monomorfismo,Monomorphism,Noun,M.,,,,,,
+Epimorfismo,Epimorphism,Noun,M.,"En la teoría de categorías, un epimorfismo es un morfismo $f: X \rightarrow Y$ que para cualquier objecto $Z$ y morfismos $g_{1}, g_{2}: Y \rightarrow Z$,
+$g_{1} \circ f=g_{2} \circ f \Longrightarrow g_{1}=g_{2}$.","In category theory, an epimorphism is a morphism $f: X \rightarrow Y$ such that, for all objects $Z$ and all morphisms $g_{1}, g_{2}: Y \rightarrow Z$,
+$$g_{1} \circ f=g_{2} \circ f \Longrightarrow g_{1}=g_{2}$$",En la categoría de $\mathbf{Set}$ epimorfismos son morifismos/funciones sobreyectivos.,In the category $\mathbb{Set}$ epimorphisms are morphisms/functions which are surjective. ,Wiki,
+Monomorfismo,Monomorphism,Noun,M.,"En la teoría de categorías, un monomorfismo es un morfismo $f: X \rightarrow Y$ que para cualquier objecto $Z$ y morfismos$g_{1}, g_{2}: Z \rightarrow X$,
+$$f \circ g_{1}=f \circ g_{2} \Longrightarrow g_{1}=g_{2}$$","In category theory, a monomorphism is a morphism $f: X \rightarrow Y$ such that for all objects $Z$ and all morphisms $g_{1}, g_{2}: Z \rightarrow X$,
+$$f \circ g_{1}=f \circ g_{2} \Longrightarrow g_{1}=g_{2}$$",En la categoría de $\mathbf{Set}$ monomorfismos son morifismos/funciones inyectivos.,In the category $\mathbb{Set}$ monomorphism are morphisms/functions which are injective. ,Wiki,
 Difeomorfismo,Diffeomorphism,Noun,M.,,,,,Wiki,
 Categoría ,Category ,Noun,F.,"Una categoría $\mathcal{C}$ consta de
 - una clase ob($\mathcal{C}$) de objetos 
