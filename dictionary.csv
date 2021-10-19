@@ -42,6 +42,7 @@ donde $K$ es un espacio compacto y $U$ es abierto en $Y$.","The compact-open top
 $$V(K, U)=\{f: X \rightarrow Y \mid f(K) \subseteq U\}$$
 where $K \subseteq X$ is compact and $U$ is an open subset of $Y$.",Wiki,
 Espacio de Lazos ,Loop Space ,Noun,M.,"El espacio de lazos, denotado $\Omega X$, de un espacio topológico $X$ con un punto base, $p$, es el espacio hecho de los lazos basados en $p$ dado la topología compacto-abierta.","The loop space $\Omega X$ of a pointed topological space $X$ is the space of (based) loops in $X$, specifically continuous pointed maps from the pointed circle $S^1$ to $X$, equipped with the compact-open topology.",,,"Wiki, Munkres 1999",
+Espacio euclídeo,Euclidean space,Noun,,"Un espacio euclídeo de dimensión finita es un espacio vectorial normado sobre los números reales de dimensión finita, cuyo la norma es la asociada al producto escalar ordinario.",,La recta real y el plano euclídeo son ejemplos especiales de espacios euclídeos de dimensiones 1 y 2. ,"The real line and the Euclidean plane are special case of Euclidean space of dimension 1 and 2, respectively.",,
 Espacio Vectorial ,Vector Space,Noun,M.,"Un espacio vectorial sobre un cuerpo $K$ es un conjunto no vacío, $V$, dotado de dos operaciones para las cuales será cerrado:
 $$\begin{aligned}
 \text { Suma }+: V \times V & \rightarrow V \\
@@ -179,9 +180,23 @@ Codominio,Codomain,Noun,M.,"El codominio (también llamado contradominio, conjun
 definida como $f(x) = x^2$ el codominio de $f$ es $\mathbb{R}$, pero $f(x)$ siempre toma un valor positivo.","For the function $f: \mathbb{R} \rightarrow \mathbb{R}$ defined as $f(x) = x^2$ the codomain of $f$ is $\mathbb{R}$, even though $f(x)$ always outputs a positive value.",Wiki,
 Imagen (o Rango),Image (or Range),Noun,F.,La imagen (o campo de valores o rango) de una función es el conjunto contenido en formado por todos los valores que puede llegar a tomar la función.,The image of a function is the set of all output values it may produce.,"Para una función $f: \mathbb{R} \rightarrow \mathbb{R}$ 
 definida como $f(x) = x^2$ el codominio de $f$ es $\mathbb{R}$, pero $f(x)$ siempre toma un valor positivo entonces la imagen de la función es el conjunto $\{x \in \mathbb{R} : x \geq 0 \}$","For the function $f: \mathbb{R} \rightarrow \mathbb{R}$ defined as $f(x) = x^2$ the codomain of $f$ is $\mathbb{R}$, but $f(x)$ always outputs  positive values so the image of the function is $\{ x \in \mathbb{R} : x \geq 0\}$.",Wiki,
-"Sobreyectiva (epiyectiva, suprayectiva suryectiva, exhaustiva, onto o subyectiva)/o",Surjective,Adj,,,,,,Wiki,
-Inyectiva/o,Injective,Adj,,,,,,,
-Imagen,Image,Noun,M.,,,,,,
+"Sobreyectiva (epiyectiva, suprayectiva suryectiva, exhaustiva, onto o subyectiva)/o",Surjective,Adj,,"Una función $f$ con dominio $X$ y codominio $Y$ es sobreyectiva si para cada $y$ en $Y$ existe al menos una $x$ en $X$ tal que $f(x)=y$.
+Simbólicamente
+Si $f: X \rightarrow Y$ entonces se dice que $f$ es sobreyectiva si
+$\forall y \in Y, \exists x \in X: f(x)=y$","A function $f$ with domain $X$ and codomain $Y$ is surjective if for every $y$ in $Y$ there exists at least one $x$ in $X$ with $f(x)=y^{[2]}$. Symbolically,
+If $f: X \rightarrow Y$, then $f$ is said to be surjective if $\forall y \in Y, \exists x \in X, \quad f(x)=y .$",,,Wiki,
+Inyectiva/o,Injective,Adj,,"Sea $f$ una función cuyo dominio es el conjunto $X$, se dice que la función $f$ es inyectiva si para todo $a$ y $b$ en $X$, si $f(a)=f(b)$ entonces $a=b$, esto es $f(a)=f(b)$ implica $a=b$. Equivalentemente, si $a \neq b$ entonces $f(a) \neq f(b)$. Simbólicamente,
+$$\forall a, b \in X, \quad f(a)=f(b) \Longrightarrow a=b$$","Let $f$ be a function whose domain is a set $X$. The function $f$ is said to be injective provided that for all $a$ and $b$ in $X$, if $f(a)=f(b$ $a=b$. Equivalently, if $a \neq b$, then $f(a) \neq f(b)$.
+Symbolically, $$\forall a, b \in X, \quad f(a)=f(b) \Longrightarrow a=b$$","Dado la función$$
+\begin{aligned}
+f: \mathbb{R} & \rightarrow \mathbb{R} \\
+x & \mapsto x^{2}
+\end{aligned}$$
+no es inyectiva pues el valor 4 puede obtenerse como $f(2)$ y $f(-2)$ pero si el dominio se restringe a los números reales positivos podemos obteniendo así una nueva función $g: \mathbb{R}^{+} \rightarrow \mathbb{R}^{+}$ y entonces sí se obtiene una función inyectiva.","The function $$
+\begin{aligned}
+f: \mathbb{R} & \rightarrow \mathbb{R} \\
+x & \mapsto x^{2}
+\end{aligned}$$ is not injective because 4 can be obtained by $f(2)$ y $f(-2)$ but if the domain is changed the positive real numbers we obtain new function $g: \mathbb{R}^{+} \rightarrow \mathbb{R}^{+}$) then the function is injective.",Wiki,
 Biyectiva/o,Bijective,Adj,,,,,,,
 Función,Function,Noun,F.,,,,,,
 Teorema,Theorem,Noun,M.,,,,,,
