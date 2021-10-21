@@ -23,7 +23,7 @@ Conjunto Vacío,Empty Set,Noun,M.,El conjunto que no contiene ningún elemento.,
 Conjunto Potencia (Conjunto de Las Partes o Conjunto de Partes) ,Power Set,Noun,M.,El conjunto potencia de un conjunto dado es otro conjunto formado por todos los subconjuntos del conjunto dado.,The power set is the set of all possible subsets of a given set. ,,,Wiki,
 Número Entero,An Integer Number,Noun,M.,,,,,,
 Número Natural,A Natural Number ,Noun,M.,Un número natural es cualquiera de los números que se usan para contar los elementos de ciertos conjuntos.,The natural numbers are those used for counting and ordering.,"1, 2, 100","1, 2, 100",Wiki,
-Número Irracional,An Irrational Number,Noun,M.,Un número irracional es un valor que no puede ser expresado como una fracción de números enteros. ,A number which can not be represented as a quotient of two integers. ,"$\sqrt{2}$, e, \π","$\sqrt{2}, e, \π",Wiki,
+Número Irracional,An Irrational Number,Noun,M.,Un número irracional es un valor que no puede ser expresado como una fracción de números enteros. ,A number which can not be represented as a quotient of two integers. ,"$\sqrt{2}$, $e$, $\pi$","$\sqrt{2}$, $e$, $\pi$",Wiki,
 El Conjunto de Los Números Enteros ,The Set of Integers (The Integers),Noun,M.,El conjunto de los números enteros es el conjunto de números enteros positivos y negativos.,,,,,
 El Conjunto de Los Números Naturales,The Set of Natural Numbers (The Naturals),Noun,M.,El conjunto de los números naturales es el conjunto de números enteros positivos. ,,,,,
 El Conjunto de Los Números Racionales ,The Set of Rational Numbers (The Rationals),,M.,El Conjunto de Los Números Racionales es el conjunto de números fraccionarios. ,,,,,
@@ -117,8 +117,8 @@ Categoría ,Category ,Noun,F.,"Una categoría $\mathcal{C}$ consta de
 - para cada terna de objetos $A, B, C$ de $\mathcal{C}$ una función $ \circ : \mathcal{C}(A, B) \times \mathcal{C}(B, C) \rightarrow \mathcal{C}(A, C)$ donde $\circ (f, g)$ se denota $g \circ f$.
 Además, los siguientes axiomas deben ser ciertos:
 - (Asociatividad) para cualquier terna de flechas $f, g, h$ se cumple que $h \circ (g \circ f)=(h \circ g) \circ f$, si es que estas composiciones están definidas.
-- (Identidad) para todo objeto $A$ en ob(C) existe una flecha en $\mathcal{C}(A, A)$ comúnmente denotada $1_{A}$ tal que para toda flecha fen $\mathcal{C}(A ; B) f=1_{B} \circe f y f=f \circ 1_{A}$.","A category $\mathcal{C}$ consists of
-- a class ob $(\mathcal{C)$ of objects,
+- (Identidad) para todo objeto $A$ en ob(C) existe una flecha en $\mathcal{C}(A, A)$ comúnmente denotada $1_{A}$ tal que para toda flecha fen $\mathcal{C}(A ; B) f=1_{B} \circ f y f=f \circ 1_{A}$.","A category $\mathcal{C}$ consists of
+- a class ob $(\mathcal{C})$ of objects,
 - for every pair of objects $A, B$ in ob($\mathcal{C}$) the set $\mathcal{C}(A, B)$ of arrows or morphism from $A$ to $B$.
 - for every three objects $A,B$ and $C$, a binary operation  $\mathcal{C}(A, B) \times \mathcal{C}(B, C) \rightarrow \mathcal{C}(A, C)$ called composition of morphisms; the composition of $f: A \rightarrow B$ and $g:B \rightarrow C$ is written as $g \circ f$ or $g f$.
 Note: Here hom $(a, b)$ denotes the subclass of morphisms $f$ in $\operatorname{hom}(C)$ such that $\operatorname{dom}(f)=a$ and $\operatorname{cod}(f)=b$. Such morphisms are often written as $f: a \rightarrow b$.
@@ -143,9 +143,15 @@ A los conjuntos pertenecientes a la topología $T$ se les llama conjuntos abiert
 \newline 2. Any arbitrary (finite or infinite) union of members of $\tau$ belongs to $T$.
 \newline 3. The intersection of any finite number of members of $\tau$ belongs to $T$.
 The elements of $T$ are called open sets and the collection $T$ is called a topology on $X .$ A subset $C \subseteq X$ is said to be closed in $(X, T)$ if and only if its complement $X \backslash C$ is an element of $T$.","Dado el conjunto $X=\{1,2,3,4\}$ y la colección de los seis subconjuntos de $X$
-$$T=\{\{\},\{2\},\{1,2\},\{2,3\},\{1,2,3\},\{1,2,3,4\}\}=\{\varnothing,\{2\},\{1,2\},\{2,3\},\{1,2,3\}, X\}$$
+\begin{align*}
+T&= \{\{\},\{2\},\{1,2\},\{2,3\},\{1,2,3\},\{1,2,3,4\}\} \\
+&= \{\varnothing,\{2\},\{1,2\},\{2,3\},\{1,2,3\}, X\}
+\end{align*}
 $(X,T)$ forman un espacio topológico. Aveces este espacio topológico con esta descripción de $T$ se llama un espacio topológico con la topología discreta.","Given $X=\{1,2,3,4\}$, the family
-$$T=& \{\{\},\{2\},\{1,2\},\{2,3\},\{1,2,3\},\{1,2,3,4\}\}$$ $$=& \{\varnothing,\{2\},\{1,2\},\{2,3\},\{1,2,3\}, X\}$$
+\begin{align*}
+T&= \{\{\},\{2\},\{1,2\},\{2,3\},\{1,2,3\},\{1,2,3,4\}\} \\
+&= \{\varnothing,\{2\},\{1,2\},\{2,3\},\{1,2,3\}, X\}
+\end{align*}
 of six subsets of $X$ form topologv of $X$.  Sometimes a this topological space with this description of $T$ is called is called a topological space with the discrete topology.","Wiki, Munkres 1999",
 Variedad Diferenciable,Differentiable Manifold,Noun,F.,,,,,Wiki,
 Par,Pair,Noun,M.,,,,,,
@@ -158,7 +164,7 @@ Abierto ,Open,Adj,,,,,,,
 Cerado,Closed,Adj,,,,,,,
 Leyes De De Morgan,De Morgan’s Law,Noun,F.,"Las leyes de De Morgan son un par de reglas de transformación. Las reglas son las siguientes: La negación de la conjunción es la disyunción de las negaciones.
 La negación de la disyunción es la conjunción de las negaciones.",De Morgan’s Laws are a pair of transformation rules. The rules are below: The negation of a disjunction is the conjunction of the negations. The negation of a conjunction is the disjunction of the negations,,,Wiki,
-Producto Cartesiano ,Cartesian Product,Noun,M.,"El producto cartesiano, denotado \(A × B\),  de dos conjuntos, \(A\) y \(B\), es una operación, que resulta en otro conjunto, cuyos elementos son todos los pares ordenados. In símbolos  \[A \times B = \{(a,b) \mid a \in A and b \in B\} \]","The Cartesian product of two sets \(A\) and \(B\), denoted \(A × B\), is the set of all ordered pairs \((a, b)\) where \(a\) is in \(A\) and \(b\) is in \(B\). In symbols \[A \times B = \{(a,b) \mid a \in A and b \in B\} \].","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{a,b\}$ el producto cartesiano $A \times B=\{(1, a),(1, b),(2, a),(2, b),(3, a),(3, b),(4, a),(4, b)\}$.","Given the sets $A = \{1,2,3,4\}$ and $B=\{a,b\}$ the Cartesian product is $A \times B=\{(1, a),(1, b),(2, a),(2, b),(3, a),(3, b),(4, a),(4, b)\}$.",Wiki,
+Producto Cartesiano ,Cartesian Product,Noun,M.,"El producto cartesiano, denotado \(A \times B\),  de dos conjuntos, \(A\) y \(B\), es una operación, que resulta en otro conjunto, cuyos elementos son todos los pares ordenados. In símbolos  \[A \times B = \{(a,b) \mid a \in A \land b \in B\} \]","The Cartesian product of two sets \(A\) and \(B\), denoted \(A \times B\), is the set of all ordered pairs \((a, b)\) where \(a\) is in \(A\) and \(b\) is in \(B\). In symbols \[A \times B = \{(a,b) \mid a \in A \land b \in B\} \].","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{a,b\}$ el producto cartesiano $A \times B=\{(1, a),(1, b),(2, a),(2, b),(3, a),(3, b),(4, a),(4, b)\}$.","Given the sets $A = \{1,2,3,4\}$ and $B=\{a,b\}$ the Cartesian product is $A \times B=\{(1, a),(1, b),(2, a),(2, b),(3, a),(3, b),(4, a),(4, b)\}$.",Wiki,
 Conjunto Parcialmente Ordenado,Partially Ordered Set (Poset),Noun,M.,,,,,,
 Orden,Order,Noun,M.,,,,,,
 Orden Parcial,Partial Ordering,Adj,,,,,,,
@@ -184,7 +190,7 @@ definida como $f(x) = x^2$ el codominio de $f$ es $\mathbb{R}$, pero $f(x)$ siem
 "Sobreyectiva (epiyectiva, suprayectiva suryectiva, exhaustiva, onto o subyectiva)/o",Surjective,Adj,,"Una función $f$ con dominio $X$ y codominio $Y$ es sobreyectiva si para cada $y$ en $Y$ existe al menos una $x$ en $X$ tal que $f(x)=y$.
 Simbólicamente
 Si $f: X \rightarrow Y$ entonces se dice que $f$ es sobreyectiva si
-$\forall y \in Y, \exists x \in X: f(x)=y$","A function $f$ with domain $X$ and codomain $Y$ is surjective if for every $y$ in $Y$ there exists at least one $x$ in $X$ with $f(x)=y^{[2]}$. Symbolically,
+$\forall y \in Y, \exists x \in X: f(x)=y$","A function $f$ with domain $X$ and codomain $Y$ is surjective if for every $y$ in $Y$ there exists at least one $x$ in $X$ with $f(x)=y$. Symbolically,
 If $f: X \rightarrow Y$, then $f$ is said to be surjective if $\forall y \in Y, \exists x \in X, \quad f(x)=y .$",,,Wiki,
 Inyectiva/o,Injective,Adj,,"Sea $f$ una función cuyo dominio es el conjunto $X$, se dice que la función $f$ es inyectiva si para todo $a$ y $b$ en $X$, si $f(a)=f(b)$ entonces $a=b$, esto es $f(a)=f(b)$ implica $a=b$. Equivalentemente, si $a \neq b$ entonces $f(a) \neq f(b)$. Simbólicamente,
 $$\forall a, b \in X, \quad f(a)=f(b) \Longrightarrow a=b$$","Let $f$ be a function whose domain is a set $X$. The function $f$ is said to be injective provided that for all $a$ and $b$ in $X$, if $f(a)=f(b$ $a=b$. Equivalently, if $a \neq b$, then $f(a) \neq f(b)$.
