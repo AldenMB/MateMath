@@ -260,3 +260,7 @@ Extension,Extension,Noun,F.,,,,,,
 Extension Radical ,Radical Extension,Noun,F.,,,,,,
 Elemento Simétrico,Inverse Element,Noun,M.,,,,,,
 Elemento Neutro,Identity Element,Noun,M.,,,,,,
+Recta (Línea Recta),Line (Straight Line),Noun,F.,,,,,wiki,Geometría
+Llave,Brace (curly bracket),Noun,F.,Los símbolos “{“ y “}”.,The symbols “{“ and “}”.,"“Usualmente, a los elementos de un conjunto se les representa encerrados entre dos llaves.” -Zamolla (2013)",Usually the elements of a set are written between two braces.,"Velázquez (2020), Zamalloa (2013)",
+Pertenecer,Belong To,Verb,,(como un elemento pertencece a un conjunto),(as an element belongs to a set),,,Zamalloa (2013),
+Comprensión ,Set Comprehension,Noun,F.,Una manera de describir un conjunto en que se escribe una propiedad común a todos los elementos.,A way of describing a set where a property is given which all the elements share.,,,Zamalloa (2013),
