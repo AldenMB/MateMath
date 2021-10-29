@@ -249,13 +249,13 @@ Raíces De Unidad ,Roots of Unity,Noun,F.,,,,,Viola-Prioli & Viola-Prioli (2006)
 Raiz N-ésima de la Unidad (o Enésima),N-th Root of Unity,Noun,F.,,,,,Wiki,
 Construcciones con Regla y Compás,Constructions with Straight Edge and Compass,Noun,F.,,,,,,"Álgebra, Análsis Compleja"
 Dominio de Ideales Principales (DIP),Principal Ideal Domain (PID),Noun,M.,,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
-Polinomio,Polynomial,Noun,M.,,,,,Viola-Prioli & Viola-Prioli (2006),
+Polinomio,Polynomial,Noun,M.,"Un polinomio es una expresión algebraica formada por varios monomios o términos y en ellos intervienen números y letras relacionados mediante sumas, multiplicaciones y potencias.","A polynomial is an expression that can be built from constants and symbols called variables or indeterminates by means of addition, multiplication and exponentiation to a non-negative integer power. ",Un ejemplo de un polinomio es la expresión $4x^3+x-2$.,An example of a polynomial expression is $4x^3+x-2$.,Viola-Prioli & Viola-Prioli (2006),
 Mónica/o,Mononic,Adj,,Se dice que un polinomio es mónico si tiene grado $n$ y el coeficiente de $x^n$  es igual a 1.,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
 Elemento Nulo ,Zero Element,Noun,F.,,,,,,
 Polinomio Constante,Constant Polynomial,Noun,M.,Se dice que un polinomio es constante si tien grado cero o es el polinomio nulo. ,,,,Viola-Prioli & Viola-Prioli (2006),
 Polinomio Nulo,Zero Polynomial,Noun,M.,,,,,,
 El Grupo de Galois,Galois Group,Noun,M.,,,,,,Álgebra
-Clausura Algebraica ,Algebraic Closure,Noun,F.,,,,,,Álgebra
+Clausura Algebraica ,Algebraic Closure,Noun,F.,La clausura algebraica de un cuerpo $K$ puede pensarse como la mayor extensión algebraica de $K$.,The algebraic closure of a field $K$ can be thought of as the largest algebraic extension of $K$.,La clausura algebraica del cuerpo de los números reales es el cuerpo de los números complejos.,The algebraic closure of the field of real numbers is the field of complex numbers.,,Álgebra
 Extension,Extension,Noun,F.,,,,,,
 Extension Radical ,Radical Extension,Noun,F.,,,,,,
 Elemento Simétrico,Inverse Element,Noun,M.,,,,,,
