@@ -26,8 +26,8 @@ Número Natural,A Natural Number ,Noun,M.,Un número natural es cualquiera de lo
 Número Irracional,An Irrational Number,Noun,M.,Un número irracional es un valor que no puede ser expresado como una fracción de números enteros. ,A number which can not be represented as a quotient of two integers. ,"$\sqrt{2}$, $e$, $\pi$","$\sqrt{2}$, $e$, $\pi$",Wiki,
 El Conjunto de Los Números Enteros ,The Set of Integers (The Integers),Noun,M.,El conjunto de los números enteros es el conjunto de números enteros positivos y negativos.,,,,,
 El Conjunto de Los Números Naturales,The Set of Natural Numbers (The Naturals),Noun,M.,El conjunto de los números naturales es el conjunto de números enteros positivos. ,,,,,
-El Conjunto de Los Números Racionales ,The Set of Rational Numbers (The Rationals),,M.,El Conjunto de Los Números Racionales es el conjunto de números fraccionarios. ,,,,,
-El Conjunto de Los Números Irracionales ,The Set of Irrational Numbers (The Irrationals),Noun,M.,,,,,,
+El Conjunto de Los Números Racionales ,The Set of Rational Numbers (The Rationals),,M.,El conjunto de los números racionales es el conjunto de números fraccionarios. ,The set of rational numbers is the set of numbers whose value can be expressed as a fraction. ,,,,
+El Conjunto de Los Números Irracionales ,The Set of Irrational Numbers (The Irrationals),Noun,M.,"El conjunto de los números irracionales es el conjuntos de números cuyos su valor que no puede ser expresado como una fracción \(\frac{m}{n}\) donde \(m, n \in \mathbb{Z} \) y \(n \neq 0\). ","The set of irrational numbers is the set of numbers whose value can not be expressed as a fraction \(\frac{m}{n} \) where \(m ,, n \in \mathbb{Z} \) and \(n \neq 0 \). ",,,,
 El Conjunto de Los Números Reales,The Set of Real Numbers (The Reals),Noun,M.,"El conjunto de los números reales es el conjunto de números enteros, fraccionarios y irracionales.",,,,,
 El Conjunto de Los Números Complejos,The Set of Complex Numbers (The Complex Numbers),Noun,M.,,,,,,
 Lazo,Loop,Noun,M. ,"Si es $X$ un espacio topológico, y $p$ un punto fijo de $X$, un lazo con base en $p$ es una aplicación continua $\gamma:[0,1] \rightarrow X$ que verifica $\gamma(0)=\gamma(1)=p$.","Given a topological space $X$, a loop based at $p$ is defined to be a continuous function (also known as a continuous map) $\gamma:[0,1] \rightarrow X$ such that the starting point $\gamma(0)$ and the end point $\gamma(1)$ are both equal to $p$.",,,,
@@ -187,13 +187,13 @@ Codominio,Codomain,Noun,M.,"El codominio (también llamado contradominio, conjun
 definida como $f(x) = x^2$ el codominio de $f$ es $\mathbb{R}$, pero $f(x)$ siempre toma un valor positivo.","For the function $f: \mathbb{R} \rightarrow \mathbb{R}$ defined as $f(x) = x^2$ the codomain of $f$ is $\mathbb{R}$, even though $f(x)$ always outputs a positive value.",Wiki,
 Imagen (o Rango),Image (or Range),Noun,F.,La imagen (o campo de valores o rango) de una función es el conjunto contenido en formado por todos los valores que puede llegar a tomar la función.,The image of a function is the set of all output values it may produce.,"Para una función $f: \mathbb{R} \rightarrow \mathbb{R}$ 
 definida como $f(x) = x^2$ el codominio de $f$ es $\mathbb{R}$, pero $f(x)$ siempre toma un valor positivo entonces la imagen de la función es el conjunto $\{x \in \mathbb{R} : x \geq 0 \}$","For the function $f: \mathbb{R} \rightarrow \mathbb{R}$ defined as $f(x) = x^2$ the codomain of $f$ is $\mathbb{R}$, but $f(x)$ always outputs  positive values so the image of the function is $\{ x \in \mathbb{R} : x \geq 0\}$.",Wiki,
-"Sobreyectiva (epiyectiva, suprayectiva suryectiva, exhaustiva, onto o subyectiva)/o",Surjective,Adj,,"Una función $f$ con dominio $X$ y codominio $Y$ es sobreyectiva si para cada $y$ en $Y$ existe al menos una $x$ en $X$ tal que $f(x)=y$.
+"Sobreyectiva (epiyectiva, suprayectiva suryectiva, exhaustiva, onto o subyectiva)/o",Surjective,Adj,,"Una función \(f\) con dominio \(X\) y codominio \(Y\) es sobreyectiva si para cada \(y\) en \(Y\) existe al menos una \(x\) en \(X\) tal que \(f(x)=y\).
 Simbólicamente
-Si $f: X \rightarrow Y$ entonces se dice que $f$ es sobreyectiva si
-$\forall y \in Y, \exists x \in X: f(x)=y$","A function $f$ with domain $X$ and codomain $Y$ is surjective if for every $y$ in $Y$ there exists at least one $x$ in $X$ with $f(x)=y$. Symbolically,
+Si \(f: X \rightarrow Y\) entonces se dice que \(f\) es sobreyectiva si
+\[\forall y \in Y, \exists x \in X: f(x)=y\]","A function $f$ with domain $X$ and codomain $Y$ is surjective if for every $y$ in $Y$ there exists at least one $x$ in $X$ with $f(x)=y$. Symbolically,
 If $f: X \rightarrow Y$, then $f$ is said to be surjective if $\forall y \in Y, \exists x \in X, \quad f(x)=y .$",,,Wiki,
-Inyectiva/o,Injective,Adj,,"Sea $f$ una función cuyo dominio es el conjunto $X$, se dice que la función $f$ es inyectiva si para todo $a$ y $b$ en $X$, si $f(a)=f(b)$ entonces $a=b$, esto es $f(a)=f(b)$ implica $a=b$. Equivalentemente, si $a \neq b$ entonces $f(a) \neq f(b)$. Simbólicamente,
-$$\forall a, b \in X, \quad f(a)=f(b) \Longrightarrow a=b$$","Let $f$ be a function whose domain is a set $X$. The function $f$ is said to be injective provided that for all $a$ and $b$ in $X$, if $f(a)=f(b$ $a=b$. Equivalently, if $a \neq b$, then $f(a) \neq f(b)$.
+Inyectiva/o,Injective,Adj,,"Dado una función \(f\) cuyo dominio es el conjunto \(X)\, se dice que la función \(f\) es inyectiva si para todo \(a\) y \(b\) en \(X\), si $f(a)=f(b)$ entonces $a=b$, esto es $f(a)=f(b)$ implica $a=b$. Equivalentemente, si $a \neq b$ entonces $f(a) \neq f(b)$. Simbólicamente,
+\[\forall a, b \in X, \quad f(a)=f(b) \Longrightarrow a=b\].","Let $f$ be a function whose domain is a set $X$. The function $f$ is said to be injective provided that for all $a$ and $b$ in $X$, if $f(a)=f(b$ $a=b$. Equivalently, if $a \neq b$, then $f(a) \neq f(b)$.
 Symbolically, $$\forall a, b \in X, \quad f(a)=f(b) \Longrightarrow a=b$$","Dado la función$$
 \begin{aligned}
 f: \mathbb{R} & \rightarrow \mathbb{R} \\
@@ -204,7 +204,7 @@ no es inyectiva pues el valor 4 puede obtenerse como $f(2)$ y $f(-2)$ pero si el
 f: \mathbb{R} & \rightarrow \mathbb{R} \\
 x & \mapsto x^{2}
 \end{aligned}$$ is not injective because 4 can be obtained by $f(2)$ y $f(-2)$ but if the domain is changed the positive real numbers we obtain new function $g: \mathbb{R}^{+} \rightarrow \mathbb{R}^{+}$) then the function is injective.",Wiki,
-Biyectiva/o,Bijective,Adj,,,,,,,
+Biyectiva/o,Bijective,Adj,,Una función \(f\) se llama biyectiva si es inyectiva y sobreyectiva. ,A function \(f\) is called bijective if it is both injective and surjective. ,,,Wiki,
 Función,Function,Noun,F.,,,,,,
 Teorema,Theorem,Noun,M.,,,,,,
 Sistema Algebraica ( Estructura Algebraica),Algebraic Structure,Noun,F.,,,,,,
@@ -215,9 +215,10 @@ Simetría,Symmetry,Adj,,,,,,,
 Transitividad,Transitividad,Adj,,,,,,,
 Relación Reflexiva (o Refleja),Reflexive Relation,Noun,,,,,,,
 Irreflexiva (Antirreflexiva o Antirrefleja),Irreflexiva (Anti-reflexive),Adj,,,,,,,
-Asimétra,Antisymmetry,Adj,,,,,,,
-Simétrica ,Symmetric,Adj,,,,,,,
-Asimétrica,Antisymmetric,Adj,,,,,,,
+(Relación) Asimétra,Asymmetry,Adj,,"Una relación binaria \(R\) sobre un conjunto \(A\), es asimétrica cuando si se da que un elemento está relacionado con otro mediante \(R\), entonces el segundo nunca está relacionado con el primero. ","An asymmetric relation is a binary relation \(R\) on a set \(A\) where for all \(a,b \in A\) if \(a\) is related to \(b\) then \(b\) is not related to \(a\).",,,,
+(Relación) Simétrica ,Symmetric,Adj,,"Una relación binaria \(R\) sobre un conjunto \(A\) es simétrica cuando se da que si un elemento está relacionado con otro mediante \(R\), entonces ese otro también está relacionado con él, a través de la misma “R,” es lo mismo tener \((a,b)\) que tener \((b,a)\) . En símbolos \[\forall x, y \in A: \quad x R y \quad \Rightarrow \quad y Rx \]","A symmetric relation is a type of binary relation. An example is the relation ""is equal to"", because if \(a=b\) is true then \(b=a\) is also true. Formally, a binary relation \(R\) over a set \(X\) is symmetric if:
+\[\forall a, b \in X(a R b \Leftrightarrow b R a)\]
+where the notation \(a R b\) means that \((a, b) \in R\).",,,,
 (Matriz) Transpuesta,Transpose (Matrix),Noun,F.,,,,,,
 Matriz,Matrix,Noun,F.,"Una matriz es un arreglo p-dimensional de números (elementos de la matriz) ordenados en filas (o renglones) y columnas, donde una fila es cada una de las líneas horizontales de la matriz y una columna es cada una de las líneas verticales. ",A matrix is a rectangular array of numbers (or other mathematical objects) for which operations such as addition and multiplication are defined.,,,Wiki,Álgebra Lineal
 Matriz de Adyacencia,Adjacency Matrix,Noun,F.,La matriz de adyacencia es una matriz cuadrada que se utiliza como una forma de representar relaciones binarias. ,An adjacency matrix is a square matrix used to represent a finite graph.,,,Wiki,"Álgebra Lineal, Teoría de Grafos"
