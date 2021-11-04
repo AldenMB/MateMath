@@ -97,22 +97,22 @@ $$\exists e \in K: e \cdot \mathbf{u}=\mathbf{u}, \forall \mathbf{u} \in V$$
 $$a \cdot(\mathbf{u}+\mathbf{v})=a \cdot \mathbf{u}+a \cdot \mathbf{v}, \forall a \in K, \forall \mathbf{u}, \mathbf{v} \in $$
 -  It respects the distributive law with respect to the product operation:
 $$(a+b) \cdot \mathbf{u}=a \cdot \mathbf{u}+b \cdot \mathbf{u}, \forall a, b \in K, \forall \mathbf{u} \in V$$",El conjunto de los números reales forman un espacio vectorial sobre el cuerpo de formado del conjunto de los números racionales. ,The set of real numbers forms a vector space over the field formed by the set of rational numbers.  ,Wiki ,
-Homotopía,Homotopy ,Noun,F.,"Una homotopía entro dos aplicaciones continuas $f, g: X \rightarrow Y$ es un aplicación, también continua, $H: X \times[0,1] \rightarrow Y$ tal que:
-$$\begin{aligned}
+Homotopía,Homotopy ,Noun,F.,"Una homotopía entro dos aplicaciones continuas \(f, g: X \rightarrow Y\) es un aplicación, también continua, \(H: X \times[0,1] \rightarrow Y\) tal que:
+\[\begin{aligned}
 &H(x, 0)=f(x) \\
 &H(x, 1)=g(x)
-\end{aligned}$$",,,,"Wiki, Munkres 1999",
+\end{aligned}\]",,,,"Wiki, Munkres 1999",
 Isomorfismo ,Isomorphism,Noun,M.,Un isomorfismo es un homomorfismo (o más generalmente un morfismo) que admite un inverso.,An isomorphism is a homomorphism (or more generally) which admits an inverse. ,,,Wiki,
 Morfismo ,Morphism ,Noun,M.,Se llaman morfismos (u homomorfismos) a las aplicaciones entre estructuras matemáticas que preservan la estructura interna.,A morphism is a structure-preserving map from one mathematical structure to another one of the same type.,,,Wiki,
-Epimorfismo,Epimorphism,Noun,M.,"En la teoría de categorías, un epimorfismo es un morfismo $f: X \rightarrow Y$ que para cualquier objecto $Z$ y morfismos $g_{1}, g_{2}: Y \rightarrow Z$,
-$g_{1} \circ f=g_{2} \circ f \Longrightarrow g_{1}=g_{2}$.","In category theory, an epimorphism is a morphism $f: X \rightarrow Y$ such that, for all objects $Z$ and all morphisms $g_{1}, g_{2}: Y \rightarrow Z$,
+Epimorfismo,Epimorphism,Noun,M.,"En la teoría de categorías, un epimorfismo es un morfismo \(f: X \rightarrow Y\) que para cualquier objecto \(Z\) y morfismos \(g_{1}, g_{2}: Y \rightarrow Z\),
+\(g_{1} \circ f=g_{2} \circ f \Longrightarrow g_{1}=g_{2}\).","In category theory, an epimorphism is a morphism $f: X \rightarrow Y$ such that, for all objects $Z$ and all morphisms $g_{1}, g_{2}: Y \rightarrow Z$,
 $$g_{1} \circ f=g_{2} \circ f \Longrightarrow g_{1}=g_{2}$$",En la categoría de $\mathbf{Set}$ epimorfismos son morifismos/funciones sobreyectivos.,In the category $\mathbb{Set}$ epimorphisms are morphisms/functions which are surjective. ,Wiki,
-Monomorfismo,Monomorphism,Noun,M.,"En la teoría de categorías, un monomorfismo es un morfismo $f: X \rightarrow Y$ que para cualquier objecto $Z$ y morfismos$g_{1}, g_{2}: Z \rightarrow X$,
-$$f \circ g_{1}=f \circ g_{2} \Longrightarrow g_{1}=g_{2}$$","In category theory, a monomorphism is a morphism $f: X \rightarrow Y$ such that for all objects $Z$ and all morphisms $g_{1}, g_{2}: Z \rightarrow X$,
+Monomorfismo,Monomorphism,Noun,M.,"En la teoría de categorías, un monomorfismo es un morfismo \(f: X \rightarrow Y\) que para cualquier objecto \(Z\)  y morfismos \(g_{1}, g_{2}: Z \rightarrow X\),
+\[f \circ g_{1}=f \circ g_{2} \Longrightarrow g_{1}=g_{2}\]","In category theory, a monomorphism is a morphism $f: X \rightarrow Y$ such that for all objects $Z$ and all morphisms $g_{1}, g_{2}: Z \rightarrow X$,
 $$f \circ g_{1}=f \circ g_{2} \Longrightarrow g_{1}=g_{2}$$",En la categoría de $\mathbf{Set}$ monomorfismos son morifismos/funciones inyectivos.,In the category $\mathbb{Set}$ monomorphism are morphisms/functions which are injective. ,Wiki,
-Difeomorfismo,Diffeomorphism,Noun,M.,,,,,Wiki,
-Categoría ,Category ,Noun,F.,"Una categoría $\mathcal{C}$ consta de
-- una clase ob($\mathcal{C}$) de objetos 
+Difeomorfismo,Diffeomorphism,Noun,M.,"Dado dos variedades \(M\) and \(N\), un morfismo \(f: M \rightarrow N \) es un difeomorfismo si \(f\) is un homeomorfismo diferenciable. ","Given two manifolds \(M\) and \(N\), a differentiable map \(f: M \rightarrow N\) is called a diffeomorphism if it is a bijection and its inverse \(f^{-1}: N \rightarrow M\) is differentiable as well.",,,Wiki,Geometría
+Categoría ,Category ,Noun,F.,"Una categoría \(\mathcal{C}\) consta de
+- una clase ob(\(\mathcal{C}\)) de objetos 
 - para cada par de objetos $A, B$ en ob($\mathcal{C}$) un conjunto $\mathcal{C}(A, B)$ de flechas o morfismos de $A$ a $B$.
 - para cada terna de objetos $A, B, C$ de $\mathcal{C}$ una función $ \circ : \mathcal{C}(A, B) \times \mathcal{C}(B, C) \rightarrow \mathcal{C}(A, C)$ donde $\circ (f, g)$ se denota $g \circ f$.
 Además, los siguientes axiomas deben ser ciertos:
@@ -156,7 +156,7 @@ of six subsets of $X$ form topologv of $X$.  Sometimes a this topological space 
 Variedad Diferenciable,Differentiable Manifold,Noun,F.,,,,,Wiki,
 Par,Pair,Noun,M.,,,,,,
 Par Ordenado,Ordered Pair,Noun,M.,"Un par ordenado \((a,b)\) es una pareja de objetos matemáticos, en la que se distingue un elemento y otro.","An ordered pair \((a, b)\) is a pair of objects.","Un ejemplo de un par ordenado es \((5,4)\).","An example of an ordered pair is \((5,4)\).",Wiki,
-Unión ,Union,Noun,F.,La unión de dos conjuntos $A$ y $B$ es otro conjunto $A \cup B$ cuyos elementos son todos los elementos de $A \mathrm{y} / \mathrm{o}$ de $B$. En símbolos $$A \cup B=\{x: x \in A \text { o } x \in B\} $$,"The union of two sets $A$ and $B$ is the set of elements which are in $A$, in $B$, or in both $A$ and $B$. Symbolically,
+Unión ,Union,Noun,F.,La unión de dos conjuntos \(A\) y \(B\) es otro conjunto \(A \cup B\) cuyos elementos son todos los elementos de \(A \mathrm{y} / \mathrm{o}\) de \(B\). En símbolos \[A \cup B=\{x: x \in A \text { o } x \in B\} \],"The union of two sets $A$ and $B$ is the set of elements which are in $A$, in $B$, or in both $A$ and $B$. Symbolically,
 $$A \cup B=\{x: x \in A \text { or } x \in B\} $$","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ la unión de $A$ y $B$ es $A\cup B = \{1,2,3,4,6,8\}$.","Given the sets $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ then the union of $A$ and $B$ is $A\cup B = \{1,2,3,4,6,8\}$.",Wiki,
 Intersección,Intersection ,Noun,F.,"La intersección de dos (o más) conjuntos, digamos $A$ y $B$, es un subconjunto de $A$ y $B$ denotado $A \cap B$  que contiene los elementos comunes de $A$ y $B$.","The intersection of two set $A$ and $B$ denoted by $A \cap B$ is the subset of $A$ and $B$ containing all elements of $A$ that also belong to $B$ or equivalently, all elements of $B$ that also belong to $A$.","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ la intersección de $A$ y $B$ es $A\cap B = \{2,4\}$.","Given the sets $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ then the intersection of $A$ and $B$ is $A\cap B = \{2,4\}$.",Wiki,
 Complemento (de un Conjunto),Complement (of a Set),Noun,M.,"El complemento de un conjunto, digamos $A$, o conjunto complementario, es otro conjunto, aveces denotado $A^c$ o $A$, que contiene todos los elementos que no están en el conjunto original.","The complement of a set $A$, often denoted by $A^c$ or $A’$, are the elements not in $A$.","Hablando de números naturales, el complementario del conjunto $A = \{1, 5, 6, 7, 8, 10\}$ es el conjunto $A^c = {2, 3, 4, 9, 11, 12, ...}$.","Given the set of natural numbers $A= \{1, 5, 6, 7, 8, 10\}$ the complement of it in the set of natural numbers is $A^c= \{2, 3, 4, 9, 11, 12, …\}$.",Wiki,
@@ -170,7 +170,9 @@ Orden,Order,Noun,M.,,,,,,
 Orden Parcial,Partial Ordering,Adj,,,,,,,
 Relación de Orden,Ordering,,,,,,,,
 Relación de Equivalencia,Equivalence Relation,Noun,F.,,,,,,
-Relación Binaria ,Binary Relation,Noun,F.,,,,,,
+Relación Binaria ,Binary Relation,Noun,F.,"Una relación binaria \(R\) es el subconjunto de los elementos del producto cartesiano \(A_{1} \times A_{2}\) que cumplen una determinada condición:
+\[R=\left\{\left(a_{1}, a_{2}\right):\left(a_{1}, a_{2}\right) \in A_{1} \times A_{2} \wedge R\left(a_{1}, a_{2}\right)=\text { Verdadero }\right\}\]","A binary relation \(R\) is the subset of elements of the Cartesian product \(A_{1} \times A_{2}\) such that the following is satisfied:
+\[R=\left\{\left(a_{1}, a_{2}\right):\left(a_{1}, a_{2}\right) \in A_{1} \times A_{2} \wedge R\left(a_{1}, a_{2}\right)=\text { True }\right\}\]",,,,
 Relación de Orden Total,Total Ordering ,Noun,F.,,,,,,
 Contraejemplo,Counterexample ,Noun,M.,,,,,,
 Conjunto Denso,Dense Set ,Noun,M.,"Si ($X, \mathcal{T})$ es un espacio topológico, $A \subset X$  se dice que es un conjunto denso en $X$  si y solamente si la clausura topológica de $A$, denotado $\bar{A}$ es $X$.","If ($X, \mathcal{T})$ is a topological space, $A \subset X$  is said to be a dense set in $X$ if and only the closure of $A$, denoted $\bar{A}$ is $X$.",Un ejemplo es el conjunto de los números racionales es un conjunto dense en el conjunto de los números reales.,An example is the set of ration numbers is a dense set in the set of real numbers.,Wiki,
@@ -251,12 +253,12 @@ Raiz N-ésima de la Unidad (o Enésima),N-th Root of Unity,Noun,F.,,,,,Wiki,
 Construcciones con Regla y Compás,Constructions with Straight Edge and Compass,Noun,F.,,,,,,"Álgebra, Análsis Compleja"
 Dominio de Ideales Principales (DIP),Principal Ideal Domain (PID),Noun,M.,,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
 Polinomio,Polynomial,Noun,M.,"Un polinomio es una expresión algebraica formada por varios monomios o términos y en ellos intervienen números y letras relacionados mediante sumas, multiplicaciones y potencias.","A polynomial is an expression that can be built from constants and symbols called variables or indeterminates by means of addition, multiplication and exponentiation to a non-negative integer power. ",Un ejemplo de un polinomio es la expresión $4x^3+x-2$.,An example of a polynomial expression is $4x^3+x-2$.,Viola-Prioli & Viola-Prioli (2006),
-Mónica/o,Mononic,Adj,,Se dice que un polinomio es mónico si tiene grado $n$ y el coeficiente de $x^n$  es igual a 1.,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
+Mónica/o,Mononic,Adj,,Se dice que un polinomio es mónico si tiene grado \(n\) y el coeficiente de \(x^n\)  es igual a 1.,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
 Elemento Nulo ,Zero Element,Noun,F.,,,,,,
 Polinomio Constante,Constant Polynomial,Noun,M.,Se dice que un polinomio es constante si tien grado cero o es el polinomio nulo. ,,,,Viola-Prioli & Viola-Prioli (2006),
 Polinomio Nulo,Zero Polynomial,Noun,M.,,,,,,
 El Grupo de Galois,Galois Group,Noun,M.,,,,,,Álgebra
-Clausura Algebraica ,Algebraic Closure,Noun,F.,La clausura algebraica de un cuerpo $K$ puede pensarse como la mayor extensión algebraica de $K$.,The algebraic closure of a field $K$ can be thought of as the largest algebraic extension of $K$.,La clausura algebraica del cuerpo de los números reales es el cuerpo de los números complejos.,The algebraic closure of the field of real numbers is the field of complex numbers.,,Álgebra
+Clausura Algebraica ,Algebraic Closure,Noun,F.,La clausura algebraica de un cuerpo \(K\) puede pensarse como la mayor extensión algebraica de \(K\).,The algebraic closure of a field \(K\) can be thought of as the largest algebraic extension of \(K\).,La clausura algebraica del cuerpo de los números reales es el cuerpo de los números complejos.,The algebraic closure of the field of real numbers is the field of complex numbers.,,Álgebra
 Extension,Extension,Noun,F.,,,,,,
 Extension Radical ,Radical Extension,Noun,F.,,,,,,
 Elemento Simétrico,Inverse Element,Noun,M.,,,,,,
