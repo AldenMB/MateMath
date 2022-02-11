@@ -170,9 +170,9 @@ Conjunto Cerado,Closed Set,Noun,M.,Un conjunto cerado es un conjunto cuyo comple
 Leyes De De Morgan,De Morgan’s Law,Noun,F.,"Las leyes de De Morgan son un par de reglas de transformación. Las reglas son las siguientes: La negación de la conjunción es la disyunción de las negaciones.
 La negación de la disyunción es la conjunción de las negaciones.",De Morgan’s Laws are a pair of transformation rules. The rules are below: The negation of a disjunction is the conjunction of the negations. The negation of a conjunction is the disjunction of the negations,,,Wiki,
 Producto Cartesiano ,Cartesian Product,Noun,M.,"El producto cartesiano, denotado \(A \times B\),  de dos conjuntos, \(A\) y \(B\), es una operación, que resulta en otro conjunto, cuyos elementos son todos los pares ordenados. In símbolos  \[A \times B = \{(a,b) \mid a \in A \land b \in B\} \]","The Cartesian product of two sets \(A\) and \(B\), denoted \(A \times B\), is the set of all ordered pairs \((a, b)\) where \(a\) is in \(A\) and \(b\) is in \(B\). In symbols \[A \times B = \{(a,b) \mid a \in A \land b \in B\} \].","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{a,b\}$ el producto cartesiano $A \times B=\{(1, a),(1, b),(2, a),(2, b),(3, a),(3, b),(4, a),(4, b)\}$.","Given the sets $A = \{1,2,3,4\}$ and $B=\{a,b\}$ the Cartesian product is $A \times B=\{(1, a),(1, b),(2, a),(2, b),(3, a),(3, b),(4, a),(4, b)\}$.",Wiki,
-Conjunto Parcialmente Ordenado,Partially Ordered Set (Poset),Noun,M.,,,,,,
+Conjunto Parcialmente Ordenado,Partially Ordered Set (Poset),Noun,M.,Un conjunto con un orden parcial se denomina conjunto parcialmente ordenado o poset.,,"El conjunto de subespacios de una topología, ordenado por inclusión.",The set of subspaces of a topological spaces order by inclusion. ,Wiki,
 Orden,Order,Noun,M.,,,,,,
-Orden Parcial,Partial Ordering,Adj,,"Un orden parcial es una relación binaria sobre un conjunto que es reflexiva, antisimétrica, y transitiva.","A partial order is a binary relation on a set which is reflexive, antisymmetric, transitive.",,,Wiki,
+Orden Parcial,Partial Ordering,Adj,,"Un orden parcial es una relación binaria sobre un conjunto que es reflexiva, antisimétrica, y transitiva es decir, para cualquier a, b, y c en X se tiene que: \begin{enumerate} \item \[aRa\] (reflexividad).\item Si \[aRb\] y \[bRa\], entonces \[a = b\] (antisimetría).\item Si \[aRb\] y \[bRc\], entonces \[aRc\] (transitividad).","A partial order is a binary relation on a set which is reflexive, antisymmetric, transitive.",,,Wiki,
 Relación de Orden,Ordering,,,,,,,,
 Relación de Equivalencia,Equivalence Relation,Noun,F.,,,,,,
 Relación Binaria ,Binary Relation,Noun,F.,"Una relación binaria \(R\) es el subconjunto de los elementos del producto cartesiano \(A_{1} \times A_{2}\) que cumplen una determinada condición:
@@ -199,7 +199,7 @@ Simbólicamente
 Si \(f: X \rightarrow Y\) entonces se dice que \(f\) es sobreyectiva si
 \[\forall y \in Y, \exists x \in X: f(x)=y\]","A function $f$ with domain $X$ and codomain $Y$ is surjective if for every $y$ in $Y$ there exists at least one $x$ in $X$ with $f(x)=y$. Symbolically,
 If $f: X \rightarrow Y$, then $f$ is said to be surjective if $\forall y \in Y, \exists x \in X, \quad f(x)=y .$",,,Wiki,
-Inyectiva/o,Injective,Adj,,"Dado una función \(f\) cuyo dominio es el conjunto \(X)\, se dice que la función \(f\) es inyectiva si para todo \(a\) y \(b\) en \(X\), si $f(a)=f(b)$ entonces $a=b$, esto es $f(a)=f(b)$ implica $a=b$. Equivalentemente, si $a \neq b$ entonces $f(a) \neq f(b)$. Simbólicamente,
+Inyectiva/o,Injective,Adj,,"Dado una función \(f\) cuyo dominio es el conjunto \(X)\, se dice que la función \(f\) es inyectiva si para todo \(a\) y \(b\) en \(X\), si \[f(a)=f(b)\] entonces \[a=b\], esto es \[f(a)=f(b)\] implica \[a=b\]. Equivalentemente, si \[a \neq b\] entonces \[f(a) \neq f(b)\]. Simbólicamente,
 \[\forall a, b \in X, \quad f(a)=f(b) \Longrightarrow a=b\].","Let $f$ be a function whose domain is a set $X$. The function $f$ is said to be injective provided that for all $a$ and $b$ in $X$, if $f(a)=f(b$ $a=b$. Equivalently, if $a \neq b$, then $f(a) \neq f(b)$.
 Symbolically, $$\forall a, b \in X, \quad f(a)=f(b) \Longrightarrow a=b$$","Dado la función$$
 \begin{aligned}
@@ -217,9 +217,9 @@ Teorema,Theorem,Noun,M.,,,,,,
 Sistema Algebraica ( Estructura Algebraica),Algebraic Structure,Noun,F.,,,,,,
 Primo,Prime,Adj,,,,,,,
 "Opuesto (o Simétrico Para la Suma, o Inverso Aditivo) ",Negation (Additive Inverse),Noun,M.,"El opuesto de un número n es el número que, sumado con da cero.",,,,Wiki,
-Reflexividad,Reflexivity ,Adj,,,,,,,
+Reflexividad,Reflexivity ,Adj,,"Dado una relación binaria \[R\] para un conjunto \[A\] se decir que la relación se cumple reflexividad si para cualquier elemento \[a \in  A\],  \[aRa\]. ",,,,,
 Simetría,Symmetry,Adj,,,,,,,
-Transitividad,Transitividad,Adj,,,,,,,
+Transitividad,Transitividad,Adj,,"Dado una relación binaria \[R\] para un conjunto \[A\] se decir que la relación se cumple transitividad si para cualquier elemento \[a,b,c  \in  A\] donde \[aRb\] y \[bRc\] implica \[aRc\].",,,,,
 Relación Reflexiva (o Refleja),Reflexive Relation,Noun,,,,,,,
 Irreflexiva (Antirreflexiva o Antirrefleja),Irreflexiva (Anti-reflexive),Adj,,,,,,,
 (Relación) Asimétra,Asymmetry,Adj,,"Una relación binaria \(R\) sobre un conjunto \(A\), es asimétrica cuando si se da que un elemento está relacionado con otro mediante \(R\), entonces el segundo nunca está relacionado con el primero. ","An asymmetric relation is a binary relation \(R\) on a set \(A\) where for all \(a,b \in A\) if \(a\) is related to \(b\) then \(b\) is not related to \(a\).",,,,
