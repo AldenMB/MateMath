@@ -31,7 +31,6 @@ El Conjunto de Los Números Irracionales ,The Set of Irrational Numbers (The Irr
 El Conjunto de Los Números Reales,The Set of Real Numbers (The Reals),Noun,M.,"El conjunto de los números reales es el conjunto de números enteros, fraccionarios y irracionales.","The set of real numbers is the set of numbers which contains the integers, rationals, and irrationals.","\(\pi, 2, \frac{1}{2}\)","\(\pi, 2, \frac{1}{2}\)",,
 El Conjunto de Los Números Complejos,The Set of Complex Numbers (The Complex Numbers),Noun,M.,El conjunto de los números complejos es el conjunto de números que viene de la forma \(a +bi\) donde \(a\) y \(b\) son números reales y \(i = \sqrt{-1}\).,The set of complex numbers is the set of numbers that come of the form \(a + bi\) where \(a\) and \( b\) are real numbers and \(i=\sqrt{-1}\).,\(1+3i\),\(1+3i\),,
 Lazo,Loop,Noun,M. ,"Si es $X$ un espacio topológico, y $p$ un punto fijo de $X$, un lazo con base en $p$ es una aplicación continua $\gamma:[0,1] \rightarrow X$ que verifica $\gamma(0)=\gamma(1)=p$.","Given a topological space $X$, a loop based at $p$ is defined to be a continuous function (also known as a continuous map) $\gamma:[0,1] \rightarrow X$ such that the starting point $\gamma(0)$ and the end point $\gamma(1)$ are both equal to $p$.",,,,
-Camino,Path,Noun,M.,,,,,,
 Topología Compacto-Abierta,Compact-Open Topology ,Noun,F.,"Dado dos espacios topológicos $X$ y $Y$, se denota el conjunto de funciones continuas de $X$ a $Y$ como $C(X, Y)$. Si $K$ es un subconjunto de $X$ compacto y $U$ es un subconjunto abierto de $Y$, $V(K, U)$ denota el conjunto de funciones $f \in C(X, Y)$ donde $f(K) \subseteq U$. Entonces la coleccion de estos $V(K, U)$ forman un subbase de la topología compacto-abierta para el conjunto $C(X,Y)$.","Let $X$ and $Y$ be two topological spaces, and let $C(X, Y)$ denote the set of all continuous maps between $X$ and $Y$. Given a compact subset $K$ of $X$ and an open subset $U$ of $Y$, let $V(K, U)$ denote the set of all functions $f \in C(X, Y)$ such that $f(K) \subseteq U$. Then the collection of all such $V(K, U)$ is a subbase for the compact-open topology on $C(X, Y)$.",,"The compact open topology can be used to topologize the following set $\Omega\left(X, x_{0}\right)=\left\{f: I \rightarrow X: f(0)=f(1)=x_{0}\right\}$ which results in the loop space of $X$ at $x_{0}$,",,
 Subbase,Subbasis,Noun,M.,"Sea $X$ un espacio topológico con topología $T$. Una subbase de $T$ es usualmente definida como una subcolección $B$ de $T$ que satisface una de las dos siguientes condiciones equivalentes:
 1. La subcolección $B$ genera la topología $T$. Esto significa que $T$ es la topología más pequeña que contiene a B: cualquier topología $U$ en $X$ que contiene a $B$ también debe contener a $T$.
@@ -267,14 +266,20 @@ Polinomio,Polynomial,Noun,M.,"Un polinomio es una expresión algebraica formada 
 Mónica/o,Mononic,Adj,,Se dice que un polinomio es mónico si tiene grado \(n\) y el coeficiente de \(x^n\)  es igual a 1.,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
 Elemento Nulo ,Zero Element,Noun,F.,,,,,,
 Polinomio Constante,Constant Polynomial,Noun,M.,Se dice que un polinomio es constante si tien grado cero o es el polinomio nulo. ,,,,Viola-Prioli & Viola-Prioli (2006),
-Polinomio Nulo,Zero Polynomial,Noun,M.,,,,,,
+Polinomio Nulo,Zero Polynomial,Noun,M.,El polinomio nulo es el polinomio con coeficientes igual a cero.,The zero polynomial is the polynomial whose coefficients are all equal to 0.,,,Wolfram MathWorld ,Álgebra
 El Grupo de Galois,Galois Group,Noun,M.,,,,,,Álgebra
 Clausura Algebraica ,Algebraic Closure,Noun,F.,La clausura algebraica de un cuerpo \(K\) puede pensarse como la mayor extensión algebraica de \(K\).,The algebraic closure of a field \(K\) can be thought of as the largest algebraic extension of \(K\).,La clausura algebraica del cuerpo de los números reales es el cuerpo de los números complejos.,The algebraic closure of the field of real numbers is the field of complex numbers.,,Álgebra
 Extension,Extension,Noun,F.,,,,,,
 Extension Radical ,Radical Extension,Noun,F.,,,,,,
 Elemento Simétrico,Inverse Element,Noun,M.,,,,,,
 Elemento Neutro,Identity Element,Noun,M.,,,,,,
-Recta (Línea Recta),Line (Straight Line),Noun,F.,,,,,wiki,Geometría
+Recta (Línea Recta),Line (Straight Line),Noun,F.,,,,,Wiki,Geometría
 Llave,Brace (curly bracket),Noun,F.,Los símbolos “{“ y “}”.,The symbols “{“ and “}”.,"“Usualmente, a los elementos de un conjunto se les representa encerrados entre dos llaves.” -Zamolla (2013)",Usually the elements of a set are written between two braces.,"Velázquez (2020), Zamalloa (2013)",
 Pertenecer,Belong To,Verb,,(como un elemento pertencece a un conjunto),(as an element belongs to a set),,,Zamalloa (2013),
 Comprensión ,Set Comprehension,Noun,F.,Una manera de describir un conjunto en que se escribe una propiedad común a todos los elementos.,A way of describing a set where a property is given which all the elements share.,,,Zamalloa (2013),
+Producto Tensorial ,Tensor Product ,Noun ,M.,,,,,,
+Axioma,Axiom,Noun,M.,Un axioma es una proposición asumida dentro de un cuerpo teórico sobre la cual descansan otros razonamientos y proposiciones deducidas de esas premisas.,"An axiom is a statement that is taken to be true, to serve as a premise or starting point for further reasoning and arguments.",,,Wiki,Mathematics
+Monoide ,Monoid ,Noun,M.,,,,,,
+Monoidal ,Monoidal ,Adj.,,Teniendo una estructura de monoid.,Having the structure of a monoid.,,,,
+Camino/Trayectoria ,Path ,Noun,M. / F.,Un camino (o una trayectoria) es una función del intervalo a un espacio topológico.,A path is a function from the interval to a topological space.,,,Wiki,Topología 
+Coeficiente ,Coefficient ,Noun,M.,Un coeficiente es un factor vinculado a un monomio.,"A coefficient is a multiplicative factor in some term of a polynomial, a series, or an expression.","Dado el polinomio \(5x^2 + 3x\), 5 y 3 son los coeficientes.","Given the polynomial  \(5x^2 + 3x\), 5 and 3 are the coefficients. ",Wiki,Matematica 
