@@ -45,7 +45,9 @@ Espacio de Lazos ,Loop Space ,Noun,M.,"El espacio de lazos, denotado $\Omega X$,
 Espacio de Caminos,Path Space ,Noun,M.,"El espacio de caminos de $\left(X, x_{0}\right)$ es el conjunto
 $$\mathcal{P}(X):=\left\{\sigma:[0,1] \longrightarrow X \text { aplicación contínua } \mid \sigma(0)=x_{0}\right\}$$
 dotado de la topología compacto-abierta.",,,,,
-Contráctil ,Contractible ,Adj.,,,,,,,
+Contráctil ,Contractible ,Adj.,,"Un espacio topológico \(X\) es contráctil si tiene el tipo de homotopía de un punto, es decir, si existe una equivalencia homotópica entre el espacio \(X\) y un espacio\( \{q\}\)
+ formado por un solo punto.",A topological space \(X\) is contractible if it has the homotopy type of a point meaning there exists a homotopy equivalence between \(X\) and a space \( \{ q\} \) formed by a single point.,"Un disco es contractíl. El espacio euclídeo \( \mathbb{R}^n \) 
+ es contráctil.",A disc is contractible. Euclidean space \( \mathbb{R}^n \) is also contractible. ,"Wiki, Munkres 1999",Topología 
 Fibración,Fibration ,Noun,F.,,,,,,
 Espacio euclídeo,Euclidean space,Noun,M.,"Un espacio euclídeo de dimensión finita es un espacio vectorial normado sobre los números reales de dimensión finita, cuyo la norma es la asociada al producto escalar ordinario.",,La recta real y el plano euclídeo son ejemplos especiales de espacios euclídeos de dimensiones 1 y 2.,"The real line and the Euclidean plane are special case of Euclidean space of dimension 1 and 2, respectively.",,
 Espacio Vectorial ,Vector Space,Noun,M.,"Un espacio vectorial sobre un cuerpo $K$ es un conjunto no vacío, $V$, dotado de dos operaciones para las cuales será cerrado:
@@ -282,4 +284,5 @@ Axioma,Axiom,Noun,M.,Un axioma es una proposición asumida dentro de un cuerpo t
 Monoide ,Monoid ,Noun,M.,,,,,,
 Monoidal ,Monoidal ,Adj.,,Teniendo una estructura de monoid.,Having the structure of a monoid.,,,,
 Camino/Trayectoria ,Path ,Noun,M. / F.,Un camino (o una trayectoria) es una función del intervalo a un espacio topológico.,A path is a function from the interval to a topological space.,,,Wiki,Topología 
-Coeficiente ,Coefficient ,Noun,M.,Un coeficiente es un factor vinculado a un monomio.,"A coefficient is a multiplicative factor in some term of a polynomial, a series, or an expression.","Dado el polinomio \(5x^2 + 3x\), 5 y 3 son los coeficientes.","Given the polynomial  \(5x^2 + 3x\), 5 and 3 are the coefficients. ",Wiki,Matematica 
+Coeficiente ,Coefficient ,Noun,M.,Un coeficiente es un factor vinculado a un monomio.,"A coefficient is a multiplicative factor in some term of a polynomial, a series, or an expression.","Dado el polinomio \(5x^2 + 3x\), 5 y 3 son los coeficientes.","Given the polynomial  \(5x^2 + 3x\), 5 and 3 are the coefficients.",Wiki,Matematica 
+Equivalencia Homotópica,Homotopy Equivalence ,Noun,F.,,,,,,
