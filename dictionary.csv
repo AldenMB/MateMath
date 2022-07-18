@@ -50,7 +50,7 @@ Contráctil ,Contractible ,Adj.,,"Un espacio topológico \(X\) es contráctil si
  es contráctil.",A disc is contractible. Euclidean space \( \mathbb{R}^n \) is also contractible. ,"Wiki, Munkres 1999",Topología 
 Fibración,Fibration ,Noun,F.,,,,,,
 Espacio euclídeo,Euclidean space,Noun,M.,"Un espacio euclídeo de dimensión finita es un espacio vectorial normado sobre los números reales de dimensión finita, cuyo la norma es la asociada al producto escalar ordinario.",,La recta real y el plano euclídeo son ejemplos especiales de espacios euclídeos de dimensiones 1 y 2.,"The real line and the Euclidean plane are special case of Euclidean space of dimension 1 and 2, respectively.",,
-Espacio Vectorial ,Vector Space,Noun,M.,"Un espacio vectorial sobre un cuerpo $K$ es un conjunto no vacío, $V$, dotado de dos operaciones para las cuales será cerrado:
+Espacio Vectorial ,Vector Space,Noun,M.,"Un espacio vectorial sobre un cuerpo \(K\) es un conjunto no vacío, $V$, dotado de dos operaciones para las cuales será cerrado:
 $$\begin{aligned}
 \text { Suma }+: V \times V & \rightarrow V \\
 &\rightarrow \mathbf{u}, \mathbf{v}) & \mapsto \quad \mathbf{u}+\mathbf{v}
@@ -186,7 +186,7 @@ Relación Binaria ,Binary Relation,Noun,F.,"Una relación binaria \(R\) es el su
 \[R=\left\{\left(a_{1}, a_{2}\right):\left(a_{1}, a_{2}\right) \in A_{1} \times A_{2} \wedge R\left(a_{1}, a_{2}\right)=\text { Verdadero }\right\}\]","A binary relation \(R\) is the subset of elements of the Cartesian product \(A_{1} \times A_{2}\) such that the following is satisfied:
 \[R=\left\{\left(a_{1}, a_{2}\right):\left(a_{1}, a_{2}\right) \in A_{1} \times A_{2} \wedge R\left(a_{1}, a_{2}\right)=\text { True }\right\}\]",,,,
 Relación de Orden Total,Total Ordering ,Noun,F.,,,,,,
-Contraejemplo,Counterexample ,Noun,M.,,,,,,
+Contraejemplo,Counterexample ,Noun,M.,Un contraejemplo a una declaración matemática es un ejemplo que cumple con las condiciones de la declaración pero no conduce la conclusión de la declaración. ,A counterexample to a mathematical statement is an example that satisfies the statement's condition but does not lead to the statement's conclusion. ,,,Khan Academy ,Matematicas
 Conjunto Denso,Dense Set ,Noun,M.,"Si ($X, \mathcal{T})$ es un espacio topológico, $A \subset X$  se dice que es un conjunto denso en $X$  si y solamente si la clausura topológica de $A$, denotado $\bar{A}$ es $X$.","If ($X, \mathcal{T})$ is a topological space, $A \subset X$  is said to be a dense set in $X$ if and only the closure of $A$, denoted $\bar{A}$ is $X$.",Un ejemplo es el conjunto de los números racionales es un conjunto dense en el conjunto de los números reales.,An example is the set of ration numbers is a dense set in the set of real numbers.,Wiki,
 Densa/o,Dense,Adj,,,,,,,
 Espacio Separable ,Separable Space,Noun,M.,,,,,,
@@ -226,9 +226,9 @@ Teorema,Theorem,Noun,M.,,,,,,
 Sistema Algebraica ( Estructura Algebraica),Algebraic Structure,Noun,F.,,,,,,
 Primo,Prime,Adj,,,,,,,
 "Opuesto (o Simétrico Para la Suma, o Inverso Aditivo) ",Negation (Additive Inverse),Noun,M.,"El opuesto de un número n es el número que, sumado con da cero.",,,,Wiki,
-Reflexividad,Reflexivity ,Adj,,"Dado una relación binaria \[R\] para un conjunto \[A\] se decir que la relación se cumple reflexividad si para cualquier elemento \[a \in  A\],  \[aRa\]. ",,,,,
-Simetría,Symmetry,Adj,,,,,,,
-Transitividad,Transitividad,Adj,,"Dado una relación binaria \[R\] para un conjunto \[A\] se decir que la relación se cumple transitividad si para cualquier elemento \[a,b,c  \in  A\] donde \[aRb\] y \[bRc\] implica \[aRc\].",,,,,
+Reflexividad,Reflexivity ,Adj,,"Dado una relación binaria \[R\] para un conjunto \[A\] se decir que la relación se cumple reflexividad si para cualquier elemento \[a \in  A\],  \[aRa\]. ","Given a binary relation \[R\] for a set \[A\] we say the relation is reflexive if for all elements \[a \in  A\],  \[aRa\]. ",,,Wiki,Matematicas
+Simetría,Symmetry,Adj,,"Dado una relación binaria \[R\] para un conjunto \[A\] se decir que la relación se cumple simetría si para cualquier elemento \[a,b \in  A\],  \[aRb \implies bRa\]. ","Given a binary relation \[R\] for a set \[A\] we say the relation is symmetric if for all elements \[a ,b \in  A\],  \[aRb\]  implies  \[bRa\]. ","Dado un conjunto \(A\) con la relation \(\cup \), entonces \(\cup\) es un relación simétrica. ","Given a set \(A\) with the relation\(\cup \), then \(\cup\) is a symmetric relation. ",Wiki,Matematicas
+Transitividad,Transitividad,Adj,,"Dado una relación binaria \[R\] para un conjunto \[A\] se decir que la relación se cumple transitividad si para cualquier elemento \[a,b,c  \in  A\] donde \[aRb\] y \[bRc\] implica \[aRc\].","Given a binary relation \[R\] for a set \[A\] we say the relation is transitive if for all elements \[a,b,c \in  A\], \[aRb\] y \[bRc\] implies \[aRc\]. ",,,Wiki,Matematicas
 Relación Reflexiva (o Refleja),Reflexive Relation,Noun,,,,,,,
 Irreflexiva (Antirreflexiva o Antirrefleja),Irreflexiva (Anti-reflexive),Adj,,,,,,,
 (Relación) Asimétra,Asymmetry,Adj,,"Una relación binaria \(R\) sobre un conjunto \(A\), es asimétrica cuando si se da que un elemento está relacionado con otro mediante \(R\), entonces el segundo nunca está relacionado con el primero. ","An asymmetric relation is a binary relation \(R\) on a set \(A\) where for all \(a,b \in A\) if \(a\) is related to \(b\) then \(b\) is not related to \(a\).",,,,
