@@ -221,6 +221,9 @@ f: \mathbb{R} & \rightarrow \mathbb{R} \\
 x & \mapsto x^{2}
 \end{aligned}$$ is not injective because 4 can be obtained by $f(2)$ y $f(-2)$ but if the domain is changed the positive real numbers we obtain new function $g: \mathbb{R}^{+} \rightarrow \mathbb{R}^{+}$) then the function is injective.",Wiki,
 Biyectiva/o,Bijective,Adj,,Una función \(f\) se llama biyectiva si es inyectiva y sobreyectiva. ,A function \(f\) is called bijective if it is both injective and surjective. ,,,Wiki,
+Discreta/o,Discrete,Adj.,,,,,,,
+Conexo/a ,Connected ,Adj.,,,,,,,
+Disconexo/a,Disconnected,Adj.,,,,,,,
 Función,Function,Noun,F.,,,,,,
 Teorema,Theorem,Noun,M.,,,,,,
 Sistema Algebraica ( Estructura Algebraica),Algebraic Structure,Noun,F.,,,,,,
@@ -242,12 +245,14 @@ Matriz Cuadrada,Square Matrix,Noun,F.,,,,,,
 Matriz Cero,Zero Matrix,Noun,F.,,,,,,
 Matriz Laplaciana (o Matriz de Admitancia o Matriz de Kirchhoff ),Laplacian Matrix (or Admittance Matrix or Kirchhoff Matrix),Noun,F.,,,,,Wiki,Teoría de Grafos
 Teoría de Grafos,Graph Theory,Noun,,,,,,,
-Álgebra,Algebra,Noun,F.,La rama de la matemática que estudia la combinación de elementos de estructuras abstractas acorde a ciertas reglas.,"In its most general form, algebra is the study of mathematical symbols and the rules for manipulating these symbols.",,,Wiki,
+Álgebra,Algebra,Noun,F.,La rama de la matemática que estudia la combinación de elementos de estructuras abstractas acorde a ciertas reglas.,Algebra is the branch of mathematics that studies of mathematical symbols and the rules for manipulating these symbols.,,,Wiki,
 Análisis ,Analysis ,Noun,M.,,,,,,
 Geometría,Geometry,Noun,F.,,,,,,
 Teoría de Números,Number Theory,Noun,,,,,,,
 Álgebra Lineal ,Linear Algebra,Noun,F.,"La rama de matemáticas en que se estudia conceptos tales como vectores, matrices, espacio dual, sistemas de ecuaciones lineales y en su enfoque de manera más formal, espacios vectoriales y sus transformaciones lineales.",,,,Wiki,
-Análisis Real ( o Teoría de las Funciones de Variable Real) ,Real Analysis,Noun,M.,La rama del análisis matemático que tiene que ver con el conjunto de los números reales. ,,,,Wiki,
+Análisis Real ( o Teoría de las Funciones de Variable Real) ,Real Analysis,Noun,M.,"La rama del análisis matemático que tiene que ver con el conjunto de los números reales, y sucesión y funciones de números reales. ","Real analysis is the branch of mathematical analysis that studies the behavior of real numbers, sequences and series of real numbers, and real functions.",,,Wiki,
+Sucesión,Sequence ,Noun,F.,,,,,,
+Serie,Series,Noun,F.,,,,,,
 Análisis Complejo ( o Teoría de las Funciones de Variable Compleja) ,Complex Analysis,Noun,M.,,,,,,
 Álgebra Abstracta,Abstract Algebra,Noun,F.,,,,,,
 Álgebra Homológica,Homological Algebra,Noun,F.,,,,,,
@@ -286,6 +291,8 @@ Axioma,Axiom,Noun,M.,Un axioma es una proposición asumida dentro de un cuerpo t
 Axioma de Elección,Axiom of Choice,Noun,M.,,,,,,
 Monoide ,Monoid ,Noun,M.,,,,,,
 Monoidal ,Monoidal ,Adj.,,Teniendo una estructura de monoid.,Having the structure of a monoid.,,,,
-Camino/Trayectoria ,Path ,Noun,M. / F.,Un camino (o una trayectoria) es una función del intervalo a un espacio topológico.,A path is a function from the interval to a topological space.,,,Wiki,Topología 
+Camino/Trayectoria/Arco ,Path ,Noun,M. / F.,Un camino (o una trayectoria) es una función del intervalo a un espacio topológico.,A path is a function from the interval to a topological space.,,,Wiki,Topología 
 Coeficiente ,Coefficient ,Noun,M.,Un coeficiente es un factor vinculado a un monomio.,"A coefficient is a multiplicative factor in some term of a polynomial, a series, or an expression.","Dado el polinomio \(5x^2 + 3x\), 5 y 3 son los coeficientes.","Given the polynomial  \(5x^2 + 3x\), 5 and 3 are the coefficients.",Wiki,Matematica 
 Equivalencia Homotópica,Homotopy Equivalence ,Noun,F.,,,,,,
+Embebimiento ,Embedding ,Noun,M.,,,,,,
+Arcoconexo,Path Connected ,Adj.,,"Se dice que \( (X, T) \) es un espacio conexo por arcos o arcoconexo si para cada par de puntos distintos \( x , y \in X \), existe un arco \( \sigma \)  tal que \( \sigma (0) = x \)   y \( \sigma (1) = y \) .",,,,,
