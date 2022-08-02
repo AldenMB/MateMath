@@ -241,8 +241,8 @@ where the notation \(a R b\) means that \((a, b) \in R\).",,,,
 (Matriz) Transpuesta,Transpose (Matrix),Noun,F.,,,,,,
 Matriz,Matrix,Noun,F.,"Una matriz es un arreglo p-dimensional de números (elementos de la matriz) ordenados en filas (o renglones) y columnas, donde una fila es cada una de las líneas horizontales de la matriz y una columna es cada una de las líneas verticales. ",A matrix is a rectangular array of numbers (or other mathematical objects) for which operations such as addition and multiplication are defined.,,,Wiki,Álgebra Lineal
 Matriz de Adyacencia,Adjacency Matrix,Noun,F.,La matriz de adyacencia es una matriz cuadrada que se utiliza como una forma de representar relaciones binarias. ,An adjacency matrix is a square matrix used to represent a finite graph.,,,Wiki,"Álgebra Lineal, Teoría de Grafos"
-Matriz Cuadrada,Square Matrix,Noun,F.,,,,,,
-Matriz Cero,Zero Matrix,Noun,F.,,,,,,
+Matriz Cuadrada,Square Matrix,Noun,F.,Una matriz cuadrada es una matriz que tienen el mismo el número de columnas y filas. ,A square matrix is a matrix that has an equal number of rows and columns.,,,Wiki,Álgebra Lineal
+Matriz Cero,Zero Matrix,Noun,F.,Una matriz cero es una matriz con todos sus elementos iguales a cero.,A zero matrix or null matrix is a matrix all of whose entries are zero.,,,Wiki,Álgebra Lineal
 Matriz Laplaciana (o Matriz de Admitancia o Matriz de Kirchhoff ),Laplacian Matrix (or Admittance Matrix or Kirchhoff Matrix),Noun,F.,,,,,Wiki,Teoría de Grafos
 Teoría de Grafos,Graph Theory,Noun,,,,,,,
 Álgebra,Algebra,Noun,F.,La rama de la matemática que estudia la combinación de elementos de estructuras abstractas acorde a ciertas reglas.,Algebra is the branch of mathematics that studies of mathematical symbols and the rules for manipulating these symbols.,,,Wiki,
