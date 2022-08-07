@@ -172,7 +172,7 @@ function makeDictionary(csv_string){
 		div.id = "dictionary";
 		let current_letter = ''
 		for(const defn of reduced_dict){
-			const def_letter = normalize(defn.sort_key[primary_language][0]).toUpperCase();
+			const def_letter = defn.sort_key[primary_language][0].toUpperCase();
 			if(def_letter !== current_letter){
 				div.appendChild(divclass('letter', def_letter));
 				current_letter = def_letter;
