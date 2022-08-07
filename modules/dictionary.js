@@ -22,56 +22,6 @@ function intersects(list1, list2){
 	return false;
 };
 
-function normalize(str){
-	return (str
-		.toLowerCase()
-		.normalize()
-		.replaceAll('á','a')
-		.replaceAll('é','e')
-		.replaceAll('í','i')
-		.replaceAll('ó','o')
-		.replaceAll('ú','u')
-		.replaceAll('ñ','n')
-	);
-};
-
-const ARTICLES = Object.freeze({
-	[ENGLISH]: "the a an".split(' '),
-	[SPANISH]: "el la lo los las".split(' ')
-});
-
-function sort_key(defn){
-	const keys = {};
-	for(const [lang, articles] of Object.entries(ARTICLES)){
-		let key = normalize(defn[lang]);
-		key = key.replaceAll(/ *\([^)]*\) */g, "");
-		for(const article of articles){
-			key = key.replaceAll(RegExp("\\b"+article+"\\b", "g"), "")
-		};
-		key = key.replaceAll(/\s{2,}/g, " ");
-		key = key.trim();
-		keys[lang] = key;
-	};
-	return keys;
-};
-
-function parse_dictionary(csv_string){
-	const arr = parse(csv_string);
-	const headings = arr.shift();
-	function to_obj(row){
-		return Object.fromEntries(zip(headings, row));
-	}
-	const defns = arr.map(to_obj)
-	for(const defn of defns){
-		defn.areas = defn.areas.split(',').map(s => s.trim()).sort();
-		if(defn.areas[0] === ""){
-			defn.areas = [UNSPECIFIED];
-		}
-		defn.sort_key = sort_key(defn);
-	}
-	return defns;
-};
-
 function divclass(cla, contents){
 	const div = document.createElement('div');
 	div.classList.add(cla);
@@ -92,7 +42,7 @@ function spanclass(cla, contents){
 	return span;	
 };
 
-function defn_html(def, language){
+function defn_html(def){
 	const eng = divclass("english");
 	const esp = divclass("spanish");
 	
@@ -119,8 +69,7 @@ function defn_html(def, language){
 	}
 	
 	const columns = divclass('twocol');
-	const order = (language === ENGLISH) ? [eng, esp] : [esp, eng];
-	for(const col of order){
+	for(const col of [esp, eng]){
 		columns.appendChild(col);
 	}
 	
@@ -136,60 +85,185 @@ function defn_html(def, language){
 	return div;
 };
 
-function makeDictionary(csv_string){
-	const base_dictionary = parse_dictionary(csv_string);
-		
-	return Object.freeze({toHTML, getSubjectAreas});
-	
-	function toHTML(primary_language, active_filters, search_string){
-		let reduced_dict = base_dictionary.filter(
-			defn => intersects(active_filters, defn.areas)
-		);
-		if(search_string){
-			reduced_dict = reduced_dict.filter(
-				defn => Object.values(defn).filter(x => typeof(x) === "string").some(x => normalize(x).includes(normalize(search_string)))
-			);
+
+function normalize(str){
+	return (str
+		.toLowerCase()
+		.normalize()
+		.replaceAll('á','a')
+		.replaceAll('é','e')
+		.replaceAll('í','i')
+		.replaceAll('ó','o')
+		.replaceAll('ú','u')
+		.replaceAll('ñ','n')
+	);
+};
+
+
+const ARTICLES = Object.freeze({
+	[ENGLISH]: "the a an".split(' '),
+	[SPANISH]: "el la lo los las".split(' ')
+});
+
+function sort_key(defn){
+	const keys = {};
+	for(const [lang, articles] of Object.entries(ARTICLES)){
+		let key = normalize(defn[lang]);
+		key = key.replaceAll(/ *\([^)]*\) */g, "");
+		for(const article of articles){
+			key = key.replaceAll(RegExp("\\b"+article+"\\b", "g"), "")
 		};
-		reduced_dict.sort(function compare(a,b){
-			const key = {a: a.sort_key[primary_language], b: b.sort_key[primary_language]}
-			if(key.a < key.b){
-				return -1;
-			}
-			if(key.a > key.b){
-				return 1;
-			}
-			const secondary_lang = primary_language === ENGLISH ? SPANISH : ENGLISH;
-			const sec_key = {a: a.sort_key[secondary_lang], b: b.sort_key[secondary_lang]}
-			if(sec_key.a < sec_key.b){
-				return -1;
-			}
-			if(sec_key.a > sec_key.b){
-				return 1;
-			}
-			return 0;
-		});
-		const div = document.createElement('div');
-		div.id = "dictionary";
-		let current_letter = ''
-		for(const defn of reduced_dict){
-			const def_letter = defn.sort_key[primary_language][0].toUpperCase();
-			if(def_letter !== current_letter){
-				div.appendChild(divclass('letter', def_letter));
-				current_letter = def_letter;
-			}
-			div.appendChild(defn_html(defn, primary_language));
+		key = key.replaceAll(/\s{2,}/g, " ");
+		key = key.trim();
+		keys[lang] = key;
+	};
+	return keys;
+};
+
+
+function parse_dictionary(csv_string){
+	const headings = {};
+	for(const letter of "ABCDEFGHIJKLMNOPQRSTUVWXYZ"){
+		headings[letter.toLowerCase()] = divclass('letter', letter);
+	}
+	
+	const areas = {};
+	
+	const csv_arr = parse(csv_string);
+	const csv_headings = csv_arr.shift();
+	const definitions = csv_arr.map(row => Object.fromEntries(zip(csv_headings, row)));
+	
+	for(const defn of definitions){	
+		defn.search_body = ("ESP,ENG,definition_ESP,definition_ENG,example_ESP,example_ENG"
+			.split(",")
+			.map(x => normalize(defn[x]))
+			.join(';;')
+		);
+		
+		defn.areas = defn.areas.split(',').map(s => s.trim()).sort();
+		if(defn.areas[0] === ""){
+			defn.areas = [UNSPECIFIED];
 		}
-		return div;
+		for(const a of defn.areas){
+			areas[a] = areas[a] || [];
+			areas[a].push(defn);
+		}
+		
+		defn.sort_key = sort_key(defn);
+		defn.heading = {};
+		for(const [language, key] of Object.entries(defn.sort_key)){
+			defn.heading[language] = headings[key[0]];
+		}
+		
+		defn.html = defn_html(defn);
+	}
+	
+	const headings_interleaver = (
+		Object.entries(headings)
+		.map(function([letter, html]){
+			const sort_key = {[ENGLISH]:letter, [SPANISH]:letter};
+			return {html, sort_key};
+		})
+	);
+	const sorted = {}
+	for(const language of [ENGLISH, SPANISH]){
+		const other_language = language === ENGLISH ? SPANISH : ENGLISH;
+		sorted[language] = [...definitions, ...headings_interleaver].sort(
+			function(a, b){
+				const keya = a.sort_key[language]
+				const keyb = b.sort_key[language]
+				if(keya<keyb){
+					return -1;
+				}
+				if(keyb<keya){
+					return 1;
+				}
+				const keya2 = a.sort_key[other_language]
+				const keyb2 = b.sort_key[other_language]
+				if(keya2 < keyb2){
+					return -1;
+				}
+				if(keyb2 < keya2){
+					return 1;
+				}
+				return 0
+			}
+		).map(x => x.html);
+	}
+
+	return {definitions, headings, sorted, areas};
+};
+
+function makeDictionary(csv_string, container, getLanguage, getFilters, getSearchString){
+	const dictionary = parse_dictionary(csv_string);
+	const search_cache = {'':new Set(dictionary.definitions)};
+	while(container.firstChild){
+		container.removeChild(container.firstChild);
+	}	
+	sort();
+	filter();
+	search();
+	
+	return Object.freeze({sort, filter, search, areas:Object.keys(dictionary.areas)});
+	
+	
+	
+	function sort(){
+		const language = getLanguage();
+		for(const div of dictionary.sorted[language]){
+			container.appendChild(div);
+		}
+		updateHeadings();
 	};
 	
-	function getSubjectAreas(){
-		const areas = new Set();
-		for(const defn of base_dictionary){
-			for(const a of defn.areas){
-				areas.add(a);
+	function updateHeadings(){
+		const language = getLanguage();
+		const visible = new Set(dictionary.definitions
+			.filter(function(x){
+				const classlist = x.html.classList;
+				return !(classlist.contains("subjectFiltered") || classlist.contains("searchFiltered"));
+			})
+			.map(x => x.heading[language])
+		)
+		for(const head of Object.values(dictionary.headings)){
+			head.classList.toggle('headingFiltered', !visible.has(head))
+		}
+	};
+	
+	function filter(){
+		const visible = new Set();
+		for(const f of getFilters()){
+			for(const defn of dictionary.areas[f]){
+				visible.add(defn);
 			}
 		}
-		return areas;
+		for(const defn of dictionary.definitions){
+			defn.html.classList.toggle('subjectFiltered', visible.has(defn));
+		}
+		updateHeadings();
+	};
+	
+	function getMatchSet(str){
+		if(Object.hasOwn(search_cache, str)){
+			return search_cache[str]
+		}
+		let start = str;
+		while(!Object.hasOwn(search_cache, start)){
+			start = start.slice(0, -1);
+		}
+		const result = new Set([...search_cache[start]]
+			.filter(def => def.search_body.includes(str))
+		);
+		search_cache[str] = result;
+		return result;
+	};
+	
+	function search(){
+		const match_set = getMatchSet(normalize(getSearchString()));
+		for(const defn of dictionary.definitions){
+			defn.html.classList.toggle('searchFiltered', !match_set.has(defn));
+		}
+		updateHeadings();
 	};
 }
 

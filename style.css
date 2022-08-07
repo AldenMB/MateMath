@@ -49,3 +49,15 @@ body {
 	font-size: xx-large;
 	margin: 20px;
 }
+
+.searchFiltered {
+	display: none;
+}
+
+.subjectFiltered{
+	display: none;
+}
+
+.headingFiltered {
+	display: none;
+}

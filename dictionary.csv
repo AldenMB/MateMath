@@ -208,7 +208,7 @@ Simbólicamente
 Si \(f: X \rightarrow Y\) entonces se dice que \(f\) es sobreyectiva si
 \[\forall y \in Y, \exists x \in X: f(x)=y\]","A function $f$ with domain $X$ and codomain $Y$ is surjective if for every $y$ in $Y$ there exists at least one $x$ in $X$ with $f(x)=y$. Symbolically,
 If $f: X \rightarrow Y$, then $f$ is said to be surjective if $\forall y \in Y, \exists x \in X, \quad f(x)=y .$",,,Wiki,
-Inyectiva/o,Injective,Adj,,"Dado una función \(f\) cuyo dominio es el conjunto \(X)\, se dice que la función \(f\) es inyectiva si para todo \(a\) y \(b\) en \(X\), si \[f(a)=f(b)\] entonces \[a=b\], esto es \[f(a)=f(b)\] implica \[a=b\]. Equivalentemente, si \[a \neq b\] entonces \[f(a) \neq f(b)\]. Simbólicamente,
+Inyectiva/o,Injective,Adj,,"Dado una función \(f\) cuyo dominio es el conjunto \(X\), se dice que la función \(f\) es inyectiva si para todo \(a\) y \(b\) en \(X\), si \[f(a)=f(b)\] entonces \[a=b\], esto es \[f(a)=f(b)\] implica \[a=b\]. Equivalentemente, si \[a \neq b\] entonces \[f(a) \neq f(b)\]. Simbólicamente,
 \[\forall a, b \in X, \quad f(a)=f(b) \Longrightarrow a=b\].","Let $f$ be a function whose domain is a set $X$. The function $f$ is said to be injective provided that for all $a$ and $b$ in $X$, if $f(a)=f(b$ $a=b$. Equivalently, if $a \neq b$, then $f(a) \neq f(b)$.
 Symbolically, $$\forall a, b \in X, \quad f(a)=f(b) \Longrightarrow a=b$$","Dado la función$$
 \begin{aligned}

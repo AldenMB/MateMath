@@ -1,19 +1,5 @@
 import {makeDictionary, ENGLISH, SPANISH} from './modules/dictionary.js';
 
-window.MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  }, 
-  startup: {
-	ready: () => {
-		MathJax.startup.defaultReady();
-		typeset = MathJax.typeset;
-	}
-  }
-};
-
-let typeset = function(){};
-
 window.onload = function() {
 	const sortbutton = document.getElementById('sort');
 	function get_primary_language(){
@@ -45,10 +31,24 @@ window.onload = function() {
 			return response.text();
 		})
 		.then((data) => {
-			const dictionary = makeDictionary(data);
 			const areas_container = document.getElementById("subject areas");
 			const area_boxes = [];
-			for(const a of dictionary.getSubjectAreas()){
+			function get_subject_areas(){
+				return area_boxes.filter(x => !x.checked).map(x => x.name);
+			};
+			function get_search_text(){
+				return document.getElementById("search").value;
+			};
+			
+			const dictionary = makeDictionary(
+				data,
+				document.getElementById("dictionary"),
+				get_primary_language,
+				get_subject_areas,
+				get_search_text
+			);
+			
+			for(const a of dictionary.areas){
 				const box = document.createElement("input");
 				box.setAttribute("type", "checkbox");
 				box.setAttribute("id", a);
@@ -61,17 +61,14 @@ window.onload = function() {
 				label.appendChild(document.createTextNode(a));
 				areas_container.appendChild(label);
 			}
+			dictionary.filter();
 			
-			function write_dictionary(){
-				const searchtext = document.getElementById("search").value;
-				const filters = area_boxes.filter(x => x.checked).map(x => x.name);
-				document.getElementById("dictionary").replaceWith(dictionary.toHTML(get_primary_language(), filters, searchtext));
-				typeset();
-			};
+			document.getElementById("selections").addEventListener('input', dictionary.filter);
 			
-			document.getElementById("selections").addEventListener('input', write_dictionary);
-			sortbutton.addEventListener('click', write_dictionary);
+			document.getElementById("search").addEventListener('input', dictionary.search);
 			
-			write_dictionary();
+			document.getElementById("sort").addEventListener('click', dictionary.sort);
+			
+			MathJax.typeset();
 		});
 };
