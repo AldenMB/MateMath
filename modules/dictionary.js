@@ -35,6 +35,26 @@ function normalize(str){
 	);
 };
 
+const ARTICLES = Object.freeze({
+	[ENGLISH]: "the a an".split(' '),
+	[SPANISH]: "el la lo los las".split(' ')
+});
+
+function sort_key(defn){
+	const keys = {};
+	for(const [lang, articles] of Object.entries(ARTICLES)){
+		let key = normalize(defn[lang]);
+		key = key.replaceAll(/ *\([^)]*\) */g, "");
+		for(const article of articles){
+			key = key.replaceAll(RegExp("\\b"+article+"\\b", "g"), "")
+		};
+		key = key.replaceAll(/\s{2,}/g, " ");
+		key = key.trim();
+		keys[lang] = key;
+	};
+	return keys;
+};
+
 function parse_dictionary(csv_string){
 	const arr = parse(csv_string);
 	const headings = arr.shift();
@@ -47,6 +67,7 @@ function parse_dictionary(csv_string){
 		if(defn.areas[0] === ""){
 			defn.areas = [UNSPECIFIED];
 		}
+		defn.sort_key = sort_key(defn);
 	}
 	return defns;
 };
@@ -130,22 +151,28 @@ function makeDictionary(csv_string){
 			);
 		};
 		reduced_dict.sort(function compare(a,b){
-			if(normalize(a[primary_language]) < normalize(b[primary_language])){
+			const key = {a: a.sort_key[primary_language], b: b.sort_key[primary_language]}
+			if(key.a < key.b){
 				return -1;
 			}
-			if(normalize(a[primary_language]) > normalize(b[primary_language])){
-				return 1
+			if(key.a > key.b){
+				return 1;
 			}
-			if(normalize(a[primary_language]) === normalize(b[primary_language])){
-				const sec = primary_language === ENGLISH ? SPANISH : ENGLISH;
-				return 1-2*(normalize(a[sec]) < normalize(b[sec]));
+			const secondary_lang = primary_language === ENGLISH ? SPANISH : ENGLISH;
+			const sec_key = {a: a.sort_key[secondary_lang], b: b.sort_key[secondary_lang]}
+			if(sec_key.a < sec_key.b){
+				return -1;
 			}
+			if(sec_key.a > sec_key.b){
+				return 1;
+			}
+			return 0;
 		});
 		const div = document.createElement('div');
 		div.id = "dictionary";
 		let current_letter = ''
 		for(const defn of reduced_dict){
-			const def_letter = normalize(defn[primary_language][0]).toUpperCase();
+			const def_letter = normalize(defn.sort_key[primary_language][0]).toUpperCase();
 			if(def_letter !== current_letter){
 				div.appendChild(divclass('letter', def_letter));
 				current_letter = def_letter;
