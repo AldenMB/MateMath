@@ -26,8 +26,9 @@ function divclass(cla, contents){
 	const div = document.createElement('div');
 	div.classList.add(cla);
 	if(contents){
-		const t = document.createTextNode(contents);
-		div.appendChild(t);
+		//const t = document.createTextNode(contents);
+		//div.appendChild(t);
+		div.innerHTML = contents;
 	}
 	return div;	
 };
@@ -36,8 +37,9 @@ function spanclass(cla, contents){
 	const span = document.createElement('span');
 	span.classList.add(cla);
 	if(contents){
-		const t = document.createTextNode(contents);
-		span.appendChild(t);
+		//const t = document.createTextNode(contents);
+		//span.appendChild(t);
+		span.innerHTML = contents;
 	}
 	return span;	
 };
