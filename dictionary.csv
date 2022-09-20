@@ -17,14 +17,13 @@ $$
 &\forall a \in G, \exists \bar{a}: a \star \bar{a}=e
 \end{aligned}
 $$",,El conjunto de los números enteros con la operación de multiplicar conocida,,,Álgebra
-Grupo diedral ,Dihedral Group,Noun,M.,"Un grupo diedral o grupo diédrico es el grupo de simetría de un polígono regular, incluyendo tanto rotaciones y reflexiones. Normalmente se denota y tienen la presentación que sigue: \[ D_n = \langle r , s \mid r^n = s^2 = e, srs^{-1} = r^{-1} \rangle \] ","A dihedral group is a group of symmetries of a regular polygon including rotations and reflections. Normally it is denoted and presented as follows: \[ D_n = \langle r , s \mid r^n = s^2 = e, srs^{-1} = r^{-1} \rangle \] ",,,Wiki,Álgebra
+Grupo diedral ,Dihedral Group,Noun,M.,"Un grupo diedral o grupo diédrico es el grupo de simetría de un polígono regular, incluyendo tanto rotaciones y reflexiones. Normalmente se denota y tienen la presentación que sigue: \[ D_n = \langle r , s \mid r^n = s^2 = e, srs^{-1} = r^{-1} \rangle \]","A dihedral group is a group of symmetries of a regular polygon including rotations and reflections. Normally it is denoted and presented as follows: \[ D_n = \langle r , s \mid r^n = s^2 = e, srs^{-1} = r^{-1} \rangle \]",,,Wiki,Álgebra
 Group de trenzas ,Braid Group ,Noun,M. ,"El grupo de trenzas de \(n\) hebras, también llamado grupo de n-trenzas o grupo de Artin, notado por \(B_n \) se define la presentación:
 \[ \langle \sigma_{1}, \ldots, \sigma_{n-1} \mid \sigma_{i} \sigma_{j}=\sigma_{j} \sigma_{i}  \text{cuando} \mid i-j \mid \geq 2,  \sigma_{i} \sigma_{i+1} \sigma_{i}=\sigma_{i+1} \sigma_{i} \sigma_{i+1} \text{para} i=1, \ldots, n-2 \rangle \]","The braid group on n strands \( B_n \) also known as the Artin braid group has the following presentation \[ \langle \sigma_{1}, \ldots, \sigma_{n-1} \mid \sigma_{i} \sigma_{j}=\sigma_{j} \sigma_{i}  \text{cuando} \mid i-j \mid \geq 2,  \sigma_{i} \sigma_{i+1} \sigma_{i}=\sigma_{i+1} \sigma_{i} \sigma_{i+1} \text{para} i=1, \ldots, n-2 \rangle \]",,,Wiki,Álgebra
 Nudo,Knot,Noun,M.,,,,,,Topología 
 Núcleo ,Kernel ,Noun,M.,"El núcleo de un homomorfismo \(f: R \rightarrow S\) es el conjunto \( 
-\text{ker} f=\{r\in R:f(r)=0_{S}\} \) 
-","The kernel of a homomorphism \(f: R \rightarrow S\) is the set \( 
-\text{ker} f=\{r\in R:f(r)=0_{S}\} \) ",,,Wiki,"Álgebra, Álgebra Lineal"
+\text{ker} f=\{r\in R:f(r)=0_{S}\} \)","The kernel of a homomorphism \(f: R \rightarrow S\) is the set \( 
+\text{ker} f=\{r\in R:f(r)=0_{S}\} \)",,,Wiki,"Álgebra, Álgebra Lineal"
 Conjunto ,Set,Noun,M.,"Un conjunto es una agrupación de elementos tal que todos ellos participan en cierto modo, de las mismas características o propiedades.",,"Conjunto de los números naturales {0,1,2,3,..} es un conjunto,",The set of natural numbers is a set. ,Zamalloa (2013),
 Subconjunto,Subset,Noun,M. ,Un conjunto B es subconjunto de un conjunto $A$ si $B$ está contenido dentro de $A$.,A set $A$ is a subset of a set B if all elements of A are also elements of B,El conjunto de los números naturales es un subconjunto del conjunto de los números reales. ,The set of natural numbers is a subset of the set of real numbers,Wiki,
 Conjunto Vacío,Empty Set,Noun,M.,El conjunto que no contiene ningún elemento.,The empty is the set which contains no elements.,,,,
@@ -307,6 +306,10 @@ Embebimiento ,Embedding ,Noun,M.,,,,,,
 Arcoconexo,Path Connected ,Adj.,,"Se dice que \( (X, T) \) es un espacio conexo por arcos o arcoconexo si para cada par de puntos distintos \( x , y \in X \), existe un arco \( \sigma \)  tal que \( \sigma (0) = x \)   y \( \sigma (1) = y \) .",,,,,
 Generadores ,Generators ,Noun,M.,,,,,,
 Relaciones ,Relations ,Noun,F. ,,,,,,
-Autovalor,Eigenvalue ,Noun,M. ,"Sea $A$ una matriz cuadrada de orden $m$. Diremos que un escalar $\lambda \in \mathbb{K}(=\mathbb{R}$ o $\mathbb{C})$ es un autovalor de $A$ si existe un vector $v \in \mathbb{K}^{m}, v \neq 0$ tal que $A v=\lambda v$, en cuyo caso se dice que $v$ es un autovector de $A$ asociado al autovalor \(\lambda\) ",Let \(A\) be a square matrix. We call a scalar \( \lambda \in \mathbb{K} \) an eigenvalue of \(A\) if there exists a nonzero vector \( v \in \mathbb{K}^n \) such that \(Av = \lambda v\) in which was we say \( v \) is an eigenvector of \(A\) associated to eigenvalue \( \lambda \). ,,,https://personal.us.es/ealgaba/algebra%20=04-05/TEMA11.pdf,Álgebra Lineal 
+Autovalor,Eigenvalue ,Noun,M. ,"Sea $A$ una matriz cuadrada de orden $m$. Diremos que un escalar $\lambda \in \mathbb{K}(=\mathbb{R}$ o $\mathbb{C})$ es un autovalor de $A$ si existe un vector $v \in \mathbb{K}^{m}, v \neq 0$ tal que $A v=\lambda v$, en cuyo caso se dice que $v$ es un autovector de $A$ asociado al autovalor \(\lambda\)",Let \(A\) be a square matrix. We call a scalar \( \lambda \in \mathbb{K} \) an eigenvalue of \(A\) if there exists a nonzero vector \( v \in \mathbb{K}^n \) such that \(Av = \lambda v\) in which was we say \( v \) is an eigenvector of \(A\) associated to eigenvalue \( \lambda \). ,,,https://personal.us.es/ealgaba/algebra%20=04-05/TEMA11.pdf,Álgebra Lineal 
 Traza ,Trace,Noun,F. ,,,,,,
 Número de Oro ,Golden Ratio,Noun,M.,,,,,,
+Lagrangiano,Lagrangian ,Noun,M.,,,,,,
+Matriz Hessian ,Hessian matrix,Noun,F.,"La matriz hessiana de una función escalar o campo escalar f de \(n \) variables, es la matriz cuadrada de tamaño \(n \times n\) de las segundas derivadas parciales.
+","The Hessian matrix or Hessian is a square matrix of second-order partial derivatives of a scalar-valued function, or scalar field.",,,Wiki,Cálculo
+Cáculo ,Calculus ,Noun,M.,,,,,,
