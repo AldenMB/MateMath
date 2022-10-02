@@ -313,3 +313,25 @@ Lagrangiano,Lagrangian ,Noun,M.,,,,,,
 Matriz Hessian ,Hessian matrix,Noun,F.,"La matriz hessiana de una función escalar o campo escalar f de \(n \) variables, es la matriz cuadrada de tamaño \(n \times n\) de las segundas derivadas parciales.
 ","The Hessian matrix or Hessian is a square matrix of second-order partial derivatives of a scalar-valued function, or scalar field.",,,Wiki,Cálculo
 Cáculo ,Calculus ,Noun,M.,,,,,,
+Producto Semidirecto ,Semidirect Product,Noun,M.,,,,,,
+Punto Fijo ,Fixed Point,Noun,M.,,,,,,
+Toro,Torus,Noun,M. ,,,,,,
+Par ,Even ,Adj,,,,,,,
+Impar ,Odd,Adj,,,,,,,
+Summa Conexa ,Connected Sum ,Noun,F.,,,,,,
+Libre ,Free,Adj,,,,,,,
+Autocruz,Self-Intersection ,Adj,,,,,,,
+Marco,Frame,Noun,M.,,,,,,
+Bordismo ,Bordism ,Noun,M.,,,,,,Topología 
+Group de Bordismos ,Bordism Group ,Noun,M.,,,,,,Topología 
+Frontera ,Boundary ,Noun,F.,,,,,,
+Cuerda ,String,Noun,F.,,,,,,
+Vertice ,Vertex,Noun,F. ,,,,,,"Topología, Geometría, Teoría de Grafos"
+Arista ,Edge,Noun,F.,,,,,,"Topología, Geometría, Teoría de Grafos"
+Cara ,Cara,Noun,F.,,,,,,"Topología, Geometría, Teoría de Grafos"
+Grupo Cuaternión,Quaternion Group,Noun,M.," El grupo cuaternión es una extensión generada de manera análoga añadiendo las unidades imaginarias \( i, j \)y \(k\) a los números reales tal que \(i^2 =j^2 =k^2 =ijk =-1\).
+",,,,Wiki,Álgebra
+Polígono,Polygon,Noun,M.,,,,,,
+Caracteristica de Euler ,Euler Characteristic ,Noun,F.,,,,,,Topología 
+"Sólidos platónicos
+",Platonic solid,Noun,M.,"Los sólidos platónicos, regulares o perfectos son poliedros convexos tal que todas sus caras son polígonos regulares iguales entre sí, y en que todos los ángulos sólidos son iguales.",,,,,"Topología, Geometría, "
