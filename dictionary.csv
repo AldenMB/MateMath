@@ -1,62 +1,127 @@
 ESP,ENG,part_of_speech,gender,definition_ESP,definition_ENG,example_ESP,example_ENG,sources,areas
-Cuerpo ,Field,Noun,M.,"Un cuerpo es un anillo de división conmutativo, es decir, un anillo conmutativo y unitario en el que todo elemento distinto de cero es invertible respecto del producto.",,,,Wiki,"Álgebra, Teoría de Números"
-Anillo ,Ring,Noun,M.,"Un anillo  es un conjunto con dos leyes de composición, llamadas adición y multiplicación, cumpliendo las condiciones siguientes:  es grupo abeliano para la adición; el elemento neutro en esta adición se nombra cero del anillo, y se denota usualmente 0, es un semigrupo para la multiplicación, y la multiplicación es distributiva (por los dos lados) respecto de la adición.",,,,,Álgebra
-Ideal (o Ideal Bilátero),Ideal,Noun,M.,"Un ideal bilátero es un ideal por la derecha y por la izquierda. En un anillo conmutativo, las nociones de ideal por la derecha, de ideal por la izquierda y de ideal bilátero coinciden y simplemente se habla de ideal.",,"Dado un número entro $k$, $k\mathbb{Z}$ es un ideal de $\mathbb{Z}$",,Wiki,Álgebra
-Ideal por la Izquierda ,Left Ideal,Noun,M.,"Un subconjunto $I$ no vacío de un anillo $A$ es un ideal por la izquierda de $A$ si:
-1. I es un subgrupo aditivo de $A$.
-2. $\forall(a, x) \in A \times I: a \times x \in I$ (El producto por la izquierda de un elemento de I por un elemento de $A$ pertenece a $I$ ).",,,,Wiki,Álgebra
-Ideal por la Derecha,Right Ideal,Noun,M.,"Un subconjunto $I$ no vacío de un anillo $A$ es un ideal por la derecha de $A$ si:
-1. I es un subgrupo aditivo de $A$.
-2. $\forall(x, a) \in I \times A: x \times a \in I$ (El producto por la derecha de un elemento de / por un elemento de $A$ pertenece a I).",,,,Wiki,Álgebra
-Grupo,Group,Noun,M.,"Un conjunto $G$ y una operación binaria forman un grupo $(G, \star)$ cuando:
-1. $(G, \star)$ es un monoide o semigrupo con elemento neutro
-2. $(G, \star)$ verifica la existencia de elemento simétrico para cada uno de sus elementos.
-$$
-\begin{aligned}
-&\exists ! e \in G: e \star a=a, \forall a \in G . \\
-&\forall a \in G, \exists \bar{a}: a \star \bar{a}=e
-\end{aligned}
-$$",,El conjunto de los números enteros con la operación de multiplicar conocida,,,Álgebra
-Grupo diedral ,Dihedral Group,Noun,M.,"Un grupo diedral o grupo diédrico es el grupo de simetría de un polígono regular, incluyendo tanto rotaciones y reflexiones. Normalmente se denota y tienen la presentación que sigue: \[ D_n = \langle r , s \mid r^n = s^2 = e, srs^{-1} = r^{-1} \rangle \]","A dihedral group is a group of symmetries of a regular polygon including rotations and reflections. Normally it is denoted and presented as follows: \[ D_n = \langle r , s \mid r^n = s^2 = e, srs^{-1} = r^{-1} \rangle \]",,,Wiki,Álgebra
-Group de trenzas ,Braid Group ,Noun,M. ,"El grupo de trenzas de \(n\) hebras, también llamado grupo de n-trenzas o grupo de Artin, notado por \(B_n \) se define la presentación:
-\[ \langle \sigma_{1}, \ldots, \sigma_{n-1} \mid \sigma_{i} \sigma_{j}=\sigma_{j} \sigma_{i}  \text{cuando} \mid i-j \mid \geq 2,  \sigma_{i} \sigma_{i+1} \sigma_{i}=\sigma_{i+1} \sigma_{i} \sigma_{i+1} \text{para} i=1, \ldots, n-2 \rangle \]","The braid group on n strands \( B_n \) also known as the Artin braid group has the following presentation \[ \langle \sigma_{1}, \ldots, \sigma_{n-1} \mid \sigma_{i} \sigma_{j}=\sigma_{j} \sigma_{i}  \text{cuando} \mid i-j \mid \geq 2,  \sigma_{i} \sigma_{i+1} \sigma_{i}=\sigma_{i+1} \sigma_{i} \sigma_{i+1} \text{para} i=1, \ldots, n-2 \rangle \]",,,Wiki,Álgebra
-Nudo,Knot,Noun,M.,,,,,,Topología 
-Núcleo ,Kernel ,Noun,M.,"El núcleo de un homomorfismo \(f: R \rightarrow S\) es el conjunto \( 
-\text{ker} f=\{r\in R:f(r)=0_{S}\} \)","The kernel of a homomorphism \(f: R \rightarrow S\) is the set \( 
-\text{ker} f=\{r\in R:f(r)=0_{S}\} \)",,,Wiki,"Álgebra, Álgebra Lineal"
+(Matriz) Transpuesta,Transpose (Matrix),Noun,F.,"Sea \(A\) una matriz con \(m\) filas y \(n\) columnas la matriz traspuesta, denotada con \(A^t \) está dada por:
+\[\left(A^t\right)_{i j}=A_{j i}, 1 \leq i \leq n, 1 \leq j \leq m^3 \] en donde el elemento \(a_{j i}\) de la matriz original \(A\) se convertirá en el elemento \(a_{i j}\) de la matriz traspuesta \(A^t\).","Give \(A\) a matrix with \(m\) rows y \(n\) columns the transpose matrix, denoted as \(A^t\) is given by
+\[\left(A^t\right)_{i j}=A_{j i}, 1 \leq i \leq n, 1 \leq j \leq m^3 \] where the \(a_{j i}\) of the original matrix \(A\) becomes the element \(a_{i j}\) the transpose matrix \(A^t\).",,,Wiki,Álgebra Lineal
+(Relación) Asimétra,Asymmetry,Adj,,"Una relación binaria \(R\) sobre un conjunto \(A\), es asimétrica cuando si se da que un elemento está relacionado con otro mediante \(R\), entonces el segundo nunca está relacionado con el primero. ","An asymmetric relation is a binary relation \(R\) on a set \(A\) where for all \(a,b \in A\) if \(a\) is related to \(b\) then \(b\) is not related to \(a\).",,,,
+(Relación) Simétrica ,Symmetric,Adj,,"Una relación binaria \(R\) sobre un conjunto \(A\) es simétrica cuando se da que si un elemento está relacionado con otro mediante \(R\), entonces ese otro también está relacionado con él, a través de la misma “R,” es lo mismo tener \((a,b)\) que tener \((b,a)\) . En símbolos \[\forall x, y \in A: \quad x R y \quad \Rightarrow \quad y Rx \]","A symmetric relation is a type of binary relation. An example is the relation ""is equal to"", because if \(a=b\) is true then \(b=a\) is also true. Formally, a binary relation \(R\) over a set \(X\) is symmetric if:
+\[\forall a, b \in X(a R b \Leftrightarrow b R a)\]
+where the notation \(a R b\) means that \((a, b) \in R\).",,,,
+Álgebra,Algebra,Noun,F.,La rama de la matemática que estudia la combinación de elementos de estructuras abstractas acorde a ciertas reglas.,Algebra is the branch of mathematics that studies of mathematical symbols and the rules for manipulating these symbols.,,,Wiki,
+Álgebra Abstracta,Abstract Algebra,Noun,F.,,,,,,
+Álgebra Exterior (o Álgebra de Grassmann),Exterior Algebra ,Noun,F.,La álgebra exterior El sistema algebraico cuyo producto es el producto exterior y se proporciona un entorno algebraico en el que manejar cuestiones geométricas.,,,,Wiki,
+Álgebra Homológica,Homological Algebra,Noun,F.,,,,,,
+Álgebra Lineal ,Linear Algebra,Noun,F.,"La rama de matemáticas en que se estudia conceptos tales como vectores, matrices, espacio dual, sistemas de ecuaciones lineales y en su enfoque de manera más formal, espacios vectoriales y sus transformaciones lineales.",,,,Wiki,
+Análisis ,Analysis ,Noun,M.,,,,,,
+Análisis Complejo ( o Teoría de las Funciones de Variable Compleja) ,Complex Analysis,Noun,M.,,,,,,
+Análisis Real ( o Teoría de las Funciones de Variable Real) ,Real Analysis,Noun,M.,"La rama del análisis matemático que tiene que ver con el conjunto de los números reales, y sucesión y funciones de números reales. ","Real analysis is the branch of mathematical analysis that studies the behavior of real numbers, sequences and series of real numbers, and real functions.",,,Wiki,
+Ángulo,Angle,Noun,M.,Un ángulo es el parte del plano determinada por dos semirrectas llamadas lados que tienen el mismo punto de origen llamado vértice del ángulo.,,,,Wiki,Geometría
+Anillo ,Ring,Noun,M.,"Un anillo \(R, +, \cdot \) es un conjunto con dos operaciones binarias, llamadas adición, \(+\), y multiplicación, \(\cdot\), cumpliendo las condiciones siguientes: es grupo abeliano para la adición; el elemento neutro en esta adición se nombra cero del anillo, y se denota usualmente 0, es un semigrupo para la multiplicación, y la multiplicación es distributiva (por los dos lados) respecto de la adición.","A ring \(R, +, \cdot \) is a set with two binary operations, one called addition, (\+\),  and the other called multiplication, \(\cdot \), satisfying the following conditions: the set forms an abelian group under addition, the neutral element with respect to addition is called the zero of the ring, the set forms a semigroup under multiplication, and the multiplication is distributive on both sides of the addition.","Unos ejemplos de anillos son \( \mathbb{Z}, +, \cdot \)  y \( \mathbb{Q}, + \cdot \).","Some examples of rings are \( \mathbb{Z}, +, \cdot \) and \( \mathbb{Q}, + \cdot \).",,Álgebra
+Arcoconexo,Path Connected ,Adj.,,"Se dice que \( (X, T) \) es un espacio conexo por arcos o arcoconexo si para cada par de puntos distintos \( x , y \in X \), existe un arco \( \sigma \)  tal que \( \sigma (0) = x \)   y \( \sigma (1) = y \) .",,,,,
+Arista,Edge,Noun,F.,"Una arista es un segmento de recta que limita la cara, también conocida como lado, de una figura plana.",,,,Wiki,"Geometría, Teoría de Grafos"
+Arista ,Edge,Noun,F.,,,,,,"Topología, Geometría, Teoría de Grafos"
+Autocruz,Self-Intersection ,Adj,,,,,,,
+Autovalor,Eigenvalue ,Noun,M. ,"Sea $A$ una matriz cuadrada de orden $m$. Diremos que un escalar $\lambda \in \mathbb{K}(=\mathbb{R}$ o $\mathbb{C})$ es un autovalor de $A$ si existe un vector $v \in \mathbb{K}^{m}, v \neq 0$ tal que $A v=\lambda v$, en cuyo caso se dice que $v$ es un autovector de $A$ asociado al autovalor \(\lambda\)",Let \(A\) be a square matrix. We call a scalar \( \lambda \in \mathbb{K} \) an eigenvalue of \(A\) if there exists a nonzero vector \( v \in \mathbb{K}^n \) such that \(Av = \lambda v\) in which was we say \( v \) is an eigenvector of \(A\) associated to eigenvalue \( \lambda \). ,,,https://personal.us.es/ealgaba/algebra%20=04-05/TEMA11.pdf,Álgebra Lineal 
+Axioma,Axiom,Noun,M.,Un axioma es una proposición asumida dentro de un cuerpo teórico sobre la cual descansan otros razonamientos y proposiciones deducidas de esas premisas.,"An axiom is a statement that is taken to be true, to serve as a premise or starting point for further reasoning and arguments.",,,Wiki,Mathematics
+Axioma de Elección,Axiom of Choice,Noun,M.,,,,,,
+Biyectiva/o,Bijective,Adj,,Una función \(f\) se llama biyectiva si es inyectiva y sobreyectiva. ,A function \(f\) is called bijective if it is both injective and surjective. ,,,Wiki,
+Bordismo ,Bordism ,Noun,M.,,,,,,Topología 
+Cáculo ,Calculus ,Noun,M.,,,,,,
+Camino/Trayectoria/Arco ,Path ,Noun,M. / F.,Un camino (o una trayectoria) es una función del intervalo a un espacio topológico.,A path is a function from the interval to a topological space.,,,Wiki,Topología 
+Cara ,Cara,Noun,F.,,,,,,"Topología, Geometría, Teoría de Grafos"
+Caracteristica de Euler ,Euler Characteristic ,Noun,F.,,,,,,Topología 
+Cardinalidad ,Cardinality ,Noun,F.,La cardinalidad de un conjunto es la medida del número de elementos en el conjunto.,The cardinality of a set is a measure of the number of elements of the set.,,,Wiki,
+Categoría ,Category ,Noun,F.,"Una categoría \(\mathcal{C}\) consta de
+- una clase ob(\(\mathcal{C}\)) de objetos 
+- para cada par de objetos $A, B$ en ob($\mathcal{C}$) un conjunto $\mathcal{C}(A, B)$ de flechas o morfismos de $A$ a $B$.
+- para cada terna de objetos $A, B, C$ de $\mathcal{C}$ una función $ \circ : \mathcal{C}(A, B) \times \mathcal{C}(B, C) \rightarrow \mathcal{C}(A, C)$ donde $\circ (f, g)$ se denota $g \circ f$.
+Además, los siguientes axiomas deben ser ciertos:
+- (Asociatividad) para cualquier terna de flechas $f, g, h$ se cumple que $h \circ (g \circ f)=(h \circ g) \circ f$, si es que estas composiciones están definidas.
+- (Identidad) para todo objeto $A$ en ob(C) existe una flecha en $\mathcal{C}(A, A)$ comúnmente denotada $1_{A}$ tal que para toda flecha fen $\mathcal{C}(A ; B) f=1_{B} \circ f y f=f \circ 1_{A}$.","A category $\mathcal{C}$ consists of
+- a class ob $(\mathcal{C})$ of objects,
+- for every pair of objects $A, B$ in ob($\mathcal{C}$) the set $\mathcal{C}(A, B)$ of arrows or morphism from $A$ to $B$.
+- for every three objects $A,B$ and $C$, a binary operation  $\mathcal{C}(A, B) \times \mathcal{C}(B, C) \rightarrow \mathcal{C}(A, C)$ called composition of morphisms; the composition of $f: A \rightarrow B$ and $g:B \rightarrow C$ is written as $g \circ f$ or $g f$.
+Note: Here hom $(a, b)$ denotes the subclass of morphisms $f$ in $\operatorname{hom}(C)$ such that $\operatorname{dom}(f)=a$ and $\operatorname{cod}(f)=b$. Such morphisms are often written as $f: a \rightarrow b$.
+such that the following axioms hold:
+- (Associativity) if $f:A \rightarrow B, g: B \rightarrow C$ and $h: C \rightarrow D$ then $h \circ(g \circ f)=(h \circ g) \circ f$, and
+- (Identity) for every object $x$, there exists a morphism $1_{X}: X \rightarrow X$ called the identity morphism for the object $X$, such that every morphism $f: A \rightarrow X$ satisfies $1_{X} \circ f=f$, and every morphism $g: X \rightarrow B$ satisfies $g \circ 1_{x}=g$","La categoría $Con$ es aquella cuyos objetos son todos los conjuntos y los morfismos son morfismos de conjuntos. Entonces si $A$ y $B$ son objetos en la categoría $Con$, $Con(A,B)$ es el conjunto de funciones con dominio $A$ y codominio $B$.","The category $Set$ is the category whose objects are sets and morphism are morphisms of sets. Then if $A$ and $B$ are objects in the category $Set$, $Set(A,B)$ is the set of morphisms where$A$ is the domain and $B$ is the codomain.",Wiki,
+Clausura Algebraica ,Algebraic Closure,Noun,F.,La clausura algebraica de un cuerpo \(K\) puede pensarse como la mayor extensión algebraica de \(K\).,The algebraic closure of a field \(K\) can be thought of as the largest algebraic extension of \(K\).,La clausura algebraica del cuerpo de los números reales es el cuerpo de los números complejos.,The algebraic closure of the field of real numbers is the field of complex numbers.,,Álgebra
+Codominio,Codomain,Noun,M.,"El codominio (también llamado contradominio, conjunto final o conjunto de llegada) de una función es un conjunto al que pertenecen todos los valores de salida  de la función.",The codomain (or set of destination) of a function is the set where output values may result in. ,"Para una función $f: \mathbb{R} \rightarrow \mathbb{R}$ 
+definida como $f(x) = x^2$ el codominio de $f$ es $\mathbb{R}$, pero $f(x)$ siempre toma un valor positivo.","For the function $f: \mathbb{R} \rightarrow \mathbb{R}$ defined as $f(x) = x^2$ the codomain of $f$ is $\mathbb{R}$, even though $f(x)$ always outputs a positive value.",Wiki,
+Coeficiente ,Coefficient ,Noun,M.,Un coeficiente es un factor vinculado a un monomio.,"A coefficient is a multiplicative factor in some term of a polynomial, a series, or an expression.","Dado el polinomio \(5x^2 + 3x\), 5 y 3 son los coeficientes.","Given the polynomial  \(5x^2 + 3x\), 5 and 3 are the coefficients.",Wiki,Matematica 
+Complemento (de un Conjunto),Complement (of a Set),Noun,M.,"El complemento de un conjunto, digamos $A$, o conjunto complementario, es otro conjunto, aveces denotado $A^c$ o $A$, que contiene todos los elementos que no están en el conjunto original.","The complement of a set $A$, often denoted by $A^c$ or $A’$, are the elements not in $A$.","Hablando de números naturales, el complementario del conjunto $A = \{1, 5, 6, 7, 8, 10\}$ es el conjunto $A^c = {2, 3, 4, 9, 11, 12, ...}$.","Given the set of natural numbers $A= \{1, 5, 6, 7, 8, 10\}$ the complement of it in the set of natural numbers is $A^c= \{2, 3, 4, 9, 11, 12, …\}$.",Wiki,
+Comprensión ,Set Comprehension,Noun,F.,Una manera de describir un conjunto en que se escribe una propiedad común a todos los elementos.,A way of describing a set where a property is given which all the elements share.,,,Zamalloa (2013),
+Conexo/a ,Connected ,Adj.,,,,,,,
 Conjunto ,Set,Noun,M.,"Un conjunto es una agrupación de elementos tal que todos ellos participan en cierto modo, de las mismas características o propiedades.",,"Conjunto de los números naturales {0,1,2,3,..} es un conjunto,",The set of natural numbers is a set. ,Zamalloa (2013),
-Subconjunto,Subset,Noun,M. ,Un conjunto B es subconjunto de un conjunto $A$ si $B$ está contenido dentro de $A$.,A set $A$ is a subset of a set B if all elements of A are also elements of B,El conjunto de los números naturales es un subconjunto del conjunto de los números reales. ,The set of natural numbers is a subset of the set of real numbers,Wiki,
-Conjunto Vacío,Empty Set,Noun,M.,El conjunto que no contiene ningún elemento.,The empty is the set which contains no elements.,,,,
+Conjunto Abierto ,Open Set,Noun,M.,Un conjunto abierto es un conjunto en el que cada uno de sus elementos tiene un entorno que está incluido en el mismo conjunto.,An open set is one such that for any point in the set there exists a neighborhood which is properly contained in the whole. ,,,Wiki,
+Conjunto Cerado,Closed Set,Noun,M.,Un conjunto cerado es un conjunto cuyo complemento es un conjunto abierto.,A closed set is a set whose complement is an open set.,,,Wiki,
+Conjunto Denso,Dense Set ,Noun,M.,"Si ($X, \mathcal{T})$ es un espacio topológico, $A \subset X$  se dice que es un conjunto denso en $X$  si y solamente si la clausura topológica de $A$, denotado $\bar{A}$ es $X$.","If ($X, \mathcal{T})$ is a topological space, $A \subset X$  is said to be a dense set in $X$ if and only the closure of $A$, denoted $\bar{A}$ is $X$.",Un ejemplo es el conjunto de los números racionales es un conjunto dense en el conjunto de los números reales.,An example is the set of ration numbers is a dense set in the set of real numbers.,Wiki,
+Conjunto Finito,Finite Set ,Noun,M.,"Un conjunto finito \(A\) es un conjunto cuyo número de elementos es un número natural. Es mas un conjunto finito \(A\) es aquel que puede ponerse en correspondencia biunívoca con el conjunto \( \{1, 2, ..., n\} \), para algún número natural \(n\)/",A finite set \(A\) is a set whose number of elements is a natural number. ,"Un ejemplo es \(A = \{ 2,4,5,100\} \) porque hay 4 elementos en \(A\) y 4 es un número natural.","An example is \(A = \{ 2,4,5,100\} \) because there are 4 elements in A and 4 is a natural number.",,
+Conjunto Infinito ,Infinite Set ,Noun,M.,"Un conjunto infinito es un conjunto que no es finito. Es decir Un conjunto infinito es un conjunto que no puede ponerse en correspondencia biunívoca con ningún conjunto \( \{1, 2, 3, ..., n\}\) para ningún número natural \(n \).",An infinite set \(A\) is a set whose number of elements is not finite. ,Un ejemplo es los números enteros. ,An example is the integers. ,Wiki,
+Conjunto No Numberable,Uncountable Set,Noun,M.,Un conjunto no numerable es un conjunto que no puede ser enumerado.,,Un ejemplo es el conjunto de los números reales,An example is the real numbers.,Wiki,
+Conjunto Numerable ,Countable Set,Noun,M.,Un conjunto numerable es un conjunto con la misma cardinalidad que el conjunto de los números naturales.,,,,Wiki,
+Conjunto Parcialmente Ordenado,Partially Ordered Set (Poset),Noun,M.,Un conjunto con un orden parcial se denomina conjunto parcialmente ordenado o poset.,,"El conjunto de subespacios de una topología, ordenado por inclusión.",The set of subspaces of a topological spaces order by inclusion. ,Wiki,
 Conjunto Potencia (Conjunto de Las Partes o Conjunto de Partes) ,Power Set,Noun,M.,El conjunto potencia de un conjunto dado es otro conjunto formado por todos los subconjuntos del conjunto dado.,The power set is the set of all possible subsets of a given set. ,,,Wiki,
-Número Entero,An Integer Number,Noun,M.,Un número entero es un número que no se expresa con componente fraccionario. ,An integer is a number that can be written without a fractional component.,"\(-2, 0, 2\)","\(-2, 0, 2\)",Wiki,
-Número Natural,A Natural Number ,Noun,M.,Un número natural es cualquiera de los números que se usan para contar los elementos de ciertos conjuntos.,The natural numbers are those used for counting and ordering.,"\(1, 2, 100\)","\(1, 2, 100\)",Wiki,
-Número Irracional,An Irrational Number,Noun,M.,Un número irracional es un valor que no puede ser expresado como una fracción de números enteros. ,A number which can not be represented as a quotient of two integers. ,"\(\sqrt{2}, e, \pi\)","\(\sqrt{2}, e, \pi\)",Wiki,
-El Conjunto de Los Números Enteros ,The Set of Integers (The Integers),Noun,M.,El conjunto de los números enteros es el conjunto de números enteros positivos y negativos.,,,,,
-El Conjunto de Los Números Naturales,The Set of Natural Numbers (The Naturals),Noun,M.,El conjunto de los números naturales es el conjunto de números enteros positivos. ,,,,,
-El Conjunto de Los Números Racionales ,The Set of Rational Numbers (The Rationals),,M.,El conjunto de los números racionales es el conjunto de números fraccionarios. ,The set of rational numbers is the set of numbers whose value can be expressed as a fraction. ,"\(\frac{1}{2}\), \(\frac{1202}{7773}\)","\(\frac{1}{2}\), \(\frac{1202}{7773}\)",,
-El Conjunto de Los Números Irracionales ,The Set of Irrational Numbers (The Irrationals),Noun,M.,"El conjunto de los números irracionales es el conjuntos de números cuyos su valor que no puede ser expresado como una fracción \(\frac{m}{n}\) donde \(m, n \in \mathbb{Z} \) y \(n \neq 0\).","The set of irrational numbers is the set of numbers whose value can not be expressed as a fraction \(\frac{m}{n} \) where \(m ,, n \in \mathbb{Z} \) and \(n \neq 0 \).",,,,
-El Conjunto de Los Números Reales,The Set of Real Numbers (The Reals),Noun,M.,"El conjunto de los números reales es el conjunto de números enteros, fraccionarios y irracionales.","The set of real numbers is the set of numbers which contains the integers, rationals, and irrationals.","\(\pi, 2, \frac{1}{2}\)","\(\pi, 2, \frac{1}{2}\)",,
-El Conjunto de Los Números Complejos,The Set of Complex Numbers (The Complex Numbers),Noun,M.,El conjunto de los números complejos es el conjunto de números que viene de la forma \(a +bi\) donde \(a\) y \(b\) son números reales y \(i = \sqrt{-1}\).,The set of complex numbers is the set of numbers that come of the form \(a + bi\) where \(a\) and \( b\) are real numbers and \(i=\sqrt{-1}\).,\(1+3i\),\(1+3i\),,
-Lazo,Loop,Noun,M. ,"Si es $X$ un espacio topológico, y $p$ un punto fijo de $X$, un lazo con base en $p$ es una aplicación continua $\gamma:[0,1] \rightarrow X$ que verifica $\gamma(0)=\gamma(1)=p$.","Given a topological space $X$, a loop based at $p$ is defined to be a continuous function (also known as a continuous map) $\gamma:[0,1] \rightarrow X$ such that the starting point $\gamma(0)$ and the end point $\gamma(1)$ are both equal to $p$.",,,,
-Topología Compacto-Abierta,Compact-Open Topology ,Noun,F.,"Dado dos espacios topológicos $X$ y $Y$, se denota el conjunto de funciones continuas de $X$ a $Y$ como $C(X, Y)$. Si $K$ es un subconjunto de $X$ compacto y $U$ es un subconjunto abierto de $Y$, $V(K, U)$ denota el conjunto de funciones $f \in C(X, Y)$ donde $f(K) \subseteq U$. Entonces la coleccion de estos $V(K, U)$ forman un subbase de la topología compacto-abierta para el conjunto $C(X,Y)$.","Let $X$ and $Y$ be two topological spaces, and let $C(X, Y)$ denote the set of all continuous maps between $X$ and $Y$. Given a compact subset $K$ of $X$ and an open subset $U$ of $Y$, let $V(K, U)$ denote the set of all functions $f \in C(X, Y)$ such that $f(K) \subseteq U$. Then the collection of all such $V(K, U)$ is a subbase for the compact-open topology on $C(X, Y)$.",,"The compact open topology can be used to topologize the following set $\Omega\left(X, x_{0}\right)=\left\{f: I \rightarrow X: f(0)=f(1)=x_{0}\right\}$ which results in the loop space of $X$ at $x_{0}$,",,
-Subbase,Subbasis,Noun,M.,"Sea $X$ un espacio topológico con topología $T$. Una subbase de $T$ es usualmente definida como una subcolección $B$ de $T$ que satisface una de las dos siguientes condiciones equivalentes:
-1. La subcolección $B$ genera la topología $T$. Esto significa que $T$ es la topología más pequeña que contiene a B: cualquier topología $U$ en $X$ que contiene a $B$ también debe contener a $T$.
-2. La colección de conjuntos abiertos construida con $X$ y todas la intersecciones finitas de los elementos de $B$ forman una base para $T$. Esto significa que todo conjunto abierto propio no vacío en $T$ puede ser escrito como una unión de intersecciones finitas de elementos de $B$. Explícitamente, dado un punto $x$ en un conjunto abierto propio $U$ existen varios conjuntos finitos $S_1, …, S_n$ de $B$, tales que la intersección de estos conjuntos contiene a $x$ y esta contenida en $U$.","Let $X$ be a topological space with topology $T$. A subbase of $T$ is usually defined as a subcollection $B$ of $T$ satisfying one of the two following equivalent conditions:
-1. The subcollection $B$ generates the topology $T$. This means that $T$ is the smallest topology containing $B$ : any topology $T^{\prime}$ on $X$ containing $B$ must also contain $T$.
-2. The collection of open sets consisting of all finite intersections of elements of $B$, together with the set $X$, forms a basis for $T$. This means that every proper open set in $T$ can be written as a union of finite intersections of elements of $B$. Explicitly, given a point $x$ in an open set $U \subseteq X$, there are finitely many sets $S_{1}, \ldots, S_{n}$ of $B$, such that the intersection of these sets contains $x$ and is contained in $U$.","La topología compacta abierta, en el espacio de funciones continuas de $X$ a $Y$ tiene por una subbase el conjunto de funciones
-$$V(K, U)=\{f: X \rightarrow Y \mid f(K) \subset U\}$$
-donde $K$ es un espacio compacto y $U$ es abierto en $Y$.","The compact-open topology on the space of continuous functions from $X$ to $Y$ has for a subbase the set of functions
-$$V(K, U)=\{f: X \rightarrow Y \mid f(K) \subseteq U\}$$
-where $K \subseteq X$ is compact and $U$ is an open subset of $Y$.",Wiki,
-Espacio de Lazos ,Loop Space ,Noun,M.,"El espacio de lazos, denotado $\Omega X$, de un espacio topológico $X$ con un punto base, $p$, es el espacio hecho de los lazos basados en $p$ dado la topología compacto-abierta.","The loop space $\Omega X$ of a pointed topological space $X$ is the space of (based) loops in $X$, specifically continuous pointed maps from the pointed circle $S^1$ to $X$, equipped with the compact-open topology.",,,"Wiki, Munkres 1999",
-Espacio de Caminos,Path Space ,Noun,M.,"El espacio de caminos de $\left(X, x_{0}\right)$ es el conjunto
-$$\mathcal{P}(X):=\left\{\sigma:[0,1] \longrightarrow X \text { aplicación contínua } \mid \sigma(0)=x_{0}\right\}$$
-dotado de la topología compacto-abierta.",,,,,
+Conjunto Vacío,Empty Set,Noun,M.,El conjunto que no contiene ningún elemento.,The empty is the set which contains no elements.,,,,
+Construcciones con Regla y Compás,Constructions with Straight Edge and Compass,Noun,F.,,,,,,"Álgebra, Análsis Compleja"
 Contráctil ,Contractible ,Adj.,,"Un espacio topológico \(X\) es contráctil si tiene el tipo de homotopía de un punto, es decir, si existe una equivalencia homotópica entre el espacio \(X\) y un espacio\( \{q\}\)
  formado por un solo punto.",A topological space \(X\) is contractible if it has the homotopy type of a point meaning there exists a homotopy equivalence between \(X\) and a space \( \{ q\} \) formed by a single point.,"Un disco es contractíl. El espacio euclídeo \( \mathbb{R}^n \) 
  es contráctil.",A disc is contractible. Euclidean space \( \mathbb{R}^n \) is also contractible. ,"Wiki, Munkres 1999",Topología 
-Fibración,Fibration ,Noun,F.,,,,,,
+Contraejemplo,Counterexample ,Noun,M.,Un contraejemplo a una declaración matemática es un ejemplo que cumple con las condiciones de la declaración pero no conduce la conclusión de la declaración. ,A counterexample to a mathematical statement is an example that satisfies the statement's condition but does not lead to the statement's conclusion. ,,,Khan Academy ,Matematicas
+Cubo,Cube,Noun,M.,Un cubo es un poliedro limitado por seis caras cuadradas congruentes.,,,,Wiki,Geometría
+Cuerda ,String,Noun,F.,,,,,,
+Cuerpo ,Field,Noun,M.,"Un cuerpo es un anillo de división conmutativo, es decir, un anillo conmutativo y unitario en el que todo elemento distinto de cero es invertible respecto del producto.","A field is a commutative division ring, that is to say it is a commutative unital ring where every nonzero element has a multiplicative inverse.","Unos ejemplos de cuerpos son \( \mathbb{R}, +, \cdot \)  y \( \mathbb{Q}, + \cdot \).","Some examples of fields are \( \mathbb{R}, +, \cdot \) and \( \mathbb{Q}, + \cdot \).",Wiki,"Álgebra, Teoría de Números"
+Densa/o,Dense,Adj,,,,,,,
+Difeomorfismo,Diffeomorphism,Noun,M.,"Dado dos variedades \(M\) and \(N\), un morfismo \(f: M \rightarrow N \) es un difeomorfismo si \(f\) is un homeomorfismo diferenciable. ","Given two manifolds \(M\) and \(N\), a differentiable map \(f: M \rightarrow N\) is called a diffeomorphism if it is a bijection and its inverse \(f^{-1}: N \rightarrow M\) is differentiable as well.",,,Wiki,Geometría
+Disconexo/a,Disconnected,Adj.,,,,,,,
+Discreta/o,Discrete,Adj.,,,,,,,
+Dominio,Domain,Noun,M.,El dominio (conjunto de definición o conjunto de partida) de una función son los valores para los cuales la función está definida.,The domain (or set of departure) of a function is the set which constitute the input values of the function.,El dominio de la función $f(x) = x^3$ es el conjunto de los números reales. El dominion de la función $f(x) = \frac{1}{x}$ es el conjunto de los números reales menos 0 puesto porque no esta definida para $x=0$.,"The domain of the function $f(x)= x^3$ is the set of real numbers. The domain of the function $f(x) = \frac{1}{x}$ is the set of real numbers except 0, because the function is not defined there.",Wiki,
+Dominio de Ideales Principales (DIP),Principal Ideal Domain (PID),Noun,M.,,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
+El Conjunto de Los Números Complejos,The Set of Complex Numbers (The Complex Numbers),Noun,M.,El conjunto de los números complejos es el conjunto de números que viene de la forma \(a +bi\) donde \(a\) y \(b\) son números reales y \(i = \sqrt{-1}\).,The set of complex numbers is the set of numbers that come of the form \(a + bi\) where \(a\) and \( b\) are real numbers and \(i=\sqrt{-1}\).,\(1+3i\),\(1+3i\),,
+El Conjunto de Los Números Enteros ,The Set of Integers (The Integers),Noun,M.,El conjunto de los números enteros es el conjunto de números enteros positivos y negativos.,,,,,
+El Conjunto de Los Números Irracionales ,The Set of Irrational Numbers (The Irrationals),Noun,M.,"El conjunto de los números irracionales es el conjuntos de números cuyos su valor que no puede ser expresado como una fracción \(\frac{m}{n}\) donde \(m, n \in \mathbb{Z} \) y \(n \neq 0\).","The set of irrational numbers is the set of numbers whose value can not be expressed as a fraction \(\frac{m}{n} \) where \(m ,, n \in \mathbb{Z} \) and \(n \neq 0 \).",,,,
+El Conjunto de Los Números Naturales,The Set of Natural Numbers (The Naturals),Noun,M.,El conjunto de los números naturales es el conjunto de números enteros positivos. ,,,,,
+El Conjunto de Los Números Racionales ,The Set of Rational Numbers (The Rationals),,M.,El conjunto de los números racionales es el conjunto de números fraccionarios. ,The set of rational numbers is the set of numbers whose value can be expressed as a fraction. ,"\(\frac{1}{2}\), \(\frac{1202}{7773}\)","\(\frac{1}{2}\), \(\frac{1202}{7773}\)",,
+El Conjunto de Los Números Reales,The Set of Real Numbers (The Reals),Noun,M.,"El conjunto de los números reales es el conjunto de números enteros, fraccionarios y irracionales.","The set of real numbers is the set of numbers which contains the integers, rationals, and irrationals.","\(\pi, 2, \frac{1}{2}\)","\(\pi, 2, \frac{1}{2}\)",,
+El Grupo de Galois,Galois Group,Noun,M.,,,,,,Álgebra
+Elemento Neutro,Identity Element,Noun,M.,,,,,,
+Elemento Nulo ,Zero Element,Noun,F.,,,,,,
+Elemento Simétrico,Inverse Element,Noun,M.,,,,,,
+Embebimiento ,Embedding ,Noun,M.,,,,,,
+Entorno (o Vecindad),Neighborhood ,Noun,M.,"Si \((X, \Tau\) es un espacio topológico y \(p\) es un punto perteneciente a \(X\), un entorno de \(p\) es un conjunto \(V\) en el que está contenido un conjunto abierto \(U\) que tiene como elemento al punto \(p\), \( p \in U \subset V \).",,,,Wiki,
+Epimorfismo,Epimorphism,Noun,M.,"En la teoría de categorías, un epimorfismo es un morfismo \(f: X \rightarrow Y\) que para cualquier objecto \(Z\) y morfismos \(g_{1}, g_{2}: Y \rightarrow Z\),
+\(g_{1} \circ f=g_{2} \circ f \Longrightarrow g_{1}=g_{2}\).","In category theory, an epimorphism is a morphism $f: X \rightarrow Y$ such that, for all objects $Z$ and all morphisms $g_{1}, g_{2}: Y \rightarrow Z$,
+$$g_{1} \circ f=g_{2} \circ f \Longrightarrow g_{1}=g_{2}$$",En la categoría de $\mathbf{Set}$ epimorfismos son morifismos/funciones sobreyectivos.,In the category $\mathbb{Set}$ epimorphisms are morphisms/functions which are surjective. ,Wiki,
+Equivalencia Homotópica,Homotopy Equivalence ,Noun,F.,,,,,,
+Espacio de Caminos,Path Space ,Noun,M.,"El espacio de caminos de $\left(X, x_{0}\right)$ es el conjunto
+$$\mathcal{P}(X):=\left\{\sigma:[0,1] \longrightarrow X \text { aplicación contínua } \mid \sigma(0)=x_{0}\right\}$$
+dotado de la topología compacto-abierta.",,,,,
+Espacio de Lazos ,Loop Space ,Noun,M.,"El espacio de lazos, denotado $\Omega X$, de un espacio topológico $X$ con un punto base, $p$, es el espacio hecho de los lazos basados en $p$ dado la topología compacto-abierta.","The loop space $\Omega X$ of a pointed topological space $X$ is the space of (based) loops in $X$, specifically continuous pointed maps from the pointed circle $S^1$ to $X$, equipped with the compact-open topology.",,,"Wiki, Munkres 1999",
+Espacio Denso,Dense Space,Noun,M.,,,,,Wiki,
 Espacio euclídeo,Euclidean space,Noun,M.,"Un espacio euclídeo de dimensión finita es un espacio vectorial normado sobre los números reales de dimensión finita, cuyo la norma es la asociada al producto escalar ordinario.",,La recta real y el plano euclídeo son ejemplos especiales de espacios euclídeos de dimensiones 1 y 2.,"The real line and the Euclidean plane are special case of Euclidean space of dimension 1 and 2, respectively.",,
+Espacio Separable ,Separable Space,Noun,M.,,,,,,
+Espacio Topológico,Topological Space,Noun,M.,"Se llama un espacio topológico al par ordenado $(X,T)$ formado por un conjunto $X$ y una topología $T$ sobre X, es decir, una colección de subconjuntos de X que cumplen las tres propiedades siguientes:
+1. El conjunto vacío y $X$ están en $T$.
+$$\varnothing \in T, X \in T$$
+2. La intersección de cualquier subcolección finita de conjuntos de $T$ está en $T$.
+$$\left(O_{1} \in T, O_{2} \in T\right) \Rightarrow\left(O_{1} \cap O_{2} \in T\right)$$
+3. La unión de cualquier subcolección de conjuntos de $T$ está en $T .$
+Esta condición también se escribe, formalmente:
+$$\forall S \subset T, \cup_{O \in S} O \in T$$
+A los conjuntos pertenecientes a la topología $T$ se les llama conjuntos abiertos o simplemente abiertos de $(X, T) ;^{4}$ y a sus complementos en E, conjuntos cerrados.","A topological space is an ordered pair $(X, T)$, where $X$ is a set and $T$ is a collection of subsets of $X$, satisfying the following axioms: 
+\newline1. The empty set and $X$ itself belong to $T$.
+\newline 2. Any arbitrary (finite or infinite) union of members of $\tau$ belongs to $T$.
+\newline 3. The intersection of any finite number of members of $\tau$ belongs to $T$.
+The elements of $T$ are called open sets and the collection $T$ is called a topology on $X .$ A subset $C \subseteq X$ is said to be closed in $(X, T)$ if and only if its complement $X \backslash C$ is an element of $T$.","Dado el conjunto $X=\{1,2,3,4\}$ y la colección de los seis subconjuntos de $X$
+\begin{align*}
+T&= \{\{\},\{2\},\{1,2\},\{2,3\},\{1,2,3\},\{1,2,3,4\}\} \\
+&= \{\varnothing,\{2\},\{1,2\},\{2,3\},\{1,2,3\}, X\}
+\end{align*}
+$(X,T)$ forman un espacio topológico. Aveces este espacio topológico con esta descripción de $T$ se llama un espacio topológico con la topología discreta.","Given $X=\{1,2,3,4\}$, the family
+\begin{align*}
+T&= \{\{\},\{2\},\{1,2\},\{2,3\},\{1,2,3\},\{1,2,3,4\}\} \\
+&= \{\varnothing,\{2\},\{1,2\},\{2,3\},\{1,2,3\}, X\}
+\end{align*}
+of six subsets of $X$ form topologv of $X$.  Sometimes a this topological space with this description of $T$ is called is called a topological space with the discrete topology.","Wiki, Munkres 1999",
 Espacio Vectorial ,Vector Space,Noun,M.,"Un espacio vectorial sobre un cuerpo \(K\) es un conjunto no vacío, $V$, dotado de dos operaciones para las cuales será cerrado:
 $$\begin{aligned}
 \text { Suma }+: V \times V & \rightarrow V \\
@@ -111,110 +176,51 @@ $$\exists e \in K: e \cdot \mathbf{u}=\mathbf{u}, \forall \mathbf{u} \in V$$
 $$a \cdot(\mathbf{u}+\mathbf{v})=a \cdot \mathbf{u}+a \cdot \mathbf{v}, \forall a \in K, \forall \mathbf{u}, \mathbf{v} \in $$
 -  It respects the distributive law with respect to the product operation:
 $$(a+b) \cdot \mathbf{u}=a \cdot \mathbf{u}+b \cdot \mathbf{u}, \forall a, b \in K, \forall \mathbf{u} \in V$$",El conjunto de los números reales forman un espacio vectorial sobre el cuerpo de formado del conjunto de los números racionales. ,The set of real numbers forms a vector space over the field formed by the set of rational numbers.  ,Wiki ,
+Estructura Diferenciable (o Atlas Maximal),Maximal Atlas,Noun,F.,"Dada una variedad topológica \(M\) y un número entero \(r \geq 0\), una estructura diferenciable (o atlas maximal) \(F\) de clase \(r\) sobre \(M\) es una familia \[\left\{\left(U_{\lambda}, \varphi_{\lambda}\right): \lambda \in \Lambda\right\}\] de sistemas coordenados sobre \(M\) de manera que se cumpla que:
+\begin{enumerate}  \item \(U_{\lambda}\) recubre \(M\), es decir, \[\bigcup_{\lambda \in \Lambda} U_{\lambda}=M\],
+\item dados dos cualesquiera \(\alpha, \beta \in \Lambda\) ha de ocurrir que la aplicación \[\varphi_{\beta} \circ \varphi_{\alpha}^{-1}_{\varphi_{\alpha} \left(U_{\alpha} \cap U_{\beta}\right)}: \varphi_{\alpha} (U_{\alpha} \cap U_{\beta}) \longrightarrow \varphi_{\beta} (U_{\alpha} \cap U_{\beta})\], llamada cambio de cartas sea diferenciable de orden \(r\).
+\item \(F\) es maximal (relativo al orden dado por la inclusión de conjuntos) entre todas las familias de entornos coordenados sobre \(M\) bajo las condiciones 1 y 2 . \end{enumerate}",,,,Wiki,
+Extension,Extension,Noun,F.,,,,,,
+Extension Radical ,Radical Extension,Noun,F.,,,,,,
+Fibración,Fibration ,Noun,F.,,,,,,
+Finita/o,Finite,Adj.,,,,,,,
+Frontera ,Boundary ,Noun,F.,,,,,,
+Función,Function,Noun,F.,,,,,,
+Generadores ,Generators ,Noun,M.,,,,,,
+Geometría,Geometry,Noun,F.,,,,,,
+Group de Bordismos ,Bordism Group ,Noun,M.,,,,,,Topología 
+Group de trenzas ,Braid Group ,Noun,M. ,"El grupo de trenzas de \(n\) hebras, también llamado grupo de n-trenzas o grupo de Artin, notado por \(B_n \) se define la presentación:
+\[ \langle \sigma_{1}, \ldots, \sigma_{n-1} \mid \sigma_{i} \sigma_{j}=\sigma_{j} \sigma_{i}  \text{cuando} \mid i-j \mid \geq 2,  \sigma_{i} \sigma_{i+1} \sigma_{i}=\sigma_{i+1} \sigma_{i} \sigma_{i+1} \text{para} i=1, \ldots, n-2 \rangle \]","The braid group on n strands \( B_n \) also known as the Artin braid group has the following presentation \[ \langle \sigma_{1}, \ldots, \sigma_{n-1} \mid \sigma_{i} \sigma_{j}=\sigma_{j} \sigma_{i}  \text{cuando} \mid i-j \mid \geq 2,  \sigma_{i} \sigma_{i+1} \sigma_{i}=\sigma_{i+1} \sigma_{i} \sigma_{i+1} \text{para} i=1, \ldots, n-2 \rangle \]",,,Wiki,Álgebra
+Grupo,Group,Noun,M.,"Un conjunto \(G\) y una operación binaria forman un grupo $(G, \star)$ cuando:
+1. \((G, \star)\) es un monoide o semigrupo con elemento neutro
+2. \((G, \star)\) verifica la existencia de elemento simétrico para cada uno de sus elementos.
+\[
+\begin{aligned}
+&\exists ! e \in G: e \star a=a, \forall a \in G . \\
+&\forall a \in G, \exists \bar{a}: a \star \bar{a}=e
+\end{aligned}
+\]",,El conjunto de los números enteros con la operación de multiplicar conocida,,,Álgebra
+Grupo Cuaternión,Quaternion Group,Noun,M.,"El grupo cuaternión es una extensión generada de manera análoga añadiendo las unidades imaginarias \( i, j \)y \(k\) a los números reales tal que \(i^2 =j^2 =k^2 =ijk =-1\).",,,,Wiki,Álgebra
+Grupo diedral ,Dihedral Group,Noun,M.,"Un grupo diedral o grupo diédrico es el grupo de simetría de un polígono regular, incluyendo tanto rotaciones y reflexiones. Normalmente se denota y tienen la presentación que sigue: \[ D_n = \langle r , s \mid r^n = s^2 = e, srs^{-1} = r^{-1} \rangle \]","A dihedral group is a group of symmetries of a regular polygon including rotations and reflections. Normally it is denoted and presented as follows: \[ D_n = \langle r , s \mid r^n = s^2 = e, srs^{-1} = r^{-1} \rangle \]",,,Wiki,Álgebra
+Hexadro ,Hexagon ,Noun,M.,Un hexadro es un poliedro de sies caras.,,,,Wiki,"Geometría, Teoría de Grafos"
+Homología,Homology,Noun,F.,,,,,,
 Homotopía,Homotopy ,Noun,F.,"Una homotopía entro dos aplicaciones continuas \(f, g: X \rightarrow Y\) es un aplicación, también continua, \(H: X \times[0,1] \rightarrow Y\) tal que:
 \[\begin{aligned}
 &H(x, 0)=f(x) \\
 &H(x, 1)=g(x)
 \end{aligned}\]",,,,"Wiki, Munkres 1999",
-Isomorfismo ,Isomorphism,Noun,M.,Un isomorfismo es un homomorfismo (o más generalmente un morfismo) que admite un inverso.,An isomorphism is a homomorphism (or more generally) which admits an inverse. ,,,Wiki,
-Morfismo ,Morphism ,Noun,M.,Se llaman morfismos (u homomorfismos) a las aplicaciones entre estructuras matemáticas que preservan la estructura interna.,A morphism is a structure-preserving map from one mathematical structure to another one of the same type.,,,Wiki,
-Epimorfismo,Epimorphism,Noun,M.,"En la teoría de categorías, un epimorfismo es un morfismo \(f: X \rightarrow Y\) que para cualquier objecto \(Z\) y morfismos \(g_{1}, g_{2}: Y \rightarrow Z\),
-\(g_{1} \circ f=g_{2} \circ f \Longrightarrow g_{1}=g_{2}\).","In category theory, an epimorphism is a morphism $f: X \rightarrow Y$ such that, for all objects $Z$ and all morphisms $g_{1}, g_{2}: Y \rightarrow Z$,
-$$g_{1} \circ f=g_{2} \circ f \Longrightarrow g_{1}=g_{2}$$",En la categoría de $\mathbf{Set}$ epimorfismos son morifismos/funciones sobreyectivos.,In the category $\mathbb{Set}$ epimorphisms are morphisms/functions which are surjective. ,Wiki,
-Monomorfismo,Monomorphism,Noun,M.,"En la teoría de categorías, un monomorfismo es un morfismo \(f: X \rightarrow Y\) que para cualquier objecto \(Z\)  y morfismos \(g_{1}, g_{2}: Z \rightarrow X\),
-\[f \circ g_{1}=f \circ g_{2} \Longrightarrow g_{1}=g_{2}\]","In category theory, a monomorphism is a morphism $f: X \rightarrow Y$ such that for all objects $Z$ and all morphisms $g_{1}, g_{2}: Z \rightarrow X$,
-$$f \circ g_{1}=f \circ g_{2} \Longrightarrow g_{1}=g_{2}$$",En la categoría de $\mathbf{Set}$ monomorfismos son morifismos/funciones inyectivos.,In the category $\mathbb{Set}$ monomorphism are morphisms/functions which are injective. ,Wiki,
-Difeomorfismo,Diffeomorphism,Noun,M.,"Dado dos variedades \(M\) and \(N\), un morfismo \(f: M \rightarrow N \) es un difeomorfismo si \(f\) is un homeomorfismo diferenciable. ","Given two manifolds \(M\) and \(N\), a differentiable map \(f: M \rightarrow N\) is called a diffeomorphism if it is a bijection and its inverse \(f^{-1}: N \rightarrow M\) is differentiable as well.",,,Wiki,Geometría
-Categoría ,Category ,Noun,F.,"Una categoría \(\mathcal{C}\) consta de
-- una clase ob(\(\mathcal{C}\)) de objetos 
-- para cada par de objetos $A, B$ en ob($\mathcal{C}$) un conjunto $\mathcal{C}(A, B)$ de flechas o morfismos de $A$ a $B$.
-- para cada terna de objetos $A, B, C$ de $\mathcal{C}$ una función $ \circ : \mathcal{C}(A, B) \times \mathcal{C}(B, C) \rightarrow \mathcal{C}(A, C)$ donde $\circ (f, g)$ se denota $g \circ f$.
-Además, los siguientes axiomas deben ser ciertos:
-- (Asociatividad) para cualquier terna de flechas $f, g, h$ se cumple que $h \circ (g \circ f)=(h \circ g) \circ f$, si es que estas composiciones están definidas.
-- (Identidad) para todo objeto $A$ en ob(C) existe una flecha en $\mathcal{C}(A, A)$ comúnmente denotada $1_{A}$ tal que para toda flecha fen $\mathcal{C}(A ; B) f=1_{B} \circ f y f=f \circ 1_{A}$.","A category $\mathcal{C}$ consists of
-- a class ob $(\mathcal{C})$ of objects,
-- for every pair of objects $A, B$ in ob($\mathcal{C}$) the set $\mathcal{C}(A, B)$ of arrows or morphism from $A$ to $B$.
-- for every three objects $A,B$ and $C$, a binary operation  $\mathcal{C}(A, B) \times \mathcal{C}(B, C) \rightarrow \mathcal{C}(A, C)$ called composition of morphisms; the composition of $f: A \rightarrow B$ and $g:B \rightarrow C$ is written as $g \circ f$ or $g f$.
-Note: Here hom $(a, b)$ denotes the subclass of morphisms $f$ in $\operatorname{hom}(C)$ such that $\operatorname{dom}(f)=a$ and $\operatorname{cod}(f)=b$. Such morphisms are often written as $f: a \rightarrow b$.
-such that the following axioms hold:
-- (Associativity) if $f:A \rightarrow B, g: B \rightarrow C$ and $h: C \rightarrow D$ then $h \circ(g \circ f)=(h \circ g) \circ f$, and
-- (Identity) for every object $x$, there exists a morphism $1_{X}: X \rightarrow X$ called the identity morphism for the object $X$, such that every morphism $f: A \rightarrow X$ satisfies $1_{X} \circ f=f$, and every morphism $g: X \rightarrow B$ satisfies $g \circ 1_{x}=g$","La categoría $Con$ es aquella cuyos objetos son todos los conjuntos y los morfismos son morfismos de conjuntos. Entonces si $A$ y $B$ son objetos en la categoría $Con$, $Con(A,B)$ es el conjunto de funciones con dominio $A$ y codominio $B$.","The category $Set$ is the category whose objects are sets and morphism are morphisms of sets. Then if $A$ and $B$ are objects in the category $Set$, $Set(A,B)$ is the set of morphisms where$A$ is the domain and $B$ is the codomain.",Wiki,
-Topología ,Topology,Noun,F.,La topología es la rama de las matemáticas dedicada al estudio de aquellas propiedades de los cuerpos geométricos que permanecen inalteradas por transformaciones continuas.,"Topology is the area of mathematics which is concerned with the properties of a geometric object that are preserved under continuous deformations, such as stretching, twisting, crumpling, and bending.",,,"Wiki, Munkres 1999",
-Topología de los Complementos Finito / Topología Cofinita,Finite Complement Topology/ Cofinite Topology,Noun,F.,"En matemáticas, la topología de los complementos finitos o topología cofinita sobre un conjunto $X$ es la topología dada por
-$$\mathcal{T}_{c o f}=\{A \subseteq X: X \backslash A \text { es finito ó } A=\emptyset\}$$.
-Es decir, un subconjunto $A$ de $X$ es abierto si su complemento es un conjunto finito.","The cofinite topology or the finite complement topology is a topology that can be defined on every set $X$. It has precisely the empty set and all cofinite subsets of $X$ as open sets. Symbolically,
-$$\mathcal{T}=\{A \subseteq X \mid A=\varnothing \text { or } X \backslash A \text { is finite }\}$$",,,"Wiki, Munkres 1999",
-Espacio Topológico,Topological Space,Noun,M.,"Se llama un espacio topológico al par ordenado $(X,T)$ formado por un conjunto $X$ y una topología $T$ sobre X, es decir, una colección de subconjuntos de X que cumplen las tres propiedades siguientes:
-1. El conjunto vacío y $X$ están en $T$.
-$$\varnothing \in T, X \in T$$
-2. La intersección de cualquier subcolección finita de conjuntos de $T$ está en $T$.
-$$\left(O_{1} \in T, O_{2} \in T\right) \Rightarrow\left(O_{1} \cap O_{2} \in T\right)$$
-3. La unión de cualquier subcolección de conjuntos de $T$ está en $T .$
-Esta condición también se escribe, formalmente:
-$$\forall S \subset T, \cup_{O \in S} O \in T$$
-A los conjuntos pertenecientes a la topología $T$ se les llama conjuntos abiertos o simplemente abiertos de $(X, T) ;^{4}$ y a sus complementos en E, conjuntos cerrados.","A topological space is an ordered pair $(X, T)$, where $X$ is a set and $T$ is a collection of subsets of $X$, satisfying the following axioms: 
-\newline1. The empty set and $X$ itself belong to $T$.
-\newline 2. Any arbitrary (finite or infinite) union of members of $\tau$ belongs to $T$.
-\newline 3. The intersection of any finite number of members of $\tau$ belongs to $T$.
-The elements of $T$ are called open sets and the collection $T$ is called a topology on $X .$ A subset $C \subseteq X$ is said to be closed in $(X, T)$ if and only if its complement $X \backslash C$ is an element of $T$.","Dado el conjunto $X=\{1,2,3,4\}$ y la colección de los seis subconjuntos de $X$
-\begin{align*}
-T&= \{\{\},\{2\},\{1,2\},\{2,3\},\{1,2,3\},\{1,2,3,4\}\} \\
-&= \{\varnothing,\{2\},\{1,2\},\{2,3\},\{1,2,3\}, X\}
-\end{align*}
-$(X,T)$ forman un espacio topológico. Aveces este espacio topológico con esta descripción de $T$ se llama un espacio topológico con la topología discreta.","Given $X=\{1,2,3,4\}$, the family
-\begin{align*}
-T&= \{\{\},\{2\},\{1,2\},\{2,3\},\{1,2,3\},\{1,2,3,4\}\} \\
-&= \{\varnothing,\{2\},\{1,2\},\{2,3\},\{1,2,3\}, X\}
-\end{align*}
-of six subsets of $X$ form topologv of $X$.  Sometimes a this topological space with this description of $T$ is called is called a topological space with the discrete topology.","Wiki, Munkres 1999",
-Variedad Diferenciable,Differentiable Manifold,Noun,F.,"Se dice que el par \[(M,F)\] formado por la variedad topológica \[M\] de dimensión \[n\] y por la estructura diferenciable \[F\] de clase \[r\] es una variedad diferenciable de dimensión \[n\] y clase \[r\].",,,,Wiki,
-Estructura Diferenciable (o Atlas Maximal),Maximal Atlas,Noun,F.,"Dada una variedad topológica \[M\] y un número entero \[r \geq 0\], una estructura diferenciable (o atlas maximal) \[F\] de clase \[r\] sobre \[M\] es una familia $\left\{\left(U_{\lambda}, \varphi_{\lambda}\right): \lambda \in \Lambda\right\}$ de sistemas coordenados sobre $M$ de manera que se cumpla que:
-1. \[U_{\lambda}\] recubre \[M\], es decir, \[\bigcup_{\lambda \in \Lambda} U_{\lambda}=M\],
-2. dados dos cualesquiera \[\alpha, \beta \in \Lambda\] ha de ocurrir que la aplicación \[left.\varphi_{\beta} \circ \varphi_{\alpha}^{-1}\right|_{\varphi_{\alpha}\left(U_{\alpha} \cap U_{\beta}\right)}: \varphi_{\alpha}\left(U_{\alpha} \cap U_{\beta}\right) \longrightarrow \varphi_{\beta}\left(U_{\alpha} \cap U_{\beta}\right)\], llamada cambio de cartas sea diferenciable de orden \[r\].
-3. \[F\] es maximal (relativo al orden dado por la inclusión de conjuntos) entre todas las familias de entornos coordenados sobre \[M\] bajo las condiciones 1 y 2 .",,,,Wiki,
-Par,Pair,Noun,M.,,,,,,
-Par Ordenado,Ordered Pair,Noun,M.,"Un par ordenado \((a,b)\) es una pareja de objetos matemáticos, en la que se distingue un elemento y otro.","An ordered pair \((a, b)\) is a pair of objects.","Un ejemplo de un par ordenado es \((5,4)\).","An example of an ordered pair is \((5,4)\).",Wiki,
-Unión ,Union,Noun,F.,La unión de dos conjuntos \(A\) y \(B\) es otro conjunto \(A \cup B\) cuyos elementos son todos los elementos de \(A \mathrm{y} / \mathrm{o}\) de \(B\). En símbolos \[A \cup B=\{x: x \in A \text { o } x \in B\} \],"The union of two sets $A$ and $B$ is the set of elements which are in $A$, in $B$, or in both $A$ and $B$. Symbolically,
-$$A \cup B=\{x: x \in A \text { or } x \in B\} $$","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ la unión de $A$ y $B$ es $A\cup B = \{1,2,3,4,6,8\}$.","Given the sets $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ then the union of $A$ and $B$ is $A\cup B = \{1,2,3,4,6,8\}$.",Wiki,
-Intersección,Intersection ,Noun,F.,"La intersección de dos (o más) conjuntos, digamos $A$ y $B$, es un subconjunto de $A$ y $B$ denotado $A \cap B$  que contiene los elementos comunes de $A$ y $B$.","The intersection of two set $A$ and $B$ denoted by $A \cap B$ is the subset of $A$ and $B$ containing all elements of $A$ that also belong to $B$ or equivalently, all elements of $B$ that also belong to $A$.","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ la intersección de $A$ y $B$ es $A\cap B = \{2,4\}$.","Given the sets $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ then the intersection of $A$ and $B$ is $A\cap B = \{2,4\}$.",Wiki,
-Complemento (de un Conjunto),Complement (of a Set),Noun,M.,"El complemento de un conjunto, digamos $A$, o conjunto complementario, es otro conjunto, aveces denotado $A^c$ o $A$, que contiene todos los elementos que no están en el conjunto original.","The complement of a set $A$, often denoted by $A^c$ or $A’$, are the elements not in $A$.","Hablando de números naturales, el complementario del conjunto $A = \{1, 5, 6, 7, 8, 10\}$ es el conjunto $A^c = {2, 3, 4, 9, 11, 12, ...}$.","Given the set of natural numbers $A= \{1, 5, 6, 7, 8, 10\}$ the complement of it in the set of natural numbers is $A^c= \{2, 3, 4, 9, 11, 12, …\}$.",Wiki,
-Entorno,Neighborhood ,Noun,M.,,,,,Wiki,
-Conjunto Abierto ,Open Set,Noun,M.,Un conjunto abierto es un conjunto en el que cada uno de sus elementos tiene un entorno que está incluido en el mismo conjunto.,An open set is one such that for any point in the set there exists a neighborhood which is properly contained in the whole. ,,,Wiki,
-Conjunto Cerado,Closed Set,Noun,M.,Un conjunto cerado es un conjunto cuyo complemento es un conjunto abierto.,A closed set is a set whose complement is an open set.,,,Wiki,
-Leyes De De Morgan,De Morgan’s Law,Noun,F.,"Las leyes de De Morgan son un par de reglas de transformación. Las reglas son las siguientes: La negación de la conjunción es la disyunción de las negaciones.
-La negación de la disyunción es la conjunción de las negaciones.",De Morgan’s Laws are a pair of transformation rules. The rules are below: The negation of a disjunction is the conjunction of the negations. The negation of a conjunction is the disjunction of the negations,,,Wiki,
-Producto Cartesiano ,Cartesian Product,Noun,M.,"El producto cartesiano, denotado \(A \times B\),  de dos conjuntos, \(A\) y \(B\), es una operación, que resulta en otro conjunto, cuyos elementos son todos los pares ordenados. In símbolos  \[A \times B = \{(a,b) \mid a \in A \land b \in B\} \]","The Cartesian product of two sets \(A\) and \(B\), denoted \(A \times B\), is the set of all ordered pairs \((a, b)\) where \(a\) is in \(A\) and \(b\) is in \(B\). In symbols \[A \times B = \{(a,b) \mid a \in A \land b \in B\} \].","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{a,b\}$ el producto cartesiano $A \times B=\{(1, a),(1, b),(2, a),(2, b),(3, a),(3, b),(4, a),(4, b)\}$.","Given the sets $A = \{1,2,3,4\}$ and $B=\{a,b\}$ the Cartesian product is $A \times B=\{(1, a),(1, b),(2, a),(2, b),(3, a),(3, b),(4, a),(4, b)\}$.",Wiki,
-Conjunto Parcialmente Ordenado,Partially Ordered Set (Poset),Noun,M.,Un conjunto con un orden parcial se denomina conjunto parcialmente ordenado o poset.,,"El conjunto de subespacios de una topología, ordenado por inclusión.",The set of subspaces of a topological spaces order by inclusion. ,Wiki,
-Orden,Order,Noun,M.,,,,,,
-Orden Parcial,Partial Ordering,Adj,,"Un orden parcial es una relación binaria sobre un conjunto que es reflexiva, antisimétrica, y transitiva es decir, para cualquier a, b, y c en X se tiene que: \begin{enumerate} \item \[aRa\] (reflexividad).\item Si \[aRb\] y \[bRa\], entonces \[a = b\] (antisimetría).\item Si \[aRb\] y \[bRc\], entonces \[aRc\] (transitividad).","A partial order is a binary relation on a set which is reflexive, antisymmetric, transitive.",,,Wiki,
-Relación de Orden,Ordering,,,,,,,,
-Relación de Equivalencia,Equivalence Relation,Noun,F.,,,,,,
-Relación Binaria ,Binary Relation,Noun,F.,"Una relación binaria \(R\) es el subconjunto de los elementos del producto cartesiano \(A_{1} \times A_{2}\) que cumplen una determinada condición:
-\[R=\left\{\left(a_{1}, a_{2}\right):\left(a_{1}, a_{2}\right) \in A_{1} \times A_{2} \wedge R\left(a_{1}, a_{2}\right)=\text { Verdadero }\right\}\]","A binary relation \(R\) is the subset of elements of the Cartesian product \(A_{1} \times A_{2}\) such that the following is satisfied:
-\[R=\left\{\left(a_{1}, a_{2}\right):\left(a_{1}, a_{2}\right) \in A_{1} \times A_{2} \wedge R\left(a_{1}, a_{2}\right)=\text { True }\right\}\]",,,,
-Relación de Orden Total,Total Ordering ,Noun,F.,,,,,,
-Contraejemplo,Counterexample ,Noun,M.,Un contraejemplo a una declaración matemática es un ejemplo que cumple con las condiciones de la declaración pero no conduce la conclusión de la declaración. ,A counterexample to a mathematical statement is an example that satisfies the statement's condition but does not lead to the statement's conclusion. ,,,Khan Academy ,Matematicas
-Conjunto Denso,Dense Set ,Noun,M.,"Si ($X, \mathcal{T})$ es un espacio topológico, $A \subset X$  se dice que es un conjunto denso en $X$  si y solamente si la clausura topológica de $A$, denotado $\bar{A}$ es $X$.","If ($X, \mathcal{T})$ is a topological space, $A \subset X$  is said to be a dense set in $X$ if and only the closure of $A$, denoted $\bar{A}$ is $X$.",Un ejemplo es el conjunto de los números racionales es un conjunto dense en el conjunto de los números reales.,An example is the set of ration numbers is a dense set in the set of real numbers.,Wiki,
-Densa/o,Dense,Adj,,,,,,,
-Espacio Separable ,Separable Space,Noun,M.,,,,,,
-Espacio Denso,Dense Space,Noun,M.,,,,,Wiki,
-Conjunto Finito,Finite Set ,Noun,M.,"Un conjunto finito \(A\) es un conjunto cuyo número de elementos es un número natural. Es mas un conjunto finito \(A\) es aquel que puede ponerse en correspondencia biunívoca con el conjunto \( \{1, 2, ..., n\} \), para algún número natural \(n\)/",A finite set \(A\) is a set whose number of elements is a natural number. ,"Un ejemplo es \(A = \{ 2,4,5,100\} \) porque hay 4 elementos en \(A\) y 4 es un número natural.","An example is \(A = \{ 2,4,5,100\} \) because there are 4 elements in A and 4 is a natural number.",,
-Conjunto Infinito ,Infinite Set ,Noun,M.,"Un conjunto infinito es un conjunto que no es finito. Es decir Un conjunto infinito es un conjunto que no puede ponerse en correspondencia biunívoca con ningún conjunto \( \{1, 2, 3, ..., n\}\) para ningún número natural \(n \).",An infinite set \(A\) is a set whose number of elements is not finite. ,Un ejemplo es los números enteros. ,An example is the integers. ,Wiki,
-Finita/o,Finite,Adj.,,,,,,,
-Infinita/o,Infinite,Adj,,,,,,,
-Conjunto Numerable ,Countable Set,Noun,M.,Un conjunto numerable es un conjunto con la misma cardinalidad que el conjunto de los números naturales.,,,,Wiki,
-Conjunto No Numberable,Uncountable Set,Noun,M.,Un conjunto no numerable es un conjunto que no puede ser enumerado.,,Un ejemplo es el conjunto de los números reales,An example is the real numbers.,Wiki,
-Cardinalidad ,Cardinality ,Noun,F.,La cardinalidad de un conjunto es la medida del número de elementos en el conjunto.,The cardinality of a set is a measure of the number of elements of the set.,,,Wiki,
-Dominio,Domain,Noun,M.,El dominio (conjunto de definición o conjunto de partida) de una función son los valores para los cuales la función está definida.,The domain (or set of departure) of a function is the set which constitute the input values of the function.,El dominio de la función $f(x) = x^3$ es el conjunto de los números reales. El dominion de la función $f(x) = \frac{1}{x}$ es el conjunto de los números reales menos 0 puesto porque no esta definida para $x=0$.,"The domain of the function $f(x)= x^3$ is the set of real numbers. The domain of the function $f(x) = \frac{1}{x}$ is the set of real numbers except 0, because the function is not defined there.",Wiki,
-Codominio,Codomain,Noun,M.,"El codominio (también llamado contradominio, conjunto final o conjunto de llegada) de una función es un conjunto al que pertenecen todos los valores de salida  de la función.",The codomain (or set of destination) of a function is the set where output values may result in. ,"Para una función $f: \mathbb{R} \rightarrow \mathbb{R}$ 
-definida como $f(x) = x^2$ el codominio de $f$ es $\mathbb{R}$, pero $f(x)$ siempre toma un valor positivo.","For the function $f: \mathbb{R} \rightarrow \mathbb{R}$ defined as $f(x) = x^2$ the codomain of $f$ is $\mathbb{R}$, even though $f(x)$ always outputs a positive value.",Wiki,
+Ideal (o Ideal Bilátero),Ideal,Noun,M.,"Un ideal bilátero es un ideal por la derecha y por la izquierda. En un anillo conmutativo, las nociones de ideal por la derecha, de ideal por la izquierda y de ideal bilátero coinciden y simplemente se habla de ideal.",,"Dado un número entro \(k|), \(k\mathbb{Z}\) es un ideal de \( \mathbb{Z}\).",,Wiki,Álgebra
+Ideal por la Derecha,Right Ideal,Noun,M.,"Un subconjunto \(I\) no vacío de un anillo \(A\) es un ideal por la derecha de \(A\) si:
+\begin{enumerate} \item \(I\) es un subgrupo aditivo de \(A\).
+\item \(\forall(x, a) \in I \times A: x \times a \in I\) (El producto por la derecha de un elemento de \(I\) por un elemento de \(A\) pertenece a \(I\) ). \end{enumerate}",,,,Wiki,Álgebra
+Ideal por la Izquierda ,Left Ideal,Noun,M.,"Un subconjunto \(I\) no vacío de un anillo \(A\) es un ideal por la izquierda de \(A\) si:
+\begin{enumerate} \item \(I\) es un subgrupo aditivo de \(A\).
+\item \(\forall(a, x) \in A \times I: a \times x \in I\) (El producto por la izquierda de un elemento de \(I\) por un elemento de \(A\) pertenece a \(I\) ). \end{enumerate}",,,,Wiki,Álgebra
 Imagen (o Rango),Image (or Range),Noun,F.,La imagen (o campo de valores o rango) de una función es el conjunto contenido en formado por todos los valores que puede llegar a tomar la función.,The image of a function is the set of all output values it may produce.,"Para una función $f: \mathbb{R} \rightarrow \mathbb{R}$ 
 definida como $f(x) = x^2$ el codominio de $f$ es $\mathbb{R}$, pero $f(x)$ siempre toma un valor positivo entonces la imagen de la función es el conjunto $\{x \in \mathbb{R} : x \geq 0 \}$","For the function $f: \mathbb{R} \rightarrow \mathbb{R}$ defined as $f(x) = x^2$ the codomain of $f$ is $\mathbb{R}$, but $f(x)$ always outputs  positive values so the image of the function is $\{ x \in \mathbb{R} : x \geq 0\}$.",Wiki,
-"Sobreyectiva (epiyectiva, suprayectiva suryectiva, exhaustiva, onto o subyectiva)/o",Surjective,Adj,,"Una función \(f\) con dominio \(X\) y codominio \(Y\) es sobreyectiva si para cada \(y\) en \(Y\) existe al menos una \(x\) en \(X\) tal que \(f(x)=y\).
-Simbólicamente
-Si \(f: X \rightarrow Y\) entonces se dice que \(f\) es sobreyectiva si
-\[\forall y \in Y, \exists x \in X: f(x)=y\]","A function $f$ with domain $X$ and codomain $Y$ is surjective if for every $y$ in $Y$ there exists at least one $x$ in $X$ with $f(x)=y$. Symbolically,
-If $f: X \rightarrow Y$, then $f$ is said to be surjective if $\forall y \in Y, \exists x \in X, \quad f(x)=y .$",,,Wiki,
+Impar ,Odd,Adj,,,,,,,
+Infinita/o,Infinite,Adj,,,,,,,
+Intersección,Intersection ,Noun,F.,"La intersección de dos (o más) conjuntos, digamos $A$ y $B$, es un subconjunto de $A$ y $B$ denotado $A \cap B$  que contiene los elementos comunes de $A$ y $B$.","The intersection of two set $A$ and $B$ denoted by $A \cap B$ is the subset of $A$ and $B$ containing all elements of $A$ that also belong to $B$ or equivalently, all elements of $B$ that also belong to $A$.","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ la intersección de $A$ y $B$ es $A\cap B = \{2,4\}$.","Given the sets $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ then the intersection of $A$ and $B$ is $A\cap B = \{2,4\}$.",Wiki,
 Inyectiva/o,Injective,Adj,,"Dado una función \(f\) cuyo dominio es el conjunto \(X)\, se dice que la función \(f\) es inyectiva si para todo \(a\) y \(b\) en \(X\), si \[f(a)=f(b)\] entonces \[a=b\], esto es \[f(a)=f(b)\] implica \[a=b\]. Equivalentemente, si \[a \neq b\] entonces \[f(a) \neq f(b)\]. Simbólicamente,
 \[\forall a, b \in X, \quad f(a)=f(b) \Longrightarrow a=b\].","Let $f$ be a function whose domain is a set $X$. The function $f$ is said to be injective provided that for all $a$ and $b$ in $X$, if $f(a)=f(b$ $a=b$. Equivalently, if $a \neq b$, then $f(a) \neq f(b)$.
 Symbolically, $$\forall a, b \in X, \quad f(a)=f(b) \Longrightarrow a=b$$","Dado la función$$
@@ -227,114 +233,108 @@ no es inyectiva pues el valor 4 puede obtenerse como $f(2)$ y $f(-2)$ pero si el
 f: \mathbb{R} & \rightarrow \mathbb{R} \\
 x & \mapsto x^{2}
 \end{aligned}$$ is not injective because 4 can be obtained by $f(2)$ y $f(-2)$ but if the domain is changed the positive real numbers we obtain new function $g: \mathbb{R}^{+} \rightarrow \mathbb{R}^{+}$) then the function is injective.",Wiki,
-Biyectiva/o,Bijective,Adj,,Una función \(f\) se llama biyectiva si es inyectiva y sobreyectiva. ,A function \(f\) is called bijective if it is both injective and surjective. ,,,Wiki,
-Discreta/o,Discrete,Adj.,,,,,,,
-Conexo/a ,Connected ,Adj.,,,,,,,
-Disconexo/a,Disconnected,Adj.,,,,,,,
-Función,Function,Noun,F.,,,,,,
-Teorema,Theorem,Noun,M.,,,,,,
-Sistema Algebraica ( Estructura Algebraica),Algebraic Structure,Noun,F.,,,,,,
-Primo,Prime,Adj,,,,,,,
+Isomorfismo ,Isomorphism,Noun,M.,Un isomorfismo es un homomorfismo (o más generalmente un morfismo) que admite un inverso.,An isomorphism is a homomorphism (or more generally) which admits an inverse. ,,,Wiki,
+Lagrangiano,Lagrangian ,Noun,M.,,,,,,
+Lazo,Loop,Noun,M. ,"Si es $X$ un espacio topológico, y $p$ un punto fijo de $X$, un lazo con base en $p$ es una aplicación continua $\gamma:[0,1] \rightarrow X$ que verifica $\gamma(0)=\gamma(1)=p$.","Given a topological space $X$, a loop based at $p$ is defined to be a continuous function (also known as a continuous map) $\gamma:[0,1] \rightarrow X$ such that the starting point $\gamma(0)$ and the end point $\gamma(1)$ are both equal to $p$.",,,,
+Leyes De De Morgan,De Morgan’s Law,Noun,F.,"Las leyes de De Morgan son un par de reglas de transformación. Las reglas son las siguientes: La negación de la conjunción es la disyunción de las negaciones.
+La negación de la disyunción es la conjunción de las negaciones.",De Morgan’s Laws are a pair of transformation rules. The rules are below: The negation of a disjunction is the conjunction of the negations. The negation of a conjunction is the disjunction of the negations,,,Wiki,
+Libre ,Free,Adj,,,,,,,
+Llave,Brace (curly bracket),Noun,F.,Los símbolos “{“ y “}”.,The symbols “{“ and “}”.,"“Usualmente, a los elementos de un conjunto se les representa encerrados entre dos llaves.” -Zamolla (2013)",Usually the elements of a set are written between two braces.,"Velázquez (2020), Zamalloa (2013)",
+Marco,Frame,Noun,M.,,,,,,
+Matriz,Matrix,Noun,F.,"Una matriz es un arreglo p-dimensional de números (elementos de la matriz) ordenados en filas (o renglones) y columnas, donde una fila es cada una de las líneas horizontales de la matriz y una columna es cada una de las líneas verticales. ",A matrix is a rectangular array of numbers (or other mathematical objects) for which operations such as addition and multiplication are defined.,,,Wiki,Álgebra Lineal
+Matriz Cero,Zero Matrix,Noun,F.,Una matriz cero es una matriz con todos sus elementos iguales a cero.,A zero matrix or null matrix is a matrix all of whose entries are zero.,,,Wiki,Álgebra Lineal
+Matriz Cuadrada,Square Matrix,Noun,F.,Una matriz cuadrada es una matriz que tienen el mismo el número de columnas y filas. ,A square matrix is a matrix that has an equal number of rows and columns.,,,Wiki,Álgebra Lineal
+Matriz de Adyacencia,Adjacency Matrix,Noun,F.,La matriz de adyacencia es una matriz cuadrada que se utiliza como una forma de representar relaciones binarias. ,An adjacency matrix is a square matrix used to represent a finite graph.,,,Wiki,"Álgebra Lineal, Teoría de Grafos"
+Matriz Hessian ,Hessian matrix,Noun,F.,"La matriz hessiana de una función escalar o campo escalar f de \(n \) variables, es la matriz cuadrada de tamaño \(n \times n\) de las segundas derivadas parciales.
+","The Hessian matrix or Hessian is a square matrix of second-order partial derivatives of a scalar-valued function, or scalar field.",,,Wiki,Cálculo
+Matriz Laplaciana (o Matriz de Admitancia o Matriz de Kirchhoff ),Laplacian Matrix (or Admittance Matrix or Kirchhoff Matrix),Noun,F.,,,,,Wiki,Teoría de Grafos
+Mónica/o,Mononic,Adj,,Se dice que un polinomio es mónico si tiene grado \(n\) y el coeficiente de \(x^n\)  es igual a 1.,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
+Monoidal ,Monoidal ,Adj.,,Teniendo una estructura de monoid.,Having the structure of a monoid.,,,,
+Monoide ,Monoid ,Noun,M.,,,,,,
+Monomorfismo,Monomorphism,Noun,M.,"En la teoría de categorías, un monomorfismo es un morfismo \(f: X \rightarrow Y\) que para cualquier objecto \(Z\)  y morfismos \(g_{1}, g_{2}: Z \rightarrow X\),
+\[f \circ g_{1}=f \circ g_{2} \Longrightarrow g_{1}=g_{2}\]","In category theory, a monomorphism is a morphism $f: X \rightarrow Y$ such that for all objects $Z$ and all morphisms $g_{1}, g_{2}: Z \rightarrow X$,
+$$f \circ g_{1}=f \circ g_{2} \Longrightarrow g_{1}=g_{2}$$",En la categoría de $\mathbf{Set}$ monomorfismos son morifismos/funciones inyectivos.,In the category $\mathbb{Set}$ monomorphism are morphisms/functions which are injective. ,Wiki,
+Morfismo ,Morphism ,Noun,M.,Se llaman morfismos (u homomorfismos) a las aplicaciones entre estructuras matemáticas que preservan la estructura interna.,A morphism is a structure-preserving map from one mathematical structure to another one of the same type.,,,Wiki,
+Núcleo ,Kernel ,Noun,M.,"El núcleo de un homomorfismo \(f: R \rightarrow S\) es el conjunto \( 
+\text{ker} f=\{r\in R:f(r)=0_{S}\} \)","The kernel of a homomorphism \(f: R \rightarrow S\) is the set \( 
+\text{ker} f=\{r\in R:f(r)=0_{S}\} \)",,,Wiki,"Álgebra, Álgebra Lineal"
+Nudo,Knot,Noun,M.,,,,,,Topología 
+Número de Oro ,Golden Ratio,Noun,M.,,,,,,
+Número Entero,An Integer Number,Noun,M.,Un número entero es un número que no se expresa con componente fraccionario. ,An integer is a number that can be written without a fractional component.,"\(-2, 0, 2\)","\(-2, 0, 2\)",Wiki,
+Número Irracional,An Irrational Number,Noun,M.,Un número irracional es un valor que no puede ser expresado como una fracción de números enteros. ,A number which can not be represented as a quotient of two integers. ,"\(\sqrt{2}, e, \pi\)","\(\sqrt{2}, e, \pi\)",Wiki,
+Número Natural,A Natural Number ,Noun,M.,Un número natural es cualquiera de los números que se usan para contar los elementos de ciertos conjuntos.,The natural numbers are those used for counting and ordering.,"\(1, 2, 100\)","\(1, 2, 100\)",Wiki,
 "Opuesto (o Simétrico Para la Suma, o Inverso Aditivo) ",Negation (Additive Inverse),Noun,M.,"El opuesto de un número n es el número que, sumado con da cero.",,,,Wiki,
+Orden,Order,Noun,M.,,,,,,
+Orden Parcial,Partial Ordering,Adj,,"Un orden parcial es una relación binaria sobre un conjunto que es reflexiva, antisimétrica, y transitiva es decir, para cualquier a, b, y c en X se tiene que: \begin{enumerate} \item \[aRa\] (reflexividad).\item Si \[aRb\] y \[bRa\], entonces \[a = b\] (antisimetría).\item Si \[aRb\] y \[bRc\], entonces \[aRc\] (transitividad).","A partial order is a binary relation on a set which is reflexive, antisymmetric, transitive.",,,Wiki,
+Par,Pair,Noun,M.,,,,,,
+Par ,Even ,Adj,,,,,,,
+Par Ordenado,Ordered Pair,Noun,M.,"Un par ordenado \((a,b)\) es una pareja de objetos matemáticos, en la que se distingue un elemento y otro.","An ordered pair \((a, b)\) is a pair of objects.","Un ejemplo de un par ordenado es \((5,4)\).","An example of an ordered pair is \((5,4)\).",Wiki,
+Paralelepípedo,Parallelepiped,Noun,M.,"Un paralelepípedo es un poliedro de seis caras (por tanto, un hexaedro), en el que todas las caras son paralelogramos, paralelas e iguales dos a dos.",,,,Wiki,Geometría
+Pertenecer,Belong To,Verb,,(como un elemento pertencece a un conjunto),(as an element belongs to a set),,,Zamalloa (2013),
+Plano,Plane,Noun,M.,"Un plano es un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas.",,,,Wiki,Geometría
+Poliedro,Polygon,Noun,M.,Un poliedro es un cuerpo geométrico cuyas caras son planas y encierran un volumen finito.,,,,Wiki,Geometría
+Polígono,Polygon,Noun,M.,,,,,,
+Polinomio,Polynomial,Noun,M.,"Un polinomio es una expresión algebraica formada por varios monomios o términos y en ellos intervienen números y letras relacionados mediante sumas, multiplicaciones y potencias.","A polynomial is an expression that can be built from constants and symbols called variables or indeterminates by means of addition, multiplication and exponentiation to a non-negative integer power. ",Un ejemplo de un polinomio es la expresión $4x^3+x-2$.,An example of a polynomial expression is $4x^3+x-2$.,Viola-Prioli & Viola-Prioli (2006),
+Polinomio Constante,Constant Polynomial,Noun,M.,Se dice que un polinomio es constante si tien grado cero o es el polinomio nulo. ,,,,Viola-Prioli & Viola-Prioli (2006),
+Polinomio Nulo,Zero Polynomial,Noun,M.,El polinomio nulo es el polinomio con coeficientes igual a cero.,The zero polynomial is the polynomial whose coefficients are all equal to 0.,,,Wolfram MathWorld ,Álgebra
+Primo,Prime,Adj,,,,,,,
+Producto Cartesiano ,Cartesian Product,Noun,M.,"El producto cartesiano, denotado \(A \times B\),  de dos conjuntos, \(A\) y \(B\), es una operación, que resulta en otro conjunto, cuyos elementos son todos los pares ordenados. In símbolos  \[A \times B = \{(a,b) \mid a \in A \land b \in B\} \]","The Cartesian product of two sets \(A\) and \(B\), denoted \(A \times B\), is the set of all ordered pairs \((a, b)\) where \(a\) is in \(A\) and \(b\) is in \(B\). In symbols \[A \times B = \{(a,b) \mid a \in A \land b \in B\} \].","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{a,b\}$ el producto cartesiano $A \times B=\{(1, a),(1, b),(2, a),(2, b),(3, a),(3, b),(4, a),(4, b)\}$.","Given the sets $A = \{1,2,3,4\}$ and $B=\{a,b\}$ the Cartesian product is $A \times B=\{(1, a),(1, b),(2, a),(2, b),(3, a),(3, b),(4, a),(4, b)\}$.",Wiki,
+Producto Semidirecto ,Semidirect Product,Noun,M.,,,,,,
+Producto Tensorial ,Tensor Product ,Noun ,M.,,,,,,
+Punto,Point,Noun,M.,,,,,,
+Punto Fijo ,Fixed Point,Noun,M.,,,,,,
+Raíces De Unidad ,Roots of Unity,Noun,F.,,,,,Viola-Prioli & Viola-Prioli (2006),
+Raiz N-ésima de la Unidad (o Enésima),N-th Root of Unity,Noun,F.,,,,,Wiki,
+Recta (Línea Recta),Line (Straight Line),Noun,F.,,,,,Wiki,Geometría
 Reflexividad,Reflexivity ,Adj,,"Dado una relación binaria \[R\] para un conjunto \[A\] se decir que la relación se cumple reflexividad si para cualquier elemento \[a \in  A\],  \[aRa\]. ","Given a binary relation \[R\] for a set \[A\] we say the relation is reflexive if for all elements \[a \in  A\],  \[aRa\]. ",,,Wiki,Matematicas
-Simetría,Symmetry,Adj,,"Dado una relación binaria \[R\] para un conjunto \[A\] se decir que la relación se cumple simetría si para cualquier elemento \[a,b \in  A\],  \[aRb \implies bRa\]. ","Given a binary relation \[R\] for a set \[A\] we say the relation is symmetric if for all elements \[a ,b \in  A\],  \[aRb\]  implies  \[bRa\]. ","Dado un conjunto \(A\) con la relation \(\cup \), entonces \(\cup\) es un relación simétrica. ","Given a set \(A\) with the relation\(\cup \), then \(\cup\) is a symmetric relation. ",Wiki,Matematicas
-Transitividad,Transitividad,Adj,,"Dado una relación binaria \[R\] para un conjunto \[A\] se decir que la relación se cumple transitividad si para cualquier elemento \[a,b,c  \in  A\] donde \[aRb\] y \[bRc\] implica \[aRc\].","Given a binary relation \[R\] for a set \[A\] we say the relation is transitive if for all elements \[a,b,c \in  A\], \[aRb\] y \[bRc\] implies \[aRc\]. ",,,Wiki,Matematicas
+Relación Binaria ,Binary Relation,Noun,F.,"Una relación binaria \(R\) es el subconjunto de los elementos del producto cartesiano \(A_{1} \times A_{2}\) que cumplen una determinada condición:
+\[R=\left\{\left(a_{1}, a_{2}\right):\left(a_{1}, a_{2}\right) \in A_{1} \times A_{2} \wedge R\left(a_{1}, a_{2}\right)=\text { Verdadero }\right\}\]","A binary relation \(R\) is the subset of elements of the Cartesian product \(A_{1} \times A_{2}\) such that the following is satisfied:
+\[R=\left\{\left(a_{1}, a_{2}\right):\left(a_{1}, a_{2}\right) \in A_{1} \times A_{2} \wedge R\left(a_{1}, a_{2}\right)=\text { True }\right\}\]",,,,
+Relación de Equivalencia,Equivalence Relation,Noun,F.,,,,,,
+Relación de Orden,Ordering,,,,,,,,
+Relación de Orden Total,Total Ordering ,Noun,F.,,,,,,
+Relación Irreflexiva (Antirreflexiva o Antirrefleja),Irreflexive (Anti-reflexive) Relation,Adj,,"Una relación irreflexiva o antirefleja es una relación binaria \(R\) sobre un conjunto \(A\), de manera que ningún elemento de \(A\) está relacionado consigo mismo mediante R. Es decir, \( \forall x \in A\) tenemos que \( \neg (x R x) \).","A irreflexive relation is a binary relation\(R\) on a set \(A\), such that all elements of \(A\)  are not related to themselves. That is to say , \( \forall x \in A\) we have  \( \neg( x R x) \).",,,Wiki,Teoría de Conjuntos 
 Relación Reflexiva (o Refleja),Reflexive Relation,Noun,,"Una relación reflexiva o refleja es una relación binaria \(R\) sobre un conjunto \(A\), de manera que todo elemento de \(A\) está relacionado consigo mismo. Es decir, \( \forall x \in A\) tenemos que \( x R x \).
 En tal caso, se dice que \(R\) cumple con la propiedad de reflexividad.","A reflexive relation is a binary relation\(R\) on a set \(A\), such that all elements of \(A\)  are related to themselves. That is to say , \( \forall x \in A\) we have  \( x R x \).
 In which case, \(R\) is said to satisfy the reflexivity property.",,,Wiki,Teoría de Conjuntos 
-Relación Irreflexiva (Antirreflexiva o Antirrefleja),Irreflexive (Anti-reflexive) Relation,Adj,,"Una relación irreflexiva o antirefleja es una relación binaria \(R\) sobre un conjunto \(A\), de manera que ningún elemento de \(A\) está relacionado consigo mismo mediante R. Es decir, \( \forall x \in A\) tenemos que \( \neg (x R x) \).","A irreflexive relation is a binary relation\(R\) on a set \(A\), such that all elements of \(A\)  are not related to themselves. That is to say , \( \forall x \in A\) we have  \( \neg( x R x) \).",,,Wiki,Teoría de Conjuntos 
-(Relación) Asimétra,Asymmetry,Adj,,"Una relación binaria \(R\) sobre un conjunto \(A\), es asimétrica cuando si se da que un elemento está relacionado con otro mediante \(R\), entonces el segundo nunca está relacionado con el primero. ","An asymmetric relation is a binary relation \(R\) on a set \(A\) where for all \(a,b \in A\) if \(a\) is related to \(b\) then \(b\) is not related to \(a\).",,,,
-(Relación) Simétrica ,Symmetric,Adj,,"Una relación binaria \(R\) sobre un conjunto \(A\) es simétrica cuando se da que si un elemento está relacionado con otro mediante \(R\), entonces ese otro también está relacionado con él, a través de la misma “R,” es lo mismo tener \((a,b)\) que tener \((b,a)\) . En símbolos \[\forall x, y \in A: \quad x R y \quad \Rightarrow \quad y Rx \]","A symmetric relation is a type of binary relation. An example is the relation ""is equal to"", because if \(a=b\) is true then \(b=a\) is also true. Formally, a binary relation \(R\) over a set \(X\) is symmetric if:
-\[\forall a, b \in X(a R b \Leftrightarrow b R a)\]
-where the notation \(a R b\) means that \((a, b) \in R\).",,,,
-(Matriz) Transpuesta,Transpose (Matrix),Noun,F.,"Sea \(A\) una matriz con \(m\) filas y \(n\) columnas la matriz traspuesta, denotada con \(A^t \) está dada por:
-\[\left(A^t\right)_{i j}=A_{j i}, 1 \leq i \leq n, 1 \leq j \leq m^3 \] en donde el elemento \(a_{j i}\) de la matriz original \(A\) se convertirá en el elemento \(a_{i j}\) de la matriz traspuesta \(A^t\).","Give \(A\) a matrix with \(m\) rows y \(n\) columns the transpose matrix, denoted as \(A^t\) is given by
-\[\left(A^t\right)_{i j}=A_{j i}, 1 \leq i \leq n, 1 \leq j \leq m^3 \] where the \(a_{j i}\) of the original matrix \(A\) becomes the element \(a_{i j}\) the transpose matrix \(A^t\).",,,Wiki,Álgebra Lineal
-Matriz,Matrix,Noun,F.,"Una matriz es un arreglo p-dimensional de números (elementos de la matriz) ordenados en filas (o renglones) y columnas, donde una fila es cada una de las líneas horizontales de la matriz y una columna es cada una de las líneas verticales. ",A matrix is a rectangular array of numbers (or other mathematical objects) for which operations such as addition and multiplication are defined.,,,Wiki,Álgebra Lineal
-Matriz de Adyacencia,Adjacency Matrix,Noun,F.,La matriz de adyacencia es una matriz cuadrada que se utiliza como una forma de representar relaciones binarias. ,An adjacency matrix is a square matrix used to represent a finite graph.,,,Wiki,"Álgebra Lineal, Teoría de Grafos"
-Matriz Cuadrada,Square Matrix,Noun,F.,Una matriz cuadrada es una matriz que tienen el mismo el número de columnas y filas. ,A square matrix is a matrix that has an equal number of rows and columns.,,,Wiki,Álgebra Lineal
-Matriz Cero,Zero Matrix,Noun,F.,Una matriz cero es una matriz con todos sus elementos iguales a cero.,A zero matrix or null matrix is a matrix all of whose entries are zero.,,,Wiki,Álgebra Lineal
-Matriz Laplaciana (o Matriz de Admitancia o Matriz de Kirchhoff ),Laplacian Matrix (or Admittance Matrix or Kirchhoff Matrix),Noun,F.,,,,,Wiki,Teoría de Grafos
-Teoría de Grafos,Graph Theory,Noun,,,,,,,
-Álgebra,Algebra,Noun,F.,La rama de la matemática que estudia la combinación de elementos de estructuras abstractas acorde a ciertas reglas.,Algebra is the branch of mathematics that studies of mathematical symbols and the rules for manipulating these symbols.,,,Wiki,
-Análisis ,Analysis ,Noun,M.,,,,,,
-Geometría,Geometry,Noun,F.,,,,,,
-Teoría de Números,Number Theory,Noun,,,,,,,
-Álgebra Lineal ,Linear Algebra,Noun,F.,"La rama de matemáticas en que se estudia conceptos tales como vectores, matrices, espacio dual, sistemas de ecuaciones lineales y en su enfoque de manera más formal, espacios vectoriales y sus transformaciones lineales.",,,,Wiki,
-Análisis Real ( o Teoría de las Funciones de Variable Real) ,Real Analysis,Noun,M.,"La rama del análisis matemático que tiene que ver con el conjunto de los números reales, y sucesión y funciones de números reales. ","Real analysis is the branch of mathematical analysis that studies the behavior of real numbers, sequences and series of real numbers, and real functions.",,,Wiki,
-Sucesión,Sequence ,Noun,F.,,,,,,
-Serie,Series,Noun,F.,,,,,,
-Análisis Complejo ( o Teoría de las Funciones de Variable Compleja) ,Complex Analysis,Noun,M.,,,,,,
-Álgebra Abstracta,Abstract Algebra,Noun,F.,,,,,,
-Álgebra Homológica,Homological Algebra,Noun,F.,,,,,,
-Álgebra Exterior (o Álgebra de Grassmann),Exterior Algebra ,Noun,F.,La álgebra exterior El sistema algebraico cuyo producto es el producto exterior y se proporciona un entorno algebraico en el que manejar cuestiones geométricas.,,,,Wiki,
-Arista,Edge,Noun,F.,"Una arista es un segmento de recta que limita la cara, también conocida como lado, de una figura plana.",,,,Wiki,"Geometría, Teoría de Grafos"
-Vértice,Vertex,Noun,M.,"Un vértice es un punto donde se encuentran dos o más elementos unidimensionales (curvas, vectores, rectas, semirrectas o segmentos).",,,,Wiki,"Geometría, Teoría de Grafos"
-Punto,Point,Noun,M.,,,,,,
-Paralelepípedo,Parallelepiped,Noun,M.,"Un paralelepípedo es un poliedro de seis caras (por tanto, un hexaedro), en el que todas las caras son paralelogramos, paralelas e iguales dos a dos.",,,,Wiki,Geometría
-Poliedro,Polygon,Noun,M.,Un poliedro es un cuerpo geométrico cuyas caras son planas y encierran un volumen finito.,,,,Wiki,Geometría
-Hexadro ,Hexagon ,Noun,M.,Un hexadro es un poliedro de sies caras.,,,,Wiki,"Geometría, Teoría de Grafos"
-Cubo,Cube,Noun,M.,Un cubo es un poliedro limitado por seis caras cuadradas congruentes.,,,,Wiki,Geometría
-Ángulo,Angle,Noun,M.,Un ángulo es el parte del plano determinada por dos semirrectas llamadas lados que tienen el mismo punto de origen llamado vértice del ángulo.,,,,Wiki,Geometría
-Plano,Plane,Noun,M.,"Un plano es un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas.",,,,Wiki,Geometría
-Homología,Homology,Noun,F.,,,,,,
-Raíces De Unidad ,Roots of Unity,Noun,F.,,,,,Viola-Prioli & Viola-Prioli (2006),
-Raiz N-ésima de la Unidad (o Enésima),N-th Root of Unity,Noun,F.,,,,,Wiki,
-Construcciones con Regla y Compás,Constructions with Straight Edge and Compass,Noun,F.,,,,,,"Álgebra, Análsis Compleja"
-Dominio de Ideales Principales (DIP),Principal Ideal Domain (PID),Noun,M.,,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
-Polinomio,Polynomial,Noun,M.,"Un polinomio es una expresión algebraica formada por varios monomios o términos y en ellos intervienen números y letras relacionados mediante sumas, multiplicaciones y potencias.","A polynomial is an expression that can be built from constants and symbols called variables or indeterminates by means of addition, multiplication and exponentiation to a non-negative integer power. ",Un ejemplo de un polinomio es la expresión $4x^3+x-2$.,An example of a polynomial expression is $4x^3+x-2$.,Viola-Prioli & Viola-Prioli (2006),
-Mónica/o,Mononic,Adj,,Se dice que un polinomio es mónico si tiene grado \(n\) y el coeficiente de \(x^n\)  es igual a 1.,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
-Elemento Nulo ,Zero Element,Noun,F.,,,,,,
-Polinomio Constante,Constant Polynomial,Noun,M.,Se dice que un polinomio es constante si tien grado cero o es el polinomio nulo. ,,,,Viola-Prioli & Viola-Prioli (2006),
-Polinomio Nulo,Zero Polynomial,Noun,M.,El polinomio nulo es el polinomio con coeficientes igual a cero.,The zero polynomial is the polynomial whose coefficients are all equal to 0.,,,Wolfram MathWorld ,Álgebra
-El Grupo de Galois,Galois Group,Noun,M.,,,,,,Álgebra
-Clausura Algebraica ,Algebraic Closure,Noun,F.,La clausura algebraica de un cuerpo \(K\) puede pensarse como la mayor extensión algebraica de \(K\).,The algebraic closure of a field \(K\) can be thought of as the largest algebraic extension of \(K\).,La clausura algebraica del cuerpo de los números reales es el cuerpo de los números complejos.,The algebraic closure of the field of real numbers is the field of complex numbers.,,Álgebra
-Extension,Extension,Noun,F.,,,,,,
-Extension Radical ,Radical Extension,Noun,F.,,,,,,
-Elemento Simétrico,Inverse Element,Noun,M.,,,,,,
-Elemento Neutro,Identity Element,Noun,M.,,,,,,
-Recta (Línea Recta),Line (Straight Line),Noun,F.,,,,,Wiki,Geometría
-Llave,Brace (curly bracket),Noun,F.,Los símbolos “{“ y “}”.,The symbols “{“ and “}”.,"“Usualmente, a los elementos de un conjunto se les representa encerrados entre dos llaves.” -Zamolla (2013)",Usually the elements of a set are written between two braces.,"Velázquez (2020), Zamalloa (2013)",
-Pertenecer,Belong To,Verb,,(como un elemento pertencece a un conjunto),(as an element belongs to a set),,,Zamalloa (2013),
-Comprensión ,Set Comprehension,Noun,F.,Una manera de describir un conjunto en que se escribe una propiedad común a todos los elementos.,A way of describing a set where a property is given which all the elements share.,,,Zamalloa (2013),
-Producto Tensorial ,Tensor Product ,Noun ,M.,,,,,,
-Suma Directa,Direct Sum,Noun,F.,,,,,,
-Axioma,Axiom,Noun,M.,Un axioma es una proposición asumida dentro de un cuerpo teórico sobre la cual descansan otros razonamientos y proposiciones deducidas de esas premisas.,"An axiom is a statement that is taken to be true, to serve as a premise or starting point for further reasoning and arguments.",,,Wiki,Mathematics
-Axioma de Elección,Axiom of Choice,Noun,M.,,,,,,
-Monoide ,Monoid ,Noun,M.,,,,,,
-Monoidal ,Monoidal ,Adj.,,Teniendo una estructura de monoid.,Having the structure of a monoid.,,,,
-Camino/Trayectoria/Arco ,Path ,Noun,M. / F.,Un camino (o una trayectoria) es una función del intervalo a un espacio topológico.,A path is a function from the interval to a topological space.,,,Wiki,Topología 
-Coeficiente ,Coefficient ,Noun,M.,Un coeficiente es un factor vinculado a un monomio.,"A coefficient is a multiplicative factor in some term of a polynomial, a series, or an expression.","Dado el polinomio \(5x^2 + 3x\), 5 y 3 son los coeficientes.","Given the polynomial  \(5x^2 + 3x\), 5 and 3 are the coefficients.",Wiki,Matematica 
-Equivalencia Homotópica,Homotopy Equivalence ,Noun,F.,,,,,,
-Embebimiento ,Embedding ,Noun,M.,,,,,,
-Arcoconexo,Path Connected ,Adj.,,"Se dice que \( (X, T) \) es un espacio conexo por arcos o arcoconexo si para cada par de puntos distintos \( x , y \in X \), existe un arco \( \sigma \)  tal que \( \sigma (0) = x \)   y \( \sigma (1) = y \) .",,,,,
-Generadores ,Generators ,Noun,M.,,,,,,
 Relaciones ,Relations ,Noun,F. ,,,,,,
-Autovalor,Eigenvalue ,Noun,M. ,"Sea $A$ una matriz cuadrada de orden $m$. Diremos que un escalar $\lambda \in \mathbb{K}(=\mathbb{R}$ o $\mathbb{C})$ es un autovalor de $A$ si existe un vector $v \in \mathbb{K}^{m}, v \neq 0$ tal que $A v=\lambda v$, en cuyo caso se dice que $v$ es un autovector de $A$ asociado al autovalor \(\lambda\)",Let \(A\) be a square matrix. We call a scalar \( \lambda \in \mathbb{K} \) an eigenvalue of \(A\) if there exists a nonzero vector \( v \in \mathbb{K}^n \) such that \(Av = \lambda v\) in which was we say \( v \) is an eigenvector of \(A\) associated to eigenvalue \( \lambda \). ,,,https://personal.us.es/ealgaba/algebra%20=04-05/TEMA11.pdf,Álgebra Lineal 
-Traza ,Trace,Noun,F. ,,,,,,
-Número de Oro ,Golden Ratio,Noun,M.,,,,,,
-Lagrangiano,Lagrangian ,Noun,M.,,,,,,
-Matriz Hessian ,Hessian matrix,Noun,F.,"La matriz hessiana de una función escalar o campo escalar f de \(n \) variables, es la matriz cuadrada de tamaño \(n \times n\) de las segundas derivadas parciales.
-","The Hessian matrix or Hessian is a square matrix of second-order partial derivatives of a scalar-valued function, or scalar field.",,,Wiki,Cálculo
-Cáculo ,Calculus ,Noun,M.,,,,,,
-Producto Semidirecto ,Semidirect Product,Noun,M.,,,,,,
-Punto Fijo ,Fixed Point,Noun,M.,,,,,,
-Toro,Torus,Noun,M. ,,,,,,
-Par ,Even ,Adj,,,,,,,
-Impar ,Odd,Adj,,,,,,,
-Summa Conexa ,Connected Sum ,Noun,F.,,,,,,
-Libre ,Free,Adj,,,,,,,
-Autocruz,Self-Intersection ,Adj,,,,,,,
-Marco,Frame,Noun,M.,,,,,,
-Bordismo ,Bordism ,Noun,M.,,,,,,Topología 
-Group de Bordismos ,Bordism Group ,Noun,M.,,,,,,Topología 
-Frontera ,Boundary ,Noun,F.,,,,,,
-Cuerda ,String,Noun,F.,,,,,,
-Vertice ,Vertex,Noun,F. ,,,,,,"Topología, Geometría, Teoría de Grafos"
-Arista ,Edge,Noun,F.,,,,,,"Topología, Geometría, Teoría de Grafos"
-Cara ,Cara,Noun,F.,,,,,,"Topología, Geometría, Teoría de Grafos"
-Grupo Cuaternión,Quaternion Group,Noun,M.,"El grupo cuaternión es una extensión generada de manera análoga añadiendo las unidades imaginarias \( i, j \)y \(k\) a los números reales tal que \(i^2 =j^2 =k^2 =ijk =-1\).",,,,Wiki,Álgebra
-Polígono,Polygon,Noun,M.,,,,,,
-Caracteristica de Euler ,Euler Characteristic ,Noun,F.,,,,,,Topología 
+Serie,Series,Noun,F.,,,,,,
+Simetría,Symmetry,Adj,,"Dado una relación binaria \[R\] para un conjunto \[A\] se decir que la relación se cumple simetría si para cualquier elemento \[a,b \in  A\],  \[aRb \implies bRa\]. ","Given a binary relation \[R\] for a set \[A\] we say the relation is symmetric if for all elements \[a ,b \in  A\],  \[aRb\]  implies  \[bRa\]. ","Dado un conjunto \(A\) con la relation \(\cup \), entonces \(\cup\) es un relación simétrica. ","Given a set \(A\) with the relation\(\cup \), then \(\cup\) is a symmetric relation. ",Wiki,Matematicas
+Sistema Algebraica ( Estructura Algebraica),Algebraic Structure,Noun,F.,,,,,,
+"Sobreyectiva (epiyectiva, suprayectiva suryectiva, exhaustiva, onto o subyectiva)/o",Surjective,Adj,,"Una función \(f\) con dominio \(X\) y codominio \(Y\) es sobreyectiva si para cada \(y\) en \(Y\) existe al menos una \(x\) en \(X\) tal que \(f(x)=y\).
+Simbólicamente
+Si \(f: X \rightarrow Y\) entonces se dice que \(f\) es sobreyectiva si
+\[\forall y \in Y, \exists x \in X: f(x)=y\]","A function $f$ with domain $X$ and codomain $Y$ is surjective if for every $y$ in $Y$ there exists at least one $x$ in $X$ with $f(x)=y$. Symbolically,
+If $f: X \rightarrow Y$, then $f$ is said to be surjective if $\forall y \in Y, \exists x \in X, \quad f(x)=y .$",,,Wiki,
 "Sólidos platónicos
 ",Platonic solid,Noun,M.,"Los sólidos platónicos, regulares o perfectos son poliedros convexos tal que todas sus caras son polígonos regulares iguales entre sí, y en que todos los ángulos sólidos son iguales.",,,,,"Topología, Geometría, "
+Subbase,Subbasis,Noun,M.,"Sea $X$ un espacio topológico con topología $T$. Una subbase de $T$ es usualmente definida como una subcolección $B$ de $T$ que satisface una de las dos siguientes condiciones equivalentes:
+1. La subcolección $B$ genera la topología $T$. Esto significa que $T$ es la topología más pequeña que contiene a B: cualquier topología $U$ en $X$ que contiene a $B$ también debe contener a $T$.
+2. La colección de conjuntos abiertos construida con $X$ y todas la intersecciones finitas de los elementos de $B$ forman una base para $T$. Esto significa que todo conjunto abierto propio no vacío en $T$ puede ser escrito como una unión de intersecciones finitas de elementos de $B$. Explícitamente, dado un punto $x$ en un conjunto abierto propio $U$ existen varios conjuntos finitos $S_1, …, S_n$ de $B$, tales que la intersección de estos conjuntos contiene a $x$ y esta contenida en $U$.","Let $X$ be a topological space with topology $T$. A subbase of $T$ is usually defined as a subcollection $B$ of $T$ satisfying one of the two following equivalent conditions:
+1. The subcollection $B$ generates the topology $T$. This means that $T$ is the smallest topology containing $B$ : any topology $T^{\prime}$ on $X$ containing $B$ must also contain $T$.
+2. The collection of open sets consisting of all finite intersections of elements of $B$, together with the set $X$, forms a basis for $T$. This means that every proper open set in $T$ can be written as a union of finite intersections of elements of $B$. Explicitly, given a point $x$ in an open set $U \subseteq X$, there are finitely many sets $S_{1}, \ldots, S_{n}$ of $B$, such that the intersection of these sets contains $x$ and is contained in $U$.","La topología compacta abierta, en el espacio de funciones continuas de $X$ a $Y$ tiene por una subbase el conjunto de funciones
+$$V(K, U)=\{f: X \rightarrow Y \mid f(K) \subset U\}$$
+donde $K$ es un espacio compacto y $U$ es abierto en $Y$.","The compact-open topology on the space of continuous functions from $X$ to $Y$ has for a subbase the set of functions
+$$V(K, U)=\{f: X \rightarrow Y \mid f(K) \subseteq U\}$$
+where $K \subseteq X$ is compact and $U$ is an open subset of $Y$.",Wiki,
+Subconjunto,Subset,Noun,M. ,Un conjunto B es subconjunto de un conjunto $A$ si $B$ está contenido dentro de $A$.,A set $A$ is a subset of a set B if all elements of A are also elements of B,El conjunto de los números naturales es un subconjunto del conjunto de los números reales. ,The set of natural numbers is a subset of the set of real numbers,Wiki,
+Sucesión,Sequence ,Noun,F.,,,,,,
+Suma Directa,Direct Sum,Noun,F.,,,,,,
+Summa Conexa ,Connected Sum ,Noun,F.,,,,,,
+Teorema,Theorem,Noun,M.,,,,,,
+Teoría de Grafos,Graph Theory,Noun,,,,,,,
+Teoría de Números,Number Theory,Noun,,,,,,,
+Topología ,Topology,Noun,F.,La topología es la rama de las matemáticas dedicada al estudio de aquellas propiedades de los cuerpos geométricos que permanecen inalteradas por transformaciones continuas.,"Topology is the area of mathematics which is concerned with the properties of a geometric object that are preserved under continuous deformations, such as stretching, twisting, crumpling, and bending.",,,"Wiki, Munkres 1999",
+Topología Compacto-Abierta,Compact-Open Topology ,Noun,F.,"Dado dos espacios topológicos $X$ y $Y$, se denota el conjunto de funciones continuas de $X$ a $Y$ como $C(X, Y)$. Si $K$ es un subconjunto de $X$ compacto y $U$ es un subconjunto abierto de $Y$, $V(K, U)$ denota el conjunto de funciones $f \in C(X, Y)$ donde $f(K) \subseteq U$. Entonces la coleccion de estos $V(K, U)$ forman un subbase de la topología compacto-abierta para el conjunto $C(X,Y)$.","Let $X$ and $Y$ be two topological spaces, and let $C(X, Y)$ denote the set of all continuous maps between $X$ and $Y$. Given a compact subset $K$ of $X$ and an open subset $U$ of $Y$, let $V(K, U)$ denote the set of all functions $f \in C(X, Y)$ such that $f(K) \subseteq U$. Then the collection of all such $V(K, U)$ is a subbase for the compact-open topology on $C(X, Y)$.",,"The compact open topology can be used to topologize the following set $\Omega\left(X, x_{0}\right)=\left\{f: I \rightarrow X: f(0)=f(1)=x_{0}\right\}$ which results in the loop space of $X$ at $x_{0}$,",,
+Topología de los Complementos Finito / Topología Cofinita,Finite Complement Topology/ Cofinite Topology,Noun,F.,"En matemáticas, la topología de los complementos finitos o topología cofinita sobre un conjunto $X$ es la topología dada por
+$$\mathcal{T}_{c o f}=\{A \subseteq X: X \backslash A \text { es finito ó } A=\emptyset\}$$.
+Es decir, un subconjunto $A$ de $X$ es abierto si su complemento es un conjunto finito.","The cofinite topology or the finite complement topology is a topology that can be defined on every set $X$. It has precisely the empty set and all cofinite subsets of $X$ as open sets. Symbolically,
+$$\mathcal{T}=\{A \subseteq X \mid A=\varnothing \text { or } X \backslash A \text { is finite }\}$$",,,"Wiki, Munkres 1999",
+Toro,Torus,Noun,M. ,,,,,,
+Transitividad,Transitividad,Adj,,"Dado una relación binaria \[R\] para un conjunto \[A\] se decir que la relación se cumple transitividad si para cualquier elemento \[a,b,c  \in  A\] donde \[aRb\] y \[bRc\] implica \[aRc\].","Given a binary relation \[R\] for a set \[A\] we say the relation is transitive if for all elements \[a,b,c \in  A\], \[aRb\] y \[bRc\] implies \[aRc\]. ",,,Wiki,Matematicas
+Traza ,Trace,Noun,F. ,,,,,,
+Unión ,Union,Noun,F.,La unión de dos conjuntos \(A\) y \(B\) es otro conjunto \(A \cup B\) cuyos elementos son todos los elementos de \(A \mathrm{y} / \mathrm{o}\) de \(B\). En símbolos \[A \cup B=\{x: x \in A \text { o } x \in B\} \],"The union of two sets $A$ and $B$ is the set of elements which are in $A$, in $B$, or in both $A$ and $B$. Symbolically,
+$$A \cup B=\{x: x \in A \text { or } x \in B\} $$","Dado los conjuntos $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ la unión de $A$ y $B$ es $A\cup B = \{1,2,3,4,6,8\}$.","Given the sets $A = \{1,2,3,4\}$ y $B=\{2,4,6,8\}$ then the union of $A$ and $B$ is $A\cup B = \{1,2,3,4,6,8\}$.",Wiki,
+Variedad Diferenciable,Differentiable Manifold,Noun,F.,"Se dice que el par \[(M,F)\] formado por la variedad topológica \[M\] de dimensión \[n\] y por la estructura diferenciable \[F\] de clase \[r\] es una variedad diferenciable de dimensión \[n\] y clase \[r\].",,,,Wiki,
+Vértice,Vertex,Noun,M.,"Un vértice es un punto donde se encuentran dos o más elementos unidimensionales (curvas, vectores, rectas, semirrectas o segmentos).",,,,Wiki,"Geometría, Teoría de Grafos"
+Vertice ,Vertex,Noun,F. ,,,,,,"Topología, Geometría, Teoría de Grafos"
