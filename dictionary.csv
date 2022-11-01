@@ -73,7 +73,7 @@ Cuerpo ,Field,Noun,M.,"Un cuerpo es un anillo de división conmutativo, es de
 Densa/o,Dense,Adj,,,,,,,
 Difeomorfismo,Diffeomorphism,Noun,M.,"Dado dos variedades \(M\) and \(N\), un morfismo \(f: M \rightarrow N \) es un difeomorfismo si \(f\) is un homeomorfismo diferenciable. ","Given two manifolds \(M\) and \(N\), a differentiable map \(f: M \rightarrow N\) is called a diffeomorphism if it is a bijection and its inverse \(f^{-1}: N \rightarrow M\) is differentiable as well.",,,Wiki,Geometría
 Disconexo/a,Disconnected,Adj.,,,,,,,
-Discreta/o,Discrete,Adj.,,,,,,,
+Discreta/o,Discrete,Adj.,,Un objeto matemático se nombra discreto/a si es finito o numerable. ,A mathematical object is described as discrete if it is either finite or countably infinite.,,,Wolfram MathWorld ,
 Dominio,Domain,Noun,M.,El dominio (conjunto de definición o conjunto de partida) de una función son los valores para los cuales la función está definida.,The domain (or set of departure) of a function is the set which constitute the input values of the function.,El dominio de la función $f(x) = x^3$ es el conjunto de los números reales. El dominion de la función $f(x) = \frac{1}{x}$ es el conjunto de los números reales menos 0 puesto porque no esta definida para $x=0$.,"The domain of the function $f(x)= x^3$ is the set of real numbers. The domain of the function $f(x) = \frac{1}{x}$ is the set of real numbers except 0, because the function is not defined there.",Wiki,
 Dominio de Ideales Principales (DIP),Principal Ideal Domain (PID),Noun,M.,,,,,Viola-Prioli & Viola-Prioli (2006),Álgebra
 El Conjunto de Los Números Complejos,The Set of Complex Numbers (The Complex Numbers),Noun,M.,El conjunto de los números complejos es el conjunto de números que viene de la forma \(a +bi\) donde \(a\) y \(b\) son números reales y \(i = \sqrt{-1}\).,The set of complex numbers is the set of numbers that come of the form \(a + bi\) where \(a\) and \( b\) are real numbers and \(i=\sqrt{-1}\).,\(1+3i\),\(1+3i\),,
@@ -99,15 +99,15 @@ Espacio de Lazos ,Loop Space ,Noun,M.,"El espacio de lazos, denotado $\Omega X$,
 Espacio Denso,Dense Space,Noun,M.,,,,,Wiki,
 Espacio euclídeo,Euclidean space,Noun,M.,"Un espacio euclídeo de dimensión finita es un espacio vectorial normado sobre los números reales de dimensión finita, cuyo la norma es la asociada al producto escalar ordinario.",,La recta real y el plano euclídeo son ejemplos especiales de espacios euclídeos de dimensiones 1 y 2.,"The real line and the Euclidean plane are special case of Euclidean space of dimension 1 and 2, respectively.",,
 Espacio Separable ,Separable Space,Noun,M.,,,,,,
-Espacio Topológico,Topological Space,Noun,M.,"Se llama un espacio topológico al par ordenado $(X,T)$ formado por un conjunto $X$ y una topología $T$ sobre X, es decir, una colección de subconjuntos de X que cumplen las tres propiedades siguientes:
-1. El conjunto vacío y $X$ están en $T$.
-$$\varnothing \in T, X \in T$$
-2. La intersección de cualquier subcolección finita de conjuntos de $T$ está en $T$.
+Espacio Topológico,Topological Space,Noun,M.,"Se llama un espacio topológico al par ordenado \((X,T)\) formado por un conjunto \(X\) y una topología \(T\) sobre \(X\), es decir, una colección de subconjuntos de \(X\) que cumplen las tres propiedades siguientes: 
+\begin{enumerate} \item El conjunto vacío y \(X\) están en \(T\).
+\[\varnothing \in T, X \in T\]
+\item La intersección de cualquier subcolección finita de conjuntos de \(T\) está en \(T\).
 $$\left(O_{1} \in T, O_{2} \in T\right) \Rightarrow\left(O_{1} \cap O_{2} \in T\right)$$
-3. La unión de cualquier subcolección de conjuntos de $T$ está en $T .$
+\item La unión de cualquier subcolección de conjuntos de \(T\) está en \(T.\)
 Esta condición también se escribe, formalmente:
-$$\forall S \subset T, \cup_{O \in S} O \in T$$
-A los conjuntos pertenecientes a la topología $T$ se les llama conjuntos abiertos o simplemente abiertos de $(X, T) ;^{4}$ y a sus complementos en E, conjuntos cerrados.","A topological space is an ordered pair $(X, T)$, where $X$ is a set and $T$ is a collection of subsets of $X$, satisfying the following axioms: 
+$$\forall S \subset T, \cup_{O \in S} O \in T$$ \end{enumerate}
+A los conjuntos pertenecientes a la topología \(T\) se les llama conjuntos abiertos o simplemente abiertos de $(X, T)$ y a sus complementos en \(E\), conjuntos cerrados.","A topological space is an ordered pair $(X, T)$, where $X$ is a set and $T$ is a collection of subsets of $X$, satisfying the following axioms: 
 \newline1. The empty set and $X$ itself belong to $T$.
 \newline 2. Any arbitrary (finite or infinite) union of members of $\tau$ belongs to $T$.
 \newline 3. The intersection of any finite number of members of $\tau$ belongs to $T$.
@@ -182,7 +182,8 @@ Estructura Diferenciable (o Atlas Maximal),Maximal Atlas,Noun,F.,"Dada una varie
 \item \(F\) es maximal (relativo al orden dado por la inclusión de conjuntos) entre todas las familias de entornos coordenados sobre \(M\) bajo las condiciones 1 y 2 . \end{enumerate}",,,,Wiki,
 Extension,Extension,Noun,F.,,,,,,
 Extension Radical ,Radical Extension,Noun,F.,,,,,,
-Fibración,Fibration ,Noun,F.,,,,,,
+Fibración,Fibration ,Noun,F.,,A fibration (also called Hurewicz fibration) is a mapping  satisfying the homotopy lifting property for all spaces. ,,,,
+Fibrado,Fiber Bundle ,Noun,M.,"Un fibrado (o haz fibrado) es una cuaterna \( (E, B, \pi, F) \) donde \(\pi\) es una función continua suprayectiva, de un espacio topológico \(E\) en otro espacio topológico \(B\), satisfaciendo otra condición que lo hace de una forma particularmente simple localmente.","A fiber bundle is a structure $(E, B, \pi, F)$, where $E, B$, and $F$ are topological spaces and $\pi: E \rightarrow B$ is a continuous surjection satisfying a local triviality condition outlined below. The space $B$ is called the base space of the bundle, $E$ the total space, and $F$ the fiber. The map $\pi$ is called the projection map (or bundle projection).",,,Wiki,Topología 
 Finita/o,Finite,Adj.,,,,,,,
 Frontera ,Boundary ,Noun,F.,,,,,,
 Función,Function,Noun,F.,,,,,,
@@ -238,7 +239,7 @@ Lagrangiano,Lagrangian ,Noun,M.,,,,,,
 Lazo,Loop,Noun,M. ,"Si es $X$ un espacio topológico, y $p$ un punto fijo de $X$, un lazo con base en $p$ es una aplicación continua $\gamma:[0,1] \rightarrow X$ que verifica $\gamma(0)=\gamma(1)=p$.","Given a topological space $X$, a loop based at $p$ is defined to be a continuous function (also known as a continuous map) $\gamma:[0,1] \rightarrow X$ such that the starting point $\gamma(0)$ and the end point $\gamma(1)$ are both equal to $p$.",,,,
 Leyes De De Morgan,De Morgan’s Law,Noun,F.,"Las leyes de De Morgan son un par de reglas de transformación. Las reglas son las siguientes: La negación de la conjunción es la disyunción de las negaciones.
 La negación de la disyunción es la conjunción de las negaciones.",De Morgan’s Laws are a pair of transformation rules. The rules are below: The negation of a disjunction is the conjunction of the negations. The negation of a conjunction is the disjunction of the negations,,,Wiki,
-Libre ,Free,Adj,,,,,,,
+Libre ,Free,Adj,,Un objeto matemático se nombra libre si esta libre de relaciones. ,A mathematical object is described as free if it is free of relations. ,,,Wiki,
 Llave,Brace (curly bracket),Noun,F.,Los símbolos “{“ y “}”.,The symbols “{“ and “}”.,"“Usualmente, a los elementos de un conjunto se les representa encerrados entre dos llaves.” -Zamolla (2013)",Usually the elements of a set are written between two braces.,"Velázquez (2020), Zamalloa (2013)",
 Marco,Frame,Noun,M.,,,,,,
 Matriz,Matrix,Noun,F.,"Una matriz es un arreglo p-dimensional de números (elementos de la matriz) ordenados en filas (o renglones) y columnas, donde una fila es cada una de las líneas horizontales de la matriz y una columna es cada una de las líneas verticales. ",A matrix is a rectangular array of numbers (or other mathematical objects) for which operations such as addition and multiplication are defined.,,,Wiki,Álgebra Lineal
@@ -273,7 +274,7 @@ Paralelepípedo,Parallelepiped,Noun,M.,"Un paralelepípedo es un poliedro de sei
 Pertenecer,Belong To,Verb,,(como un elemento pertencece a un conjunto),(as an element belongs to a set),,,Zamalloa (2013),
 Plano,Plane,Noun,M.,"Un plano es un objeto ideal que solo posee dos dimensiones, y contiene infinitos puntos y rectas.",,,,Wiki,Geometría
 Poliedro,Polygon,Noun,M.,Un poliedro es un cuerpo geométrico cuyas caras son planas y encierran un volumen finito.,,,,Wiki,Geometría
-Polígono,Polygon,Noun,M.,,,,,,
+Polígono,Polygon,Noun,M.,Un polígono es una figura geométrica plana compuesta por una secuencia finita de segmentos rectos consecutivos que encierran una región en el plano.,A polygon is a geometric plane figure that is described by a finite number of straight line segments connected to enclose a region in the plane. ,,,Wiki,Geometría
 Polinomio,Polynomial,Noun,M.,"Un polinomio es una expresión algebraica formada por varios monomios o términos y en ellos intervienen números y letras relacionados mediante sumas, multiplicaciones y potencias.","A polynomial is an expression that can be built from constants and symbols called variables or indeterminates by means of addition, multiplication and exponentiation to a non-negative integer power. ",Un ejemplo de un polinomio es la expresión $4x^3+x-2$.,An example of a polynomial expression is $4x^3+x-2$.,Viola-Prioli & Viola-Prioli (2006),
 Polinomio Constante,Constant Polynomial,Noun,M.,Se dice que un polinomio es constante si tien grado cero o es el polinomio nulo. ,,,,Viola-Prioli & Viola-Prioli (2006),
 Polinomio Nulo,Zero Polynomial,Noun,M.,El polinomio nulo es el polinomio con coeficientes igual a cero.,The zero polynomial is the polynomial whose coefficients are all equal to 0.,,,Wolfram MathWorld ,Álgebra
