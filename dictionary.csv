@@ -86,8 +86,12 @@ El Grupo de Galois,Galois Group,Noun,M.,,,,,,Álgebra
 Elemento Neutro,Identity Element,Noun,M.,,,,,,
 Elemento Nulo ,Zero Element,Noun,F.,,,,,,
 Elemento Simétrico,Inverse Element,Noun,M.,,,,,,
-Embebimiento ,Embedding ,Noun,M.,,,,,,
+Encaje (o Inmersión),Embedding ,Noun,M.,"Dados \(X,Y\) objetos de alguna categoría \(\mathcal{C}\), un encaje de \(X\) en \(Y\) es un función
+\[f: X \rightarrow Y \]
+ la cual es un\(\mathcal{C}\)-morfismo y es inyectivo, i.e. \(f\) es un \(\mathcal{C}\)-monomorfismo.","Given \(X,Y\) objects en a category \(\mathcal{C}\), an embedding of \(X\) into \(Y\) is a function
+\[f: X \rightarrow Y \] which is a \(\mathcal{C}\)-morfismo and is injective i.e. \(f\) is a \(\mathcal{C}\)-monomorfismo.",,,Wiki,"Geometría, Topología "
 Entorno (o Vecindad),Neighborhood ,Noun,M.,"Si \((X, \Tau\) es un espacio topológico y \(p\) es un punto perteneciente a \(X\), un entorno de \(p\) es un conjunto \(V\) en el que está contenido un conjunto abierto \(U\) que tiene como elemento al punto \(p\), \( p \in U \subset V \).",,,,Wiki,
+,,,,,,,,,
 Epimorfismo,Epimorphism,Noun,M.,"En la teoría de categorías, un epimorfismo es un morfismo \(f: X \rightarrow Y\) que para cualquier objecto \(Z\) y morfismos \(g_{1}, g_{2}: Y \rightarrow Z\),
 \(g_{1} \circ f=g_{2} \circ f \Longrightarrow g_{1}=g_{2}\).","In category theory, an epimorphism is a morphism $f: X \rightarrow Y$ such that, for all objects $Z$ and all morphisms $g_{1}, g_{2}: Y \rightarrow Z$,
 $$g_{1} \circ f=g_{2} \circ f \Longrightarrow g_{1}=g_{2}$$",En la categoría de $\mathbf{Set}$ epimorfismos son morifismos/funciones sobreyectivos.,In the category $\mathbb{Set}$ epimorphisms are morphisms/functions which are surjective. ,Wiki,
@@ -219,7 +223,7 @@ Ideal por la Izquierda ,Left Ideal,Noun,M.,"Un subconjunto \(I\) no vacío de un
 \item \(\forall(a, x) \in A \times I: a \times x \in I\) (El producto por la izquierda de un elemento de \(I\) por un elemento de \(A\) pertenece a \(I\) ). \end{enumerate}",,,,Wiki,Álgebra
 Imagen (o Rango),Image (or Range),Noun,F.,La imagen (o campo de valores o rango) de una función es el conjunto contenido en formado por todos los valores que puede llegar a tomar la función.,The image of a function is the set of all output values it may produce.,"Para una función $f: \mathbb{R} \rightarrow \mathbb{R}$ 
 definida como $f(x) = x^2$ el codominio de $f$ es $\mathbb{R}$, pero $f(x)$ siempre toma un valor positivo entonces la imagen de la función es el conjunto $\{x \in \mathbb{R} : x \geq 0 \}$","For the function $f: \mathbb{R} \rightarrow \mathbb{R}$ defined as $f(x) = x^2$ the codomain of $f$ is $\mathbb{R}$, but $f(x)$ always outputs  positive values so the image of the function is $\{ x \in \mathbb{R} : x \geq 0\}$.",Wiki,
-Impar ,Odd,Adj,,,,,,,
+Impar (o Número Impar),Odd (or Odd Number),Noun,M,Un número impar es un número entero que se puede escribir como \(n = 2k+1\) donde \(k\) es un número entero.,"An odd number is an integer of the form \( n = 2k +1 \), where \(k\)  is an integer.","Números impares incluyen 3,5,7, y 101.","Odd numbers include 3, 5, 7, and 101.",Wolfram MathWorld ,
 Infinita/o,Infinite,Adj,,,,,,,
 Intersección,Intersection ,Noun,F.,"La intersección de dos (o más) conjuntos, digamos \(A\) y \(B\), es un subconjunto de \(A\) y \(B\) denotado \(A \cap B\)  que contiene los elementos comunes de \(A\) y \(B\).","The intersection of two set \(A\) and \(B\) denoted by \(A \cap B\) is the subset of \(A\) and \(B\) containing all elements of \(A\) that also belong to \(B\) or equivalently, all elements of \(B\) that also belong to \(A\).","Dado los conjuntos \(A = \{1,2,3,4\}\) y \(B=\{2,4,6,8\}\) la intersección de \(A\) y \(B\) es \(A\cap B = \{2,4\}\).","Given the sets \(A = \{1,2,3,4\}\) y \(B=\{2,4,6,8\}\) then the intersection of \(A\) and \(B\) is \(A\cap B = \{2,4\}\).",Wiki,
 Inyectiva/o,Injective,Adj,,"Dado una función \(f\) cuyo dominio es el conjunto \(X)\, se dice que la función \(f\) es inyectiva si para todo \(a\) y \(b\) en \(X\), si \[f(a)=f(b)\] entonces \[a=b\], esto es \[f(a)=f(b)\] implica \[a=b\]. Equivalentemente, si \[a \neq b\] entonces \[f(a) \neq f(b)\]. Simbólicamente,
@@ -258,7 +262,7 @@ Monomorfismo,Monomorphism,Noun,M.,"En la teoría de categorías, un monomorfismo
 Morfismo ,Morphism ,Noun,M.,Se llaman morfismos (u homomorfismos) a las aplicaciones entre estructuras matemáticas que preservan la estructura interna.,A morphism is a structure-preserving map from one mathematical structure to another one of the same type.,,,Wiki,
 Núcleo ,Kernel ,Noun,M.,"El núcleo de un homomorfismo \(f: R \rightarrow S\) es el conjunto \( 
 \text{ker} f=\{r\in R:f(r)=0_{S}\} \)",The kernel of a homomorphism \(f: R \rightarrow S\) is the set \( \text{ker} f=\{r\in R:f(r)=0_{S}\} \),,,Wiki,"Álgebra, Álgebra Lineal"
-Nudo,Knot,Noun,M.,,,,,,Topología 
+Nudo,Knot,Noun,M.,Un nudo es una clase de equivalencia de encajes de la circunferencia \(S^1\) en \( \mathbb{R}^3\) o en la tres esfera \(S^3\).,A knot is an equivalence class of embeddings of the circle \(S^1\) into \(\mathbb{R}^3\) or \(S^3\).,,,Wiki,Topología 
 Número de Oro ,Golden Ratio,Noun,M.,,,,,,
 Número Entero,An Integer Number,Noun,M.,Un número entero es un número que no se expresa con componente fraccionario. ,An integer is a number that can be written without a fractional component.,"\(-2, 0, 2\)","\(-2, 0, 2\)",Wiki,
 Número Irracional,An Irrational Number,Noun,M.,Un número irracional es un valor que no puede ser expresado como una fracción de números enteros. ,A number which can not be represented as a quotient of two integers. ,"\(\sqrt{2}, e, \pi\)","\(\sqrt{2}, e, \pi\)",Wiki,
