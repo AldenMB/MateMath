@@ -94,7 +94,6 @@ Encaje (o Inmersión),Embedding ,Noun,M.,"Dados \(X,Y\) objetos de alguna catego
 \[f: X \rightarrow Y \] which is a \(\mathcal{C}\)-morfismo and is injective i.e. \(f\) is a \(\mathcal{C}\)-monomorfismo.",,,Wiki,"Geometría, Topología "
 Entorno (o Vecindad),Neighborhood ,Noun,M.,"Si \((X,  T)\) es un espacio topológico y \(p\) es un punto perteneciente a \(X\), un entorno de \(p\) es un conjunto \(V\) en el que está contenido un conjunto abierto \(U\) que tiene como elemento al punto \(p\), \( p \in U \subset V \).","If \((X, T )\) is a topological space and \(p\) is a point in \(X\), then a neighborhood of \(p\) is a subset \(V\) of \(X\) that includes an open set \(U\) containing \(p\)
 \[p\in U\subseteq V\subseteq X\]",,,Wiki,
-,,,,,,,,,
 Epimorfismo,Epimorphism,Noun,M.,"En la teoría de categorías, un epimorfismo es un morfismo \(f: X \rightarrow Y\) que para cualquier objecto \(Z\) y morfismos \(g_{1}, g_{2}: Y \rightarrow Z\),
 \(g_{1} \circ f=g_{2} \circ f \Longrightarrow g_{1}=g_{2}\).","In category theory, an epimorphism is a morphism $f: X \rightarrow Y$ such that, for all objects $Z$ and all morphisms $g_{1}, g_{2}: Y \rightarrow Z$,
 $$g_{1} \circ f=g_{2} \circ f \Longrightarrow g_{1}=g_{2}$$",En la categoría de $\mathbf{Set}$ epimorfismos son morifismos/funciones sobreyectivos.,In the category $\mathbb{Set}$ epimorphisms are morphisms/functions which are surjective. ,Wiki,
