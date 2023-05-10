@@ -109,17 +109,21 @@ Espacio Denso,Dense Space,Noun,M.,,,,,Wiki,
 Espacio euclídeo,Euclidean space,Noun,M.,"Un espacio euclídeo de dimensión finita es un espacio vectorial normado sobre los números reales de dimensión finita, cuyo la norma es la asociada al producto escalar ordinario.",,La recta real y el plano euclídeo son ejemplos especiales de espacios euclídeos de dimensiones 1 y 2.,"The real line and the Euclidean plane are special case of Euclidean space of dimension 1 and 2, respectively.",,
 Espacio Separable ,Separable Space,Noun,M.,,,,,,
 Espacio Topológico,Topological Space,Noun,M.,"Se llama un espacio topológico al par ordenado \((X,T)\) formado por un conjunto \(X\) y una topología \(T\) sobre \(X\), es decir, una colección de subconjuntos de \(X\) que cumplen las tres propiedades siguientes: 
-\begin{enumerate} \item 1. El conjunto vacío y \(X\) están en \(T\).
-\[\varnothing \in T, X \in T\]
-\item La intersección de cualquier subcolección finita de conjuntos de \(T\) está en \(T\).
-\[\left(O_{1} \in T, O_{2} \in T\right) \Rightarrow\left(O_{1} \cap O_{2} \in T\right)\]
-\item La unión de cualquier subcolección de conjuntos de \(T\) está en \(T.\)
+<ol>
+<li>El conjunto vacío y \(X\) están en \(T\).
+\[\varnothing \in T, X \in T\]</li>
+<li> La intersección de cualquier subcolección finita de conjuntos de \(T\) está en \(T\).
+\[\left(O_{1} \in T, O_{2} \in T\right) \Rightarrow\left(O_{1} \cap O_{2} \in T\right)\]</li>
+<li> La unión de cualquier subcolección de conjuntos de \(T\) está en \(T.\)
 Esta condición también se escribe, formalmente:
-\[\forall S \subset T, \cup_{O \in S} O \in T\]\end{enumerate}
-A los conjuntos pertenecientes a la topología \(T\) se les llama conjuntos abiertos (o simplemente abiertos) de \((X, T)\) y a sus complementos en \(E\), conjuntos cerrados.","A topological space is an ordered pair \((X, T)\), where \(X\) is a set and \(T\) is a collection of subsets of \(X\), satisfying the following axioms: 
-\newline 1. The empty set and $X$ itself belong to \(T\).
-\newline 2. Any arbitrary (finite or infinite) union of members of \(\tau\) belongs to \(T\).
-\newline 3. The intersection of any finite number of members of \(\tau\) belongs to \(T\).
+\[\forall S \subset T, \cup_{O \in S} O \in T\]</li>
+</ol>
+A los conjuntos pertenecientes a la topología \(T\) se les llama conjuntos abiertos (o simplemente abiertos) de \((X, T)\) y a sus complementos en \(E\), conjuntos cerrados.","A topological space is an ordered pair \((X, T)\), where \(X\) is a set and \(T\) is a collection of subsets of \(X\), satisfying the following axioms:
+<ol> 
+<li> The empty set and $X$ itself belong to \(T\).</li>
+<li> Any arbitrary (finite or infinite) union of members of \(\tau\) belongs to \(T\).</li>
+<li> The intersection of any finite number of members of \(\tau\) belongs to \(T\).</li>
+</ol>
 The elements of \(T\) are called open sets and the collection \(T\) is called a topology on \(X\). A subset \(C \subseteq X\) is said to be closed in \((X, T)\) if and only if its complement \(X \backslash C\) is an element of \(T\).","Dado el conjunto $X=\{1,2,3,4\}$ y la colección de los seis subconjuntos de $X$
 \begin{align*}
 T&= \{\{\},\{2\},\{1,2\},\{2,3\},\{1,2,3\},\{1,2,3,4\}\} \\
@@ -186,9 +190,11 @@ $$a \cdot(\mathbf{u}+\mathbf{v})=a \cdot \mathbf{u}+a \cdot \mathbf{v}, \forall 
 -  It respects the distributive law with respect to the product operation:
 $$(a+b) \cdot \mathbf{u}=a \cdot \mathbf{u}+b \cdot \mathbf{u}, \forall a, b \in K, \forall \mathbf{u} \in V$$",El conjunto de los números reales forman un espacio vectorial sobre el cuerpo de formado del conjunto de los números racionales. ,The set of real numbers forms a vector space over the field formed by the set of rational numbers.  ,Wiki ,
 Estructura Diferenciable (o Atlas Maximal),Maximal Atlas,Noun,F.,"Dada una variedad topológica \(M\) y un número entero \(r \geq 0\), una estructura diferenciable (o atlas maximal) \(F\) de clase \(r\) sobre \(M\) es una familia \[\left\{\left(U_{\lambda}, \varphi_{\lambda}\right): \lambda \in \Lambda\right\}\] de sistemas coordenados sobre \(M\) de manera que se cumpla que:
-\begin{enumerate}  \item \(U_{\lambda}\) recubre \(M\), es decir, \[\bigcup_{\lambda \in \Lambda} U_{\lambda}=M\],
-\item dados dos cualesquiera \(\alpha, \beta \in \Lambda\) ha de ocurrir que la aplicación \[\varphi_{\beta} \circ \varphi_{\alpha}^{-1}_{\varphi_{\alpha} \left(U_{\alpha} \cap U_{\beta}\right)}: \varphi_{\alpha} (U_{\alpha} \cap U_{\beta}) \longrightarrow \varphi_{\beta} (U_{\alpha} \cap U_{\beta})\], llamada cambio de cartas sea diferenciable de orden \(r\).
-\item \(F\) es maximal (relativo al orden dado por la inclusión de conjuntos) entre todas las familias de entornos coordenados sobre \(M\) bajo las condiciones 1 y 2 . \end{enumerate}",,,,Wiki,
+<ol>
+<li> \(U_{\lambda}\) recubre \(M\), es decir, \[\bigcup_{\lambda \in \Lambda} U_{\lambda}=M,\]</li>
+<li> dados dos cualesquiera \(\alpha, \beta \in \Lambda\) ha de ocurrir que la aplicación \[\varphi_{\beta} \circ \varphi_{\alpha}^{-1}: \varphi_{\alpha} (U_{\alpha} \cap U_{\beta}) \longrightarrow \varphi_{\beta} (U_{\alpha} \cap U_{\beta}),\] llamada cambio de cartas sea diferenciable de orden \(r\).</li>
+<li> \(F\) es maximal (relativo al orden dado por la inclusión de conjuntos) entre todas las familias de entornos coordenados sobre \(M\) bajo las condiciones 1 y 2 . </li>
+</ol>",,,,Wiki,
 Extension,Extension,Noun,F.,,,,,,
 Extension Radical ,Radical Extension,Noun,F.,,,,,,
 Fibración,Fibration ,Noun,F.,,A fibration (also called Hurewicz fibration) is a mapping  satisfying the homotopy lifting property for all spaces. ,,,,
@@ -219,19 +225,23 @@ Homotopía,Homotopy ,Noun,F.,"Una homotopía entro dos aplicaciones continuas \(
 &H(x, 0)=f(x) \\
 &H(x, 1)=g(x)
 \end{aligned}\]",,,,"Wiki, Munkres 1999",
-Ideal (o Ideal Bilátero),Ideal,Noun,M.,"Un ideal bilátero es un ideal por la derecha y por la izquierda. En un anillo conmutativo, las nociones de ideal por la derecha, de ideal por la izquierda y de ideal bilátero coinciden y simplemente se habla de ideal.",,"Dado un número entro \(k|), \(k\mathbb{Z}\) es un ideal de \( \mathbb{Z}\).",,Wiki,Álgebra
+Ideal (o Ideal Bilátero),Ideal,Noun,M.,"Un ideal bilátero es un ideal por la derecha y por la izquierda. En un anillo conmutativo, las nociones de ideal por la derecha, de ideal por la izquierda y de ideal bilátero coinciden y simplemente se habla de ideal.",,"Dado un número entro \(k\), \(k\mathbb{Z}\) es un ideal de \( \mathbb{Z}\).",,Wiki,Álgebra
 Ideal por la Derecha,Right Ideal,Noun,M.,"Un subconjunto \(I\) no vacío de un anillo \(A\) es un ideal por la derecha de \(A\) si:
-\begin{enumerate} \item \(I\) es un subgrupo aditivo de \(A\).
-\item \(\forall(x, a) \in I \times A: x \times a \in I\) (El producto por la derecha de un elemento de \(I\) por un elemento de \(A\) pertenece a \(I\) ). \end{enumerate}",,,,Wiki,Álgebra
+<ol>
+<li> \(I\) es un subgrupo aditivo de \(A\).</li>
+<li> \(\forall(x, a) \in I \times A: x \times a \in I\) (El producto por la derecha de un elemento de \(I\) por un elemento de \(A\) pertenece a \(I\) ).</li>
+</ol>",,,,Wiki,Álgebra
 Ideal por la Izquierda ,Left Ideal,Noun,M.,"Un subconjunto \(I\) no vacío de un anillo \(A\) es un ideal por la izquierda de \(A\) si:
-\begin{enumerate} \item \(I\) es un subgrupo aditivo de \(A\).
-\item \(\forall(a, x) \in A \times I: a \times x \in I\) (El producto por la izquierda de un elemento de \(I\) por un elemento de \(A\) pertenece a \(I\) ). \end{enumerate}",,,,Wiki,Álgebra
+<ol>
+<li> \(I\) es un subgrupo aditivo de \(A\).</li>
+<li> \(\forall(a, x) \in A \times I: a \times x \in I\) (El producto por la izquierda de un elemento de \(I\) por un elemento de \(A\) pertenece a \(I\) ).</li>
+</ol>",,,,Wiki,Álgebra
 Imagen (o Rango),Image (or Range),Noun,F.,La imagen (o campo de valores o rango) de una función es el conjunto contenido en formado por todos los valores que puede llegar a tomar la función.,The image of a function is the set of all output values it may produce.,"Para una función $f: \mathbb{R} \rightarrow \mathbb{R}$ 
 definida como $f(x) = x^2$ el codominio de $f$ es $\mathbb{R}$, pero $f(x)$ siempre toma un valor positivo entonces la imagen de la función es el conjunto $\{x \in \mathbb{R} : x \geq 0 \}$","For the function $f: \mathbb{R} \rightarrow \mathbb{R}$ defined as $f(x) = x^2$ the codomain of $f$ is $\mathbb{R}$, but $f(x)$ always outputs  positive values so the image of the function is $\{ x \in \mathbb{R} : x \geq 0\}$.",Wiki,
 Impar (o Número Impar),Odd (or Odd Number),Noun,M,Un número impar es un número entero que se puede escribir como \(n = 2k+1\) donde \(k\) es un número entero.,"An odd number is an integer of the form \( n = 2k +1 \), where \(k\)  is an integer.","Números impares incluyen 3,5,7, y 101.","Odd numbers include 3, 5, 7, and 101.",Wolfram MathWorld ,
 Infinita/o,Infinite,Adj,,,,,,,
 Intersección,Intersection ,Noun,F.,"La intersección de dos (o más) conjuntos, digamos \(A\) y \(B\), es un subconjunto de \(A\) y \(B\) denotado \(A \cap B\)  que contiene los elementos comunes de \(A\) y \(B\).","The intersection of two set \(A\) and \(B\) denoted by \(A \cap B\) is the subset of \(A\) and \(B\) containing all elements of \(A\) that also belong to \(B\) or equivalently, all elements of \(B\) that also belong to \(A\).","Dado los conjuntos \(A = \{1,2,3,4\}\) y \(B=\{2,4,6,8\}\) la intersección de \(A\) y \(B\) es \(A\cap B = \{2,4\}\).","Given the sets \(A = \{1,2,3,4\}\) y \(B=\{2,4,6,8\}\) then the intersection of \(A\) and \(B\) is \(A\cap B = \{2,4\}\).",Wiki,
-Inyectiva/o,Injective,Adj,,"Dado una función \(f\) cuyo dominio es el conjunto \(X)\, se dice que la función \(f\) es inyectiva si para todo \(a\) y \(b\) en \(X\), si \[f(a)=f(b)\] entonces \[a=b\], esto es \[f(a)=f(b)\] implica \[a=b\]. Equivalentemente, si \[a \neq b\] entonces \[f(a) \neq f(b)\]. Simbólicamente,
+Inyectiva/o,Injective,Adj,,"Dado una función \(f\) cuyo dominio es el conjunto \(X\), se dice que la función \(f\) es inyectiva si para todo \(a\) y \(b\) en \(X\), si \[f(a)=f(b)\] entonces \[a=b\], esto es \[f(a)=f(b)\] implica \[a=b\]. Equivalentemente, si \[a \neq b\] entonces \[f(a) \neq f(b)\]. Simbólicamente,
 \[\forall a, b \in X, \quad f(a)=f(b) \Longrightarrow a=b\].","Let $f$ be a function whose domain is a set $X$. The function $f$ is said to be injective provided that for all $a$ and $b$ in $X$, if $f(a)=f(b$ $a=b$. Equivalently, if $a \neq b$, then $f(a) \neq f(b)$.
 Symbolically, $$\forall a, b \in X, \quad f(a)=f(b) \Longrightarrow a=b$$","Dado la función$$
 \begin{aligned}
@@ -274,7 +284,12 @@ Número Irracional,An Irrational Number,Noun,M.,Un número irracional es un valo
 Número Natural,A Natural Number ,Noun,M.,Un número natural es cualquiera de los números que se usan para contar los elementos de ciertos conjuntos.,The natural numbers are those used for counting and ordering.,"\(1, 2, 100\)","\(1, 2, 100\)",Wiki,
 "Opuesto (o Simétrico Para la Suma, o Inverso Aditivo) ",Negation (Additive Inverse),Noun,M.,"El opuesto de un número n es el número que, sumado con da cero.",,,,Wiki,
 Orden,Order,Noun,M.,,,,,,
-Orden Parcial,Partial Ordering,Adj,,"Un orden parcial es una relación binaria sobre un conjunto que es reflexiva, antisimétrica, y transitiva es decir, para cualquier \(a, b\), y \(c\) en \(X\) se tiene que: \begin{enumerate} \item \[aRa\] (reflexividad).\item Si \[aRb\] y \[bRa\], entonces \[a = b\] (antisimetría).\item Si \[aRb\] y \[bRc\], entonces \[aRc\] (transitividad).","A partial order is a binary relation on a set which is reflexive, antisymmetric, transitive.",,,Wiki,
+Orden Parcial,Partial Ordering,Adj,,"Un orden parcial es una relación binaria sobre un conjunto que es reflexiva, antisimétrica, y transitiva es decir, para cualquier \(a, b\), y \(c\) en \(X\) se tiene que: 
+<ol>
+<li> \[aRa\] (reflexividad).</li>
+<li> Si \[aRb\] y \[bRa\], entonces \[a = b\] (antisimetría).</li>
+<li> Si \[aRb\] y \[bRc\], entonces \[aRc\] (transitividad).</li>
+</ol>","A partial order is a binary relation on a set which is reflexive, antisymmetric, transitive.",,,Wiki,
 Par,Pair,Noun,M.,,,,,,
 Par ,Even ,Adj,,,,,,,
 Par Ordenado,Ordered Pair,Noun,M.,"Un par ordenado \((a,b)\) es una pareja de objetos matemáticos, en la que se distingue un elemento y otro.","An ordered pair \((a, b)\) is a pair of objects.","Un ejemplo de un par ordenado es \((5,4)\).","An example of an ordered pair is \((5,4)\).",Wiki,
